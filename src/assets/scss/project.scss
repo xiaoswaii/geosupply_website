@@ -1,0 +1,32 @@
+.project{
+    height: 100%;
+    width: 100%;
+}
+.project_img{
+    background-image: url('../assets/img/project.jpg');
+    width: 100%;
+    height: 40%;
+}
+
+.project_select{
+    background-color: orange;
+    width: 100%;
+    height: 10%;
+}
+
+.project_select_option{
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.project_option{
+    border: 1px solid black;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.project_option:hover{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}

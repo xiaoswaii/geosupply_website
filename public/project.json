@@ -5,8 +5,11 @@
             "name":"",
             "detail":"",
             "contrator":"",
-            "software":"",
-            "instrument":""
+            "software":"Real Time Monitoring System ( Geosupply Cloud Platform)",
+            "instrument":["",""]
+        },
+        {
+
         }
     ]
 }
