@@ -6,7 +6,8 @@
             "detail":"",
             "contrator":"",
             "software":"Real Time Monitoring System ( Geosupply Cloud Platform)",
-            "instrument":["",""]
+            "instrument":["",""],
+            "img":["./assests/"]
         },
         {
 
