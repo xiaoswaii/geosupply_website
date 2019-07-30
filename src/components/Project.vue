@@ -9,14 +9,35 @@
   </div>
   <div class="project_info">
     <div class="project_list">
-      <span class="project_list_title">Malaysia</span>
       <ul>
-        <li class="project_list_item">1</li>
-        <li class="project_list_item">2</li>
-        <li class="project_list_item">3</li>
+        <li class="project_list_title">Malaysia</li>
+        <li class="project_list_item">Project 001</li>
+        <li class="project_list_item">Project 002</li>
+        <li class="project_list_item">Project 003</li>
       </ul>
     </div>
     <div class="project_detail">
+      <div class="project_album">
+        <div class="project_album_now">
+          <img class="project_album_show" src="../assets/img/Picture1.png">
+        </div>
+        <div class="project_album_list">
+          <img class="project_album_photo" src="../assets/img/Picture2.png">
+          <img class="project_album_photo" src="../assets/img/Picture2.png">
+          <img class="project_album_photo" src="../assets/img/Picture2.png">
+          <img class="project_album_photo" src="../assets/img/Picture2.png">
+        </div>
+      </div>
+      <div class="project_detail_list">
+        <table>
+          <tr class="project_detail_table"><td>Name of Project:</td><td></td></tr>
+          <tr class="project_detail_table"><td>Project Location:</td><td></td></tr>
+          <tr class="project_detail_table"><td>Project Details:</td><td></td></tr>
+          <tr class="project_detail_table"><td>Main Contractor:</td><td></td></tr>
+          <tr class="project_detail_table"><td>Software</td><td></td></tr>
+          <tr class="project_detail_table"><td>Instrument</td><td></td></tr>
+        </table>
+      </div>
     </div>
   </div>
   </div>

@@ -1,5 +1,5 @@
 .project{
-    height: 200%;
+    height: 100%;
     width: 100%;
 }
 
@@ -20,7 +20,7 @@
 .project_select{
     background-color: orange;
     width: 100%;
-    height: 5%;
+    height: 10%;
 }
 
 .project_select_option{
@@ -60,7 +60,7 @@
 
 .project_info{
     width: 100%;
-    height: 75%;
+    height: max-content;
 }
 
 .project_list{
@@ -83,4 +83,60 @@ ul{
 .project_list_item{
     display: block;
     text-align: center;
+    border: solid 1px black;
+    font-size: 1.5em;
+}
+
+.project_list_item:hover{
+    display: block;
+    text-align: center;
+    border: solid 1px black;
+    background-color: black;
+    color: white;
+}
+
+.project_detail{
+    width: 66%;
+    display: block;
+    float: left;
+}
+.project_album{
+    width: 50%;
+    display: block;
+    float: left;
+}
+
+.project_detail_list{
+    width: 50%;
+    display: block;
+    float: left;
+    margin-top: 5%; 
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    border-bottom: 1px solid black;
+    width: 50%;
+    text-align: center;
+}
+
+.project_album_show{
+    max-height: 100%;
+    max-width: 100%
+}
+
+.project_album_list{
+    margin-top: 1%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.project_album_photo{
+    width: 30%;
+    display: inline-block;
 }
