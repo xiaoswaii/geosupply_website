@@ -5,15 +5,13 @@
     <div class="project_country">
       Select Region:
     </div>
-      <a :key="country" v-for="country in countries" class="project_option">{{ country }}</a>
+      <a id="country" :key="country" v-for="country in countries" class="project_option" @click = "show( country )">{{ country }}</a>
   </div>
   <div class="project_info">
     <div class="project_list">
       <ul>
-        <li class="project_list_title">Malaysia</li>
-        <li class="project_list_item">Project 001</li>
-        <li class="project_list_item">Project 002</li>
-        <li class="project_list_item">Project 003</li>
+        <li class="project_list_title">{{ nowCountry }}</li>
+        <li v-for="project in projectList" class="project_list_item">{{ project }}</li>
       </ul>
     </div>
     <div class="project_detail">
@@ -44,14 +42,50 @@
 </template>
 
 <script>
+import  axios  from 'axios';
+
 export default {
-  name: 'Footer',
-  props: [],
-  data(){
+	name: 'Footer',
+	props: [],	
+	data () {
     return {
-      countries:["Malaysia","Taiwan","Indonesia"]
+		countries: ["Malaysia","Taiwan","Indonesia"],
+		raw: [],
+		nowCountry: '',
+		projectList: [],
     }
-  }
+	},	
+
+	mounted () {
+		this.openFile();		  
+	},
+
+	methods: {
+    openFile () {
+      	axios.get('http://localhost:8080/project.json')
+			.then(res =>{
+				console.log(res);
+				this.raw = res.data.project;
+				console.log(this.raw);
+			}).catch(err => {
+			    console.log(err);
+			})
+	},
+	
+	show (country) {
+		this.nowCountry = country;
+		this.changeCountryList(country);
+	},
+
+	changeCountryList (country) {
+		this.projectList = [];
+		var test = this.raw.filter(element => element.place == country);
+		test.forEach(element => {
+			this.projectList.push(element.name);
+		});
+		console.log(test);
+	},
+	}
 }
 </script>
 
