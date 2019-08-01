@@ -8,7 +8,7 @@
             "contrator" :"",
             "software"  :"Real Time Monitoring System (Geosupply Cloud Platform)",
             "instrument":["Load Cell (Geostar Model 9900)","Strain Gauge (Geostar Model 9000)","Temperature Sensor (Geostar Model 9980)","Datalogger system (Campbell Scientific CR1000)"],
-            "img"       :["./assests/"]
+            "img"       :["project_img/project1/Picture1.png","project_img/project1/Picture2.png","project_img/project1/Picture3.png"]
         },
         {
             "place"     :"Malaysia",
@@ -18,7 +18,7 @@
             "contrator" :"",
             "software"  :"Real Time Monitoring System (Geosupply Cloud Platform)",
             "instrument":["Load Cell (Geostar Model 9900)","Strain Gauge (Geostar Model 9000)","Temperature Sensor (Geostar Model 9980)","Datalogger system (Campbell Scientific CR1000)"],
-            "img"       :["./assests/"]
+            "img"       :["project_img/project2/picture1.png","project_img/project2/picture2.png"]
         },
         {
             "place"     :"Malaysia",
@@ -28,7 +28,7 @@
             "contrator" :"",
             "software"  :"Real Time Monitoring System ( Geosupply Cloud Platform)",
             "instrument":["Wireless Vibration Meter System* 2 set(Geosupply)"],
-            "img"       :["./assests/"]
+            "img"       :["project_img/project3/picture1.png","project_img/project1/picture2.png","project_img/project1/picture3.png"]
         },
         {
             "place"     :"Indonesia",
@@ -38,7 +38,7 @@
             "contrator" :["JO. SHIMIZU-BCK MPP PROJECT","PT PONDASI KISOCON RAYA"],
             "software"  :"Real Time Monitoring System (Geosupply Cloud Platform)",
             "instrument":["Strain Gauge (for King Post)"," Rebar Stress (for Slab)"],
-            "img"       :["./assests/"]
+            "img"       :["project_img/project4/picture1.png","project_img/project4/picture2.png","project_img/project4/picture3.png"]
         },
         {
             "place"     :"Taiwan",
@@ -48,7 +48,7 @@
             "contrator" :"Taoyuan Metro Corporation",
             "software"  :"",
             "instrument":["In-Place Inclinometer","Piezometer","Crack Meter","Tilt Meter","Water Level sensor","Rain Gauges","GPS system","CCTV"],
-            "img"       :["./assests/"]
+            "img"       :["project_img/project5/picture1.png","project_img/project5/picture2.png","project_img/project5/picture3.png"]
         },
         {
             "place"     :"Taiwan",
@@ -58,7 +58,7 @@
             "contrator" :"Taoyuan Metro Corporation",
             "software"  :"Real Time Monitoring System ( Geosupply Cloud Platform)",
             "instrument":["In-Place Inclinometer","Piezometer","Crack Meter","Tilt Meter","Water Level sensor","Rain Gauges","GPS system","CCTV"],
-            "img"       :["./assests/"]
+            "img"       :["project_img/project6/picture1.png","project_img/project6/picture2.png"]
         },
         {
             "place"     :"Taiwan",
@@ -68,7 +68,7 @@
             "contrator" :["SOUKEN ENGINEERING CO., LTD.","Diagnostic Engineering Consultant Co., Ltd."],
             "software"  :"Real Time Monitoring System ( Geosupply Cloud Platform)",
             "instrument":["Measurand SAA"],
-            "img"       :["./assests/"]
+            "img"       :["project_img/project7/picture1.png","project_img/project7/picture2.png"]
         },
         {
             "place"     :"Taiwan",
@@ -78,7 +78,7 @@
             "contrator" :"Taiwan High Speed Railway Corporation",
             "software"  :"Real Time Monitoring System ( Geosupply Cloud Platform)",
             "instrument":["Tilt Meter ","Piezometer"],
-            "img"       :["./assests/"]
+            "img"       :["project_img/project8/picture1.png","project_img/project8/picture2.png","project_img/project8/picture3.png"]
         },
         {
             "place"     :"Taiwan",
@@ -88,7 +88,7 @@
             "contrator" :["TP Engineering Construction Co., Ltd","Citpo Tech"],
             "software"  :"Real Time Monitoring System ( Geosupply Cloud Platform)",
             "instrument":["Fiber Optic Liquid Settlement System"],
-            "img"       :["./assests/"]
+            "img"       :["project_img/project9/picture1.png","project_img/project9/picture2.png"]
         },
         {
             "place"     :"Taiwan",
@@ -98,7 +98,7 @@
             "contrator" :"Sino Geotechnology, Inc.",
             "software"  :"Real Time Monitoring System ( Geosupply Cloud Platform)",
             "instrument":["Tilt Meter","Vibration Monitoring","High Speed Camare (8000fps)","Soil Moisture Sensor","Piezometer","Spider Type Extensometer"],
-            "img"       :["./assests/"]
+            "img"       :["project_img/project10/picture1.png","project_img/project10/picture2.png"]
         },
         {
             "place"     :"Taiwan",
@@ -108,7 +108,7 @@
             "contrator" :"Yu Cheng Construction Engineering Co., Ltd.",
             "software"  :"Real Time Monitoring System ( Geosupply Cloud Platform)",
             "instrument":["Ultra Sonic Water Level Sensor"],
-            "img"       :["./assests/"]
+            "img"       :["project_img/project11/picture1.png","project_img/project11/picture2.png"]
         }
     ]
 }

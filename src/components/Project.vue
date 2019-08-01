@@ -17,13 +17,10 @@
     <div class="project_detail">
       <div class="project_album">
         <div class="project_album_now">
-          <img class="project_album_show" src="../assets/img/Picture1.png">
+          <img v-if="projectAlbum" class="project_album_show" :src="projectAlbum[0]">
         </div>
         <div class="project_album_list">
-          <img class="project_album_photo" src="../assets/img/Picture2.png">
-          <img class="project_album_photo" src="../assets/img/Picture2.png">
-          <img class="project_album_photo" src="../assets/img/Picture2.png">
-          <img class="project_album_photo" src="../assets/img/Picture2.png">
+          <img v-for="pic in projectAlbum" class="project_album_photo" :src="pic">
         </div>
       </div>
       <div class="project_detail_list">
@@ -53,7 +50,8 @@ export default {
 		raw: [],
 		nowCountry: '',
 		projectList: [],
-		projectDetail: [],
+    projectDetail: [],
+    projectAlbum: [],
     }
 	},	
 
@@ -74,24 +72,24 @@ export default {
 	},
 	
 	showCountry (country) {
+		this.projectDetail = {};
 		this.nowCountry = country;
 		this.changeCountryList(country);
 	},
 
 	changeCountryList (country) {
-		this.projectList = [];
-		var test = this.raw.filter(element => element.place == country);
-		test.forEach(element => {
+    this.projectList = [];
+    this.projectAlbum = [];
+		var tempProjectList = this.raw.filter(element => element.place == country);
+		tempProjectList.forEach(element => {
 			this.projectList.push(element.name);
 		});
-		console.log(test);
 	},
 
 	showProject (project) {
-		var testing = this.raw.filter(element => element.name == project);
-		console.log(testing)
-		this.projectDetail = testing[0];
-		console.log(this.projectDetail.location)
+    var tempProjectDetail = this.raw.filter(element => element.name == project);
+    this.projectDetail = tempProjectDetail[0];
+    this.projectAlbum = tempProjectDetail[0].img;
 	}
 	}
 }
