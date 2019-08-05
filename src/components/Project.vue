@@ -5,14 +5,14 @@
     <div class="project_country">
       Select Region:
     </div>
-      <a :key="country" v-for="country in countries" class="project_option" @click = "showCountry( country )">{{ country }}</a>
+      <a :key="country" v-for="country in countries" class="project_option" @click="showCountry( country )">{{ country }}</a>
   </div>
   <div class="project_info">
     <div class="fit_project_list"> 
       <div class="project_list">
         <ul>
           <li class="project_list_title">{{ nowCountry }}</li>
-          <li :key="project" v-for="project in projectList" class="project_list_item" @click = "showProject( project )">{{ project }}</li>
+          <li :key="project" v-for="project in projectList" class="project_list_item" @click="showProject( project )">{{ project }}</li>
         </ul>
       </div>
     </div>
@@ -20,10 +20,10 @@
       <div class="fit_project_album">
         <div class="project_album">
         <div v-if="projectAlbum" class="project_album_now">
-          <img v-if="projectAlbum" class="project_album_show" :src="projectAlbum[0]">
+          <img v-if="projectNow" class="project_album_show" :src="projectNow">
         </div>
         <div v-if="projectAlbum" class="project_album_list">
-          <img :key="pic" v-for="pic in projectAlbum" class="project_album_photo" :src="pic">
+          <img :key="pic" v-for="pic in projectAlbum" class="project_album_photo" :src="pic" @click="changePhoto">
         </div>
         </div>
       </div>
@@ -56,6 +56,7 @@ export default {
 		projectList: [],
     projectDetail: [],
     projectAlbum: [],
+    projectNow: '',
     }
 	},	
 
@@ -76,25 +77,30 @@ export default {
 	},
 	
 	showCountry (country) {
-		this.projectDetail = {};
-		this.nowCountry = country;
-		this.changeCountryList(country);
+		  this.projectDetail = {};
+		  this.nowCountry = country;
+		  this.changeCountryList(country);
 	},
 
 	changeCountryList (country) {
-    this.projectList = [];
-    this.projectAlbum = [];
-		var tempProjectList = this.raw.filter(element => element.place == country);
-		tempProjectList.forEach(element => {
-			this.projectList.push(element.name);
-		});
+      this.projectList = [];
+      this.projectAlbum = [];
+		  var tempProjectList = this.raw.filter(element => element.place == country);
+		  tempProjectList.forEach(element => {
+		  	this.projectList.push(element.name);
+		  });
 	},
 
 	showProject (project) {
-    var tempProjectDetail = this.raw.filter(element => element.name == project);
-    this.projectDetail = tempProjectDetail[0];
-    this.projectAlbum = tempProjectDetail[0].img;
-	}
+      var tempProjectDetail = this.raw.filter(element => element.name == project);
+      this.projectDetail = tempProjectDetail[0];
+      this.projectAlbum = tempProjectDetail[0].img;
+      this.projectNow = tempProjectDetail[0].img[0];
+  },
+  
+  changePhoto (img) {
+      this.projectNow = img.srcElement.src;
+  }
 	}
 }
 </script>
