@@ -8,29 +8,33 @@
       <a :key="country" v-for="country in countries" class="project_option" @click = "showCountry( country )">{{ country }}</a>
   </div>
   <div class="project_info">
-    <div class="project_list">
-      <ul>
-        <li class="project_list_title">{{ nowCountry }}</li>
-        <li v-for="project in projectList" class="project_list_item" @click = "showProject( project )">{{ project }}</li>
-      </ul>
+    <div class="fit_project_list"> 
+      <div class="project_list">
+        <ul>
+          <li class="project_list_title">{{ nowCountry }}</li>
+          <li :key="project" v-for="project in projectList" class="project_list_item" @click = "showProject( project )">{{ project }}</li>
+        </ul>
+      </div>
     </div>
     <div class="project_detail">
-      <div class="project_album">
-        <div class="project_album_now">
+      <div class="fit_project_album">
+        <div class="project_album">
+        <div v-if="projectAlbum" class="project_album_now">
           <img v-if="projectAlbum" class="project_album_show" :src="projectAlbum[0]">
         </div>
-        <div class="project_album_list">
-          <img v-for="pic in projectAlbum" class="project_album_photo" :src="pic">
+        <div v-if="projectAlbum" class="project_album_list">
+          <img :key="pic" v-for="pic in projectAlbum" class="project_album_photo" :src="pic">
+        </div>
         </div>
       </div>
       <div class="project_detail_list">
         <table>
-          <tr class="project_detail_table"><td>Name of Project:</td><td>{{ projectDetail.name }}</td></tr>
-          <tr class="project_detail_table"><td>Project Location:</td><td>{{ projectDetail.location }}</td></tr>
-          <tr class="project_detail_table"><td>Project Details:</td><td>{{ projectDetail.detail }}</td></tr>
-          <tr class="project_detail_table"><td>Main Contractor:</td><td>{{ projectDetail.contractor }}</td></tr>
-          <tr class="project_detail_table"><td>Software</td><td>{{ projectDetail.software }}</td></tr>
-          <tr class="project_detail_table"><td>Instrument</td><td><span v-for="instrument in projectDetail.instrument">{{ instrument }}</span></td></tr>
+          <tr class="project_detail_table"><td class="table_left">Name of Project:</td><td>{{ projectDetail.name }}</td></tr>
+          <tr class="project_detail_table"><td class="table_left">Project Location:</td><td>{{ projectDetail.location }}</td></tr>
+          <tr class="project_detail_table"><td class="table_left">Project Details:</td><td>{{ projectDetail.detail }}</td></tr>
+          <tr class="project_detail_table"><td class="table_left">Main Contractor:</td><td>{{ projectDetail.contractor }}</td></tr>
+          <tr class="project_detail_table"><td class="table_left">Software</td><td>{{ projectDetail.software }}</td></tr>
+          <tr class="project_detail_table"><td class="table_left">Instrument</td><td><span :key="instrument" v-for="instrument in projectDetail.instrument">{{ instrument }}</span></td></tr>
         </table>
       </div>
     </div>

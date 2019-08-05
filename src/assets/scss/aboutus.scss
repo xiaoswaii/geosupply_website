@@ -23,9 +23,11 @@
   margin: auto;
   height: 50%;
   width: 50%;
+  border-radius: 2%;
   top:50%;
   transform:translateY(-50%);
   position: relative;
+  animation: fadein 3s;
 }
 
 .aboutus_title{
@@ -33,14 +35,20 @@
   height: 10%;
   width: 100%;
   text-align: center;
+  font-size: 3.5vh;
 }
 
 .aboutus_content{
   display: block;
   height: 95%;
   width: 100%;
-  font-size: 1.5vw;
+  font-size: 2.5vh;
   //text-align: center;
+}
+
+@keyframes fadein{
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
   
