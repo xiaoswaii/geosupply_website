@@ -1,10 +1,11 @@
 <template>
   <div class="nav">
     <header>
-      <span class="brand">GEOSUPPLY</span>
-      <div class="title_row">
-        <router-link to="/Project"><li class="title">Project</li></router-link>
-        <router-link to="/Aboutus"><span class="title">About us</span></router-link>
+      <a class="brand"></a>
+      <a class="logo">GEOSUPPLY</a>
+      <div class="nav-right">
+        <router-link to="/Project" >Project</router-link>
+        <router-link to="/Aboutus" >About us</router-link>
       </div>
     </header>
   </div>

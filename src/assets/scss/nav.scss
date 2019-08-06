@@ -1,29 +1,44 @@
-.nav{  
-    height: 8%;
-    width: 100%;
-    box-shadow: 1px 11px 20px #c1c0c0;
+body { 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-header{
-    height: 100%;
+  
+.nav {
+    height: 6%;
     width: 100%;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding-top: 7px;
 }
-
-.brand{
-    height: 100%;
-    width: 10%;
-    display: block;
+  
+.nav a {
     float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+    padding: 15px 10px;
 }
-
-.title_row{
-    height: 100%;
-    width: 30%;
+  
+.nav a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+  
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+.nav a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+  
+.nav-right {
     float: right;
 }
-.title{
-    color: black;
-    float: left;
-    display: block;
-    width: 50%;
-}
+  
