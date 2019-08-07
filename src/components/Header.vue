@@ -3,7 +3,7 @@
   <div class="nav">
     <header>
       <a class="logo button">GEOSUPPLY</a>
-      <div class="nav-right" id="nav">
+      <div class="nav-right">
         <router-link to="/Project" class="title button">Project</router-link>
         <router-link to="/Aboutus" class="title button">About us</router-link>
       </div>
