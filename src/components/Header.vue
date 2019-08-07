@@ -1,14 +1,15 @@
 <template>
+<div class="top">
   <div class="nav">
     <header>
-      <a class="brand"></a>
-      <a class="logo">GEOSUPPLY</a>
-      <div class="nav-right">
-        <router-link to="/Project" >Project</router-link>
-        <router-link to="/Aboutus" >About us</router-link>
+      <a class="logo button">GEOSUPPLY</a>
+      <div class="nav-right" id="nav">
+        <router-link to="/Project" class="title button">Project</router-link>
+        <router-link to="/Aboutus" class="title button">About us</router-link>
       </div>
     </header>
   </div>
+</div>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <footer>test</footer>
+  <footer>Powered by GeoSupply</footer>
 </template>
 
 <script>
