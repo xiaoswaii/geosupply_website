@@ -20,7 +20,7 @@
       <div class="fit_project_album">
         <div class="project_album">
         <div v-if="projectAlbum" class="project_album_now">
-          <img v-if="projectNow" class="project_album_show" :src="projectNow">
+          <img v-if="projectPhotoNow" class="project_album_show" :src="projectPhotoNow">
         </div>
         <div v-if="projectAlbum" class="project_album_list">
           <img :key="pic" v-for="pic in projectAlbum" class="project_album_photo" :src="pic" @click="changePhoto">
@@ -49,31 +49,35 @@ export default {
 	name: 'Footer',
 	props: [],	
 	data () {
-    return {
-		countries: ["Malaysia","Taiwan","Indonesia"],
-		raw: [],
-		nowCountry: '',
-		projectList: [],
-    projectDetail: [],
-    projectAlbum: [],
-    projectNow: '',
-    }
+      return {
+		  countries: ['Malaysia','Taiwan','Indonesia'],
+		  raw: [],
+		  nowCountry: 'Malaysia',
+		  projectList: [],
+      projectDetail: [],
+      projectAlbum: [],
+      projectPhotoNow: '',
+      }
 	},	
 
 	mounted () {
-		this.openFile();		  
+      this.openFile();	  
 	},
 
 	methods: {
-    openFile () {
-      	axios.get('http://localhost:8080/project.json')
-			.then(res =>{
-				console.log(res);
-				this.raw = res.data.project;
-				console.log(this.raw);
-			}).catch(err => {
-			    console.log(err);
-			})
+      openFile () {
+          	  axios.get('http://localhost:8080/project.json')
+		  	  .then(res =>{
+		  	  	  console.log(res);
+		  	  	  this.raw = res.data.project;
+              console.log(this.raw);
+          })
+          .then(res =>{
+              this.changeCountryList('Malaysia');	
+          })   
+          .catch(err => {
+		  	      console.log(err);
+          })
 	},
 	
 	showCountry (country) {
@@ -95,11 +99,11 @@ export default {
       var tempProjectDetail = this.raw.filter(element => element.name == project);
       this.projectDetail = tempProjectDetail[0];
       this.projectAlbum = tempProjectDetail[0].img;
-      this.projectNow = tempProjectDetail[0].img[0];
+      this.projectPhotoNow = tempProjectDetail[0].img[0];
   },
   
   changePhoto (img) {
-      this.projectNow = img.srcElement.src;
+      this.projectPhotoNow = img.srcElement.src;
   }
 	}
 }

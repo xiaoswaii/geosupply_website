@@ -170,8 +170,10 @@ tr:nth-child(odd){
 }
 
 .project_album_show{
+    display: block;
+    margin: 0 auto;
     height: -webkit-fill-available;
-    max-width: 100%
+    max-width: 100%;
 }
 
 .project_album_list{
