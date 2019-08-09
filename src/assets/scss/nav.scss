@@ -52,7 +52,7 @@ body{
     white-space: normal;
 }
 .title:hover {
-    color: #ddd;
+    font-weight: bolder;
 }
 
 .title:active {
@@ -62,4 +62,17 @@ body{
 .nav-right {
     float: right!important;
 }
+
+.title:after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: black;
+    transition: 300ms;
+  }
+  
+  .title:hover:after {
+    width: 100%;
+  }
   
