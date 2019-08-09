@@ -33,7 +33,7 @@
 			<div class="footer-right">
 
 				<p class="footer-company-about">
-					<span>About the company</span>
+					<span>About GeoSupply</span>
 					Provided domestic and international automated monitoring system engineering service
 				</p>
 				<!-- <div class="footer-icons">

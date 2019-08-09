@@ -61,7 +61,7 @@
 .project_info{
     width: 100%;
     //height: max-content;
-    height: 60%;
+    height: 65%;
 }
 
 .fit_project_list{
@@ -150,7 +150,7 @@
     width: 50%;
     display: block;
     float: left;
-    margin-top: 5%; 
+    margin-top: 2%; 
 }
 
 // table{
@@ -205,22 +205,28 @@ table {
     margin: 0 auto;
     position: relative;
   }
+
   table * {
     position: relative;
   }
+
   table td, table th {
     padding-left: 8px;
   }
+
   table thead tr {
     height: 60px;
     background: #292c2f;
   }
+
   table tbody tr {
     height: 50px;
   }
+
 //   table tbody tr:last-child {
 //     border: 0;
 //   }
+
   table td, table th {
     text-align: center;
   }
@@ -239,7 +245,7 @@ table {
   
   tbody tr {
     font-family: OpenSans-Regular;
-    font-size: 15px;
+    font-size: 16px;
     color: #808080;
     line-height: 1.2;
     font-weight: unset;
@@ -339,4 +345,9 @@ table {
       padding-left: 15px;
       padding-right: 15px;
     }
+  }
+
+  .br{
+    white-space: pre;
+    display: block;
   }

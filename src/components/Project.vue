@@ -73,7 +73,11 @@
 								</tr>
                 <tr class="project_detail_table">
 									<td class="column1">Instrument</td>
-									<td class="column2">{{ projectDetail.software }}</td>
+									<td class="column2"><span :key="instrument" v-for="instrument in projectDetail.instrument">{{ instrument }}<span class="br"> </span></span></td>
+								</tr>
+                <tr class="project_detail_table">
+									<td class="column1">Project Detail</td>
+									<td class="column2">{{ projectDetail.detail }}</td>
 								</tr>
 						</tbody>
 					</table>
