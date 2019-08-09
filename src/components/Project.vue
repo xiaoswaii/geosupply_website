@@ -10,10 +10,22 @@
   <div class="project_info">
     <div class="fit_project_list"> 
       <div class="project_list">
-        <ul>
+        <!-- <ul>
           <li class="project_list_title">{{ nowCountry }}</li>
           <li :key="project" v-for="project in projectList" class="project_list_item" @click="showProject( project )">{{ project }}</li>
-        </ul>
+        </ul> -->
+        <table class="project_list_table">
+						<thead>
+							<tr class="project_list_table_head">
+								<th class="project_list_title" colspan="2">{{ nowCountry }}</th>
+							</tr>
+						</thead>
+						<tbody>
+								<tr class="project_list_item" :key="project" v-for="project in projectList">
+									<td class="column1_project" @click="showProject( project )">{{ project }}</td>
+								</tr>
+						</tbody>
+					</table>
       </div>
     </div>
     <div class="project_detail">
@@ -43,23 +55,23 @@
 							</tr>
 						</thead>
 						<tbody>
-								<tr>
+								<tr class="project_detail_table">
 									<td class="column1">Name of Project:</td>
 									<td class="column2">{{ projectDetail.name }}</td>
 								</tr>
-                <tr>
+                <tr class="project_detail_table">
 									<td class="column1">Project Location:</td>
 									<td class="column2">{{ projectDetail.location }}</td>
 								</tr>
-                <tr>
+                <tr class="project_detail_table">
 									<td class="column1">Main Contractor:</td>
 									<td class="column2">{{ projectDetail.contractor }}</td>
 								</tr>
-                <tr>
+                <tr class="project_detail_table">
 									<td class="column1">Software</td>
 									<td class="column2">{{ projectDetail.software }}</td>
 								</tr>
-                <tr>
+                <tr class="project_detail_table">
 									<td class="column1">Instrument</td>
 									<td class="column2">{{ projectDetail.software }}</td>
 								</tr>
@@ -118,6 +130,7 @@ export default {
 	changeCountryList (country) {
       this.projectList = [];
       this.projectAlbum = [];
+      this.projectPhotoNow = '';
 		  var tempProjectList = this.raw.filter(element => element.place == country);
 		  tempProjectList.forEach(element => {
 		  	this.projectList.push(element.name);
