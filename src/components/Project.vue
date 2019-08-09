@@ -28,14 +28,43 @@
         </div>
       </div>
       <div class="project_detail_list">
-        <table>
+        <!-- <table>
           <tr class="project_detail_table"><td class="table_left">Name of Project:</td><td>{{ projectDetail.name }}</td></tr>
           <tr class="project_detail_table"><td class="table_left">Project Location:</td><td>{{ projectDetail.location }}</td></tr>
           <tr class="project_detail_table"><td class="table_left">Project Details:</td><td>{{ projectDetail.detail }}</td></tr>
           <tr class="project_detail_table"><td class="table_left">Main Contractor:</td><td>{{ projectDetail.contractor }}</td></tr>
           <tr class="project_detail_table"><td class="table_left">Software</td><td>{{ projectDetail.software }}</td></tr>
           <tr class="project_detail_table"><td class="table_left">Instrument</td><td><span :key="instrument" v-for="instrument in projectDetail.instrument">{{ instrument }}</span></td></tr>
-        </table>
+        </table> -->
+        <table>
+						<thead>
+							<tr class="table100-head">
+								<th class="column" colspan="2">Project Detail</th>
+							</tr>
+						</thead>
+						<tbody>
+								<tr>
+									<td class="column1">Name of Project:</td>
+									<td class="column2">{{ projectDetail.name }}</td>
+								</tr>
+                <tr>
+									<td class="column1">Project Location:</td>
+									<td class="column2">{{ projectDetail.location }}</td>
+								</tr>
+                <tr>
+									<td class="column1">Main Contractor:</td>
+									<td class="column2">{{ projectDetail.contractor }}</td>
+								</tr>
+                <tr>
+									<td class="column1">Software</td>
+									<td class="column2">{{ projectDetail.software }}</td>
+								</tr>
+                <tr>
+									<td class="column1">Instrument</td>
+									<td class="column2">{{ projectDetail.software }}</td>
+								</tr>
+						</tbody>
+					</table>
       </div>
     </div>
   </div>
