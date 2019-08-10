@@ -1,0 +1,114 @@
+{
+    "project":[
+        {
+            "place"     :"Malaysia",
+            "name"      :"project1",
+            "location"  :"Sentul, Kuala Lumpur, Malaysia",
+            "detail"    :"",
+            "contrator" :"",
+            "software"  :"Real Time Monitoring System (Geosupply Cloud Platform)",
+            "instrument":["Load Cell (Geostar Model 9900)","Strain Gauge (Geostar Model 9000)","Temperature Sensor (Geostar Model 9980)","Datalogger system (Campbell Scientific CR1000)"],
+            "img"       :["project_img/project1/Picture1.png","project_img/project1/Picture2.png","project_img/project1/Picture3.png"]
+        },
+        {
+            "place"     :"Malaysia",
+            "name"      :"project2",
+            "location"  :"Kampung Datuk Keramat, Kuala Lumpur, Malaysia",
+            "detail"    :"",
+            "contrator" :"",
+            "software"  :"Real Time Monitoring System (Geosupply Cloud Platform)",
+            "instrument":["Load Cell (Geostar Model 9900)","Strain Gauge (Geostar Model 9000)","Temperature Sensor (Geostar Model 9980)","Datalogger system (Campbell Scientific CR1000)"],
+            "img"       :["project_img/project2/picture1.png","project_img/project2/picture2.png"]
+        },
+        {
+            "place"     :"Malaysia",
+            "name"      :"Cadangan Pembangunan Bagi Perumahan Strata Bertanah",
+            "location"  :"Cybersouth, Kuala Lumpur, Malaysia",
+            "detail"    :"",
+            "contrator" :"",
+            "software"  :"Real Time Monitoring System ( Geosupply Cloud Platform)",
+            "instrument":["Wireless Vibration Meter System* 2 set(Geosupply)"],
+            "img"       :["project_img/project3/picture1.png","project_img/project1/picture2.png","project_img/project1/picture3.png"]
+        },
+        {
+            "place"     :"Indonesia",
+            "name"      :"MPP OFFICE BUILDING PROJECT: SUPPLY INSTALL AND MONITORING OF INSTRUMENTATION",
+            "location"  :"Tanah Abang Jakarta Pusat, Indonesia",
+            "detail"    :"",
+            "contrator" :["JO. SHIMIZU-BCK MPP PROJECT","PT PONDASI KISOCON RAYA"],
+            "software"  :"Real Time Monitoring System (Geosupply Cloud Platform)",
+            "instrument":["Strain Gauge (for King Post)"," Rebar Stress (for Slab)"],
+            "img"       :["project_img/project4/picture1.png","project_img/project4/picture2.png","project_img/project4/picture3.png"]
+        },
+        {
+            "place"     :"Taiwan",
+            "name"      :"Taiwan Airport Line MRT (Taoyuan MRT) Disaster Warning System Maintain",
+            "location"  :"Taiwan Whole Airport Line MRT",
+            "detail"    :"24Hr Real Time Slope and Structure Monitoring. When the magnitude 4 earthquake occurs, the train will stop at the next station. When the magnitude 5 earthquake occurs, the train will stop",
+            "contrator" :"Taoyuan Metro Corporation",
+            "software"  :"",
+            "instrument":["In-Place Inclinometer","Piezometer","Crack Meter","Tilt Meter","Water Level sensor","Rain Gauges","GPS system","CCTV"],
+            "img"       :["project_img/project5/picture1.png","project_img/project5/picture2.png","project_img/project5/picture3.png"]
+        },
+        {
+            "place"     :"Taiwan",
+            "name"      :"East-West Lane 62 HighwayReal Time Monitoring System Maintain",
+            "location"  :"Taiwan East-West Lane 62 Highway",
+            "detail"    :"24Hr Real Time Slope Stability Monitoring",
+            "contrator" :"Taoyuan Metro Corporation",
+            "software"  :"Real Time Monitoring System ( Geosupply Cloud Platform)",
+            "instrument":["In-Place Inclinometer","Piezometer","Crack Meter","Tilt Meter","Water Level sensor","Rain Gauges","GPS system","CCTV"],
+            "img"       :["project_img/project6/picture1.png","project_img/project6/picture2.png"]
+        },
+        {
+            "place"     :"Taiwan",
+            "name"      :"Taiwan High Speed Railway Contract T1-18-009",
+            "location"  :"Taiwan High Speed Railway TK122+340~400",
+            "detail"    :"TK122+340~400 Embankment Improvement Real Time Monitoring System",
+            "contrator" :["SOUKEN ENGINEERING CO., LTD.","Diagnostic Engineering Consultant Co., Ltd."],
+            "software"  :"Real Time Monitoring System ( Geosupply Cloud Platform)",
+            "instrument":["Measurand SAA"],
+            "img"       :["project_img/project7/picture1.png","project_img/project7/picture2.png"]
+        },
+        {
+            "place"     :"Taiwan",
+            "name"      :"Taiwan High Speed Railway Contract C1-19-004",
+            "location"  :"Taiwan High Speed Railway TK94、TK168、TK188",
+            "detail"    :"Bridge and Tunnel Real Time Monitoring System",
+            "contrator" :"Taiwan High Speed Railway Corporation",
+            "software"  :"Real Time Monitoring System ( Geosupply Cloud Platform)",
+            "instrument":["Tilt Meter ","Piezometer"],
+            "img"       :["project_img/project8/picture1.png","project_img/project8/picture2.png","project_img/project8/picture3.png"]
+        },
+        {
+            "place"     :"Taiwan",
+            "name"      :"Taiwan High Speed Railway Contract T1-19-006",
+            "location"  :"Taiwan High Speed Railway TK170",
+            "detail"    :"TK170+360~412.5 Embankment Improvement Real Time Monitoring System",
+            "contrator" :["TP Engineering Construction Co., Ltd","Citpo Tech"],
+            "software"  :"Real Time Monitoring System ( Geosupply Cloud Platform)",
+            "instrument":["Fiber Optic Liquid Settlement System"],
+            "img"       :["project_img/project9/picture1.png","project_img/project9/picture2.png"]
+        },
+        {
+            "place"     :"Taiwan",
+            "name"      :"Taiwan High Speed Railway Contract C1-19-007",
+            "location"  :"Taiwan High Speed Railway TK88、TK100",
+            "detail"    :"Miaoli spraying mud investigation and improvement project",
+            "contrator" :"Sino Geotechnology, Inc.",
+            "software"  :"Real Time Monitoring System ( Geosupply Cloud Platform)",
+            "instrument":["Tilt Meter","Vibration Monitoring","High Speed Camare (8000fps)","Soil Moisture Sensor","Piezometer","Spider Type Extensometer"],
+            "img"       :["project_img/project10/picture1.png","project_img/project10/picture2.png"]
+        },
+        {
+            "place"     :"Taiwan",
+            "name"      :"Linkou Fourth Industrial Zone Flood detention and sand deposition facilities",
+            "location"  :"Linkou Fouth Industrial Zone",
+            "detail"    :"Flood Monitoring",
+            "contrator" :"Yu Cheng Construction Engineering Co., Ltd.",
+            "software"  :"Real Time Monitoring System ( Geosupply Cloud Platform)",
+            "instrument":["Ultra Sonic Water Level Sensor"],
+            "img"       :["project_img/project11/picture1.png","project_img/project11/picture2.png"]
+        }
+    ]
+}
