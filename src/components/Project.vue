@@ -111,7 +111,7 @@ export default {
 
 	methods: {
       openFile () {
-          	  axios.get('http://localhost:8080/project.json')
+          	  axios.get(`${window.location.protocol}/project.json`)
 		  	  .then(res =>{
 		  	  	  console.log(res);
 		  	  	  this.raw = res.data.project;
