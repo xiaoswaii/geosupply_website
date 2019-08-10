@@ -1,0 +1,23 @@
+.mapouter{
+    text-align:right;
+    height: 500px;
+    width: 500px;
+    display: block;
+    float: right;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+}
+
+.contact {
+    height: 80%;
+    width: 100%;
+}
+.contact_detail {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 50%;
+}
