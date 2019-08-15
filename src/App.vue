@@ -22,19 +22,5 @@ export default {
 </script>
 
 <style>
-html{
-  height: 100%;
-  width: 100%;
-}
-
-body{
-  height: 100%;
-  width: 100%;
-  margin: 0px;
-}
-
-#app{
-  height: 100%;
-  width: 100%;
-}
+@import "./assets/scss/app.scss";
 </style>

@@ -14,8 +14,10 @@
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
-
-	padding: 55px 50px;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
 	//margin-top: 80px;
 }
 
@@ -38,6 +40,16 @@
 	color:  #ffffff;
 	font: normal 36px 'Cookie', cursive;
 	margin: 0;
+}
+
+.footer_logo{
+	height: 50%;
+	width: 25%;
+
+	img{
+		max-width: 100%;
+		max-height: 100%;
+	}
 }
 
 .footer-distributed h3 span{
@@ -121,8 +133,9 @@
 	color:  #92999f;
 	font-size: 13px;
 	font-weight: normal;
-	margin: 0;
+	margin-top: 15%;
 }
+
 
 .footer-distributed .footer-company-about span{
 	display: block;

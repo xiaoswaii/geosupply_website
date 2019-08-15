@@ -2,7 +2,7 @@
 <div class="top">
   <div class="nav">
     <header>
-      <a href="/" class="logo button">GEOSUPPLY</a>
+      <a href="/" class="logo button"><img src="../assets/img/header_logo.png"></a>
       <div class="nav-right">
         <router-link to="./Project" class="title button">Project</router-link>
         <router-link to="/" class="title button">Product</router-link>

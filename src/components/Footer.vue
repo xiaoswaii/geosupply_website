@@ -2,7 +2,9 @@
   <!-- <footer>Powered by GeoSupply</footer> -->
   <footer class="footer-distributed">
 			<div class="footer-left">
-				<h3>Geo<span>Supply</span></h3>
+				<div class="footer_logo">
+					<img src="../assets/img/footer_logo.png">
+				</div>
 				<p class="footer-links">
 					<a href="#">Home</a>
 					·
@@ -19,15 +21,15 @@
 			<div class="footer-center">
 				<div>
 					<i class="fa fa-map-marker"></i>
-					<p><span>汐止區</span> </p>
+					<p><span>221新北市汐止區建成路57巷28號6樓</span> </p>
 				</div>
 				<div>
 					<i class="fa fa-phone"></i>
-					<p>02XXXXX</p>
+					<p>0918883451</p>
 				</div>
 				<div>
 					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com">support@company.com</a></p>
+					<p><a href="mailto:geosupply.tw@gmail.com">geosupply.tw@gmail.com</a></p>
 				</div>
 			</div>
 			<div class="footer-right">

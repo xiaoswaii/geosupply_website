@@ -1,12 +1,11 @@
 <template>
   <div class="project">
-  <div class="project_img"></div>
-  <div class="project_select">
-    <div class="project_country">
-      Select Region:
+    <div class="project_img"></div>
+    <div class="project_select">
+      <div class="project_country">
+        Project
+      </div>
     </div>
-      <a :key="country" v-for="country in countries" class="project_option" @click="showCountry( country )">{{ country }}</a>
-  </div>
   <div class="project_info">
     <div class="fit_project_list"> 
       <div class="project_list">
@@ -16,20 +15,34 @@
         </ul> -->
         <table class="project_list_table">
 						<thead>
-							<tr class="project_list_table_head">
-								<th class="project_list_title" colspan="2">{{ nowCountry }}</th>
+							<tr class="project_list_table_header">
+								<th class="project_list_title" colspan="2">List of Country</th>
 							</tr>
 						</thead>
 						<tbody>
-								<tr class="project_list_item" :key="project" v-for="project in projectList">
-									<td class="column1_project" @click="showProject( project )">{{ project }}</td>
+								<tr class="project_list_item" :key="country" v-for="country in countries">
+									<td class="column1_project" @click="showCountry(country)">{{ country }}</td>
+								</tr>
+                <tr class="project_list_item">
+									<td class="column1_project" @click="listAll()">List All</td>
 								</tr>
 						</tbody>
 					</table>
       </div>
     </div>
     <div class="project_detail">
-      <div class="fit_project_album">
+      
+      <div class="project_detail_list" id="project_list">
+        <div :key="country" v-for="country in countriesSelect">
+          <span >{{ country }}</span>
+          <ul>
+            <div :key="project.name" v-for="project in projectCountry">
+              <li v-if="project.place == country" @click="showProject( project.name )">{{ project.name }}</li>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="fit_project_album" id="fit_project_album">
         <div class="project_album">
         <div v-if="projectAlbum" class="project_album_now">
           <img v-if="projectPhotoNow" class="project_album_show" :src="projectPhotoNow">
@@ -39,16 +52,7 @@
         </div>
         </div>
       </div>
-      <div class="project_detail_list">
-        <!-- <table>
-          <tr class="project_detail_table"><td class="table_left">Name of Project:</td><td>{{ projectDetail.name }}</td></tr>
-          <tr class="project_detail_table"><td class="table_left">Project Location:</td><td>{{ projectDetail.location }}</td></tr>
-          <tr class="project_detail_table"><td class="table_left">Project Details:</td><td>{{ projectDetail.detail }}</td></tr>
-          <tr class="project_detail_table"><td class="table_left">Main Contractor:</td><td>{{ projectDetail.contractor }}</td></tr>
-          <tr class="project_detail_table"><td class="table_left">Software</td><td>{{ projectDetail.software }}</td></tr>
-          <tr class="project_detail_table"><td class="table_left">Instrument</td><td><span :key="instrument" v-for="instrument in projectDetail.instrument">{{ instrument }}</span></td></tr>
-        </table> -->
-        <table>
+        <table class="project_detail_table_whole" id="project_detail_table">
 						<thead>
 							<tr class="table100-head">
 								<th class="column" colspan="2">Project Detail</th>
@@ -56,6 +60,10 @@
 						</thead>
 						<tbody>
 								<tr class="project_detail_table">
+									<td class="column1">Name of Project:</td>
+									<td class="column2">{{ projectDetail.name }}</td>
+								</tr>
+                <tr class="project_detail_table">
 									<td class="column1">Name of Project:</td>
 									<td class="column2">{{ projectDetail.name }}</td>
 								</tr>
@@ -73,7 +81,7 @@
 								</tr>
                 <tr class="project_detail_table">
 									<td class="column1">Instrument</td>
-									<td class="column2"><span :key="instrument" v-for="instrument in projectDetail.instrument">{{ instrument }}<span class="br"> </span></span></td>
+									<td class="column2"><span :key="instrument" v-for="instrument in projectDetail.instrument">{{ instrument }}</span></td>
 								</tr>
                 <tr class="project_detail_table">
 									<td class="column1">Project Detail</td>
@@ -83,7 +91,6 @@
 					</table>
       </div>
     </div>
-  </div>
   </div>
 </template>
 
@@ -95,15 +102,34 @@ export default {
 	props: [],	
 	data () {
       return {
-		  countries: ['Malaysia','Taiwan','Indonesia'],
+      countries: ['Malaysia','Taiwan','Indonesia'],
+      countriesSelect: ['Malaysia','Taiwan','Indonesia'],
 		  raw: [],
 		  nowCountry: 'Malaysia',
 		  projectList: [],
       projectDetail: [],
       projectAlbum: [],
       projectPhotoNow: '',
+      projectMalaysia: [],
+      projectTaiwan: [],
+      projectIndonesia: [],
+      projectCountry: [],
       }
 	},	
+
+  beforeRouteUpdate(to) {
+    this.$route.params.name = to.params.name
+  },
+
+
+  watch: {
+    '$route' (to, from) {
+      console.log('hahaha')
+      if(to === from){
+        console.log('wtf')
+      }
+    }
+  },
 
 	mounted () {
       this.openFile();	  
@@ -114,38 +140,45 @@ export default {
           	  axios.get(`${window.location.protocol}/project.json`)
 		  	  .then(res =>{
 		  	  	  console.log(res);
-		  	  	  this.raw = res.data.project;
+              this.raw = res.data.project;
+              this.projectCountry = res.data.project;
               console.log(this.raw);
           })
           .then(res =>{
-              this.changeCountryList('Malaysia');	
+              this.projectMalaysia = this.raw.filter(element => element.place == 'Malaysia');
+              this.projectIndonesia = this.raw.filter(element => element.place == 'Indonesia');
+              this.projectTaiwan = this.raw.filter(element => element.place == 'Taiwan');
           })   
-          .catch(err => {
-		  	      console.log(err);
-          })
+          // .catch(err => {
+		  	  //     console.log(err);
+          // })
 	},
 	
 	showCountry (country) {
-		  this.projectDetail = {};
-		  this.nowCountry = country;
-		  this.changeCountryList(country);
+      this.projectCountry = [];
+      this.countriesSelect = [country];
+		  this.projectCountry = this.raw.filter(element => element.place == country);
+      document.getElementById('project_list').style.display = 'block';
+      document.getElementById('project_detail_table').style.display = 'none';
+      document.getElementById('fit_project_album').style.display = 'none';
 	},
 
-	changeCountryList (country) {
-      this.projectList = [];
-      this.projectAlbum = [];
-      this.projectPhotoNow = '';
-		  var tempProjectList = this.raw.filter(element => element.place == country);
-		  tempProjectList.forEach(element => {
-		  	this.projectList.push(element.name);
-		  });
-	},
+  listAll () {
+    this.countriesSelect = ['Malaysia','Taiwan','Indonesia'];
+    this.projectCountry = this.raw;
+    document.getElementById('project_list').style.display = 'block';
+    document.getElementById('project_detail_table').style.display = 'none';
+    document.getElementById('fit_project_album').style.display = 'none';
+  },
 
 	showProject (project) {
+      document.getElementById('project_list').style.display = 'none';
       var tempProjectDetail = this.raw.filter(element => element.name == project);
       this.projectDetail = tempProjectDetail[0];
       this.projectAlbum = tempProjectDetail[0].img;
       this.projectPhotoNow = tempProjectDetail[0].img[0];
+      document.getElementById('project_detail_table').style.display = 'block';
+      document.getElementById('fit_project_album').style.display = 'block';
   },
   
   changePhoto (img) {
