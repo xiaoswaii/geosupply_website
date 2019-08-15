@@ -2,7 +2,7 @@
     <div class="contact">
         <div class="contact_detail">
             <div class="contact_detail_table">
-                <h2>Contact Us</h2>
+                <h1>Contact Us</h1>
                 <span class="contact_detail_list"><span class="contact_detail_logo"><i class="fa fa-home fa-lg"></i></span>221新北市汐止區建成路57巷28號6樓</span>
                 <span class="contact_detail_list"><span class="contact_detail_logo"><i class="fa fa-envelope"></i></span>geosupply.tw@gmail.com</span>
                 <span class="contact_detail_list"><span class="contact_detail_logo"><i class="fa fa-phone"></i></span>0918883451</span>
