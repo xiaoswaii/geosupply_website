@@ -4,6 +4,7 @@
     <header>
       <a href="/" class="logo button"><img src="../assets/img/header_logo.png"></a>
       <div class="nav-right">
+        <router-link to="./" class="title button">Home</router-link>
         <router-link to="./Project" class="title button">Project</router-link>
         <router-link to="/" class="title button">Product</router-link>
         <router-link to="./Contactus" class="title button">Contact Us</router-link>
