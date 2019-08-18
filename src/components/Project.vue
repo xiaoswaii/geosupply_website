@@ -1,8 +1,8 @@
 <template>
   <div class="project">
     <div class="project_img"></div>
-    <div class="project_select">
-      <div class="project_country">
+    <div class="project_banner">
+      <div class="project_banner_word">
         Project
       </div>
     </div>
