@@ -1,5 +1,11 @@
 <template>
   <div class="aboutusBack">
+    <div class="aboutus_img"></div>
+        <div class="aboutus_banner">
+            <div class="aboutus_banner_word">
+            About Us
+            </div>
+        </div>
     <div class="aboutus">
       <span class="aboutus_title">About GeoSupply</span>
       <span class="aboutus_content">

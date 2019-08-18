@@ -8,6 +8,7 @@
 .aboutusBack::after {
     content: "";
     background: url('../assets/img/aboutus.jpg');
+    background-size: cover; 
     opacity: 1;
     top: 0;
     left: 0;
@@ -55,4 +56,26 @@
   to   { opacity: 1; }
 }
 
-  
+.aboutus_img {
+  background-image: url('../assets/img/contactus.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 20%;
+}
+
+.aboutus_banner_word {
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1em;
+  font-family: "RobotoCondensedBold";
+  position: relative;
+  margin-left: 1%;
+}
+
+.aboutus_banner {
+  background-color: #41b6e6;
+  width: 100%;
+  height: 5%;
+}
