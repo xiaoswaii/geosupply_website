@@ -3,9 +3,19 @@ import App from './App.vue';
 import router from './router';
 import axios from 'axios';
 import VueResizeText from 'vue-resize-text';
-import 'font-awesome/css/font-awesome.css'
+import 'font-awesome/css/font-awesome.css';
+import VueCarousel from 'vue-carousel';
+import * as VueGoogleMaps from 'vue2-google-maps'
  
-Vue.use(VueResizeText)
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: 'AIzaSyCQSyOIeBc0YnyCbpI5k3nHZ-bf61FxKaw',
+    libraries: 'places', 
+  },
+})
+ 
+Vue.use(VueCarousel);
+Vue.use(VueResizeText);
 Vue.prototype.$http = axios;
 Vue.config.productionTip = false
 

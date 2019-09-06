@@ -16,7 +16,7 @@
         </div>
         <div class="mapouter" :height="height" :width="width">
             <div class="gmap_canvas">
-                <iframe :width="width" :height="height" id="gmap_canvas" src="https://maps.google.com/maps?q=%E6%B1%90%E6%AD%A2&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                <iframe :width="width" :height="height" id="gmap_canvas" src="https://maps.google.com/maps?q=221%E6%96%B0%E5%8C%97%E5%B8%82%E6%B1%90%E6%AD%A2%E5%8D%80%E5%BB%BA%E6%88%90%E8%B7%AF57%E5%B7%B728%E8%99%9F&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                 </iframe>
             </div>
         </div>
@@ -33,7 +33,7 @@ export default {
       }
   },
   mounted () {
-      this.height = ( window.innerHeight * 0.5 ) + 'px';
+      this.height = ( window.innerHeight * 0.45 ) + 'px';
       this.width = ( window.innerWidth * 0.3 ) + 'px';
   }
 }

@@ -7,6 +7,9 @@
             </div>
         </div>
      <div class="aboutus">
+       <div class="aboutus_detail_img">
+
+       </div>
       <div class="aboutus_detail">
         <span class="aboutus_title">About GeoSupply</span>
         <span class="aboutus_content">

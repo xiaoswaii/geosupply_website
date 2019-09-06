@@ -31,8 +31,22 @@
       </div>
     </div>
     <div class="project_detail">
-      
       <div class="project_detail_list" id="project_list">
+        <GmapMap
+        :center="{lat:10.611474, lng:120.4516083}"
+        :zoom="3.3"
+        map-type-id="terrain"
+        style="width: 500px; height: 300px"
+      >
+        <GmapMarker
+          :key="index"
+          v-for="(m, index) in markers"
+          :position="m.position"
+          :clickable="true"
+          :draggable="true"
+          @click="center=m.position"
+        />
+      </GmapMap>
         <div :key="country" v-for="country in countriesSelect">
           <span >{{ country }}</span>
           <ul>
@@ -59,33 +73,29 @@
 							</tr>
 						</thead>
 						<tbody>
-								<tr class="project_detail_table">
-									<td class="column1">Name of Project:</td>
-									<td class="column2">{{ projectDetail.name }}</td>
+                <tr class="">
+									<td class="">Name of Project:</td>
+									<td class="">{{ projectDetail.name }}</td>
 								</tr>
-                <tr class="project_detail_table">
-									<td class="column1">Name of Project:</td>
-									<td class="column2">{{ projectDetail.name }}</td>
+                <tr class="">
+									<td class="">Project Location:</td>
+									<td class="">{{ projectDetail.location }}</td>
 								</tr>
-                <tr class="project_detail_table">
-									<td class="column1">Project Location:</td>
-									<td class="column2">{{ projectDetail.location }}</td>
+                <tr class="">
+									<td class="">Main Contractor:</td>
+									<td class="">{{ projectDetail.contractor }}</td>
 								</tr>
-                <tr class="project_detail_table">
-									<td class="column1">Main Contractor:</td>
-									<td class="column2">{{ projectDetail.contractor }}</td>
+                <tr class="">
+									<td class="">Software</td>
+									<td class="">{{ projectDetail.software }}</td>
 								</tr>
-                <tr class="project_detail_table">
-									<td class="column1">Software</td>
-									<td class="column2">{{ projectDetail.software }}</td>
+                <tr class="">
+									<td class="">Instrument</td>
+									<td class=""><span :key="instrument" v-for="instrument in projectDetail.instrument">{{ instrument }}</span></td>
 								</tr>
-                <tr class="project_detail_table">
-									<td class="column1">Instrument</td>
-									<td class="column2"><span :key="instrument" v-for="instrument in projectDetail.instrument">{{ instrument }}</span></td>
-								</tr>
-                <tr class="project_detail_table">
-									<td class="column1">Project Detail</td>
-									<td class="column2">{{ projectDetail.detail }}</td>
+                <tr class="">
+									<td class="">Project Detail</td>
+									<td class="">{{ projectDetail.detail }}</td>
 								</tr>
 						</tbody>
 					</table>
@@ -102,6 +112,11 @@ export default {
 	props: [],	
 	data () {
       return {
+      markers: [{
+        position: {lat: 3.1385036, lng: 101.6169498}
+        },
+        {position:{lat: -6.229728, lng: 106.6894348}},
+        {position:{lat: 25.0169639, lng: 121.2261992}}],
       countries: ['Malaysia','Taiwan','Indonesia'],
       countriesSelect: ['Malaysia','Taiwan','Indonesia'],
 		  raw: [],

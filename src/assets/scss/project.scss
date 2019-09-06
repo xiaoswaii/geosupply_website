@@ -1,6 +1,7 @@
 .project{
-    height: 120%;
+    height: 135%;
     width: 100%;
+    overflow: hidden;
 }
 
 .project_banner_word{
@@ -43,7 +44,7 @@
 .project_info{
     width: 100%;
     //height: max-content;
-    height: 80%;
+    height: 70%;
 }
 
 .fit_project_list{
@@ -122,12 +123,12 @@
     height: 100%;
     display: block;
     margin: 0 auto;
-    margin-top: 5%;
+    //margin-top: 5%;
 }
 
 .project_album_now{
     width: 100%;
-    height: 50%;
+    height: 70%;
 }
 
 .project_album_now{
@@ -162,6 +163,7 @@
     margin-top: 1%;
     overflow-x: scroll;
     overflow-y: hidden;
+    height: 25%;
     width: 70%;
     margin: 0 auto;
     white-space: nowrap;
@@ -201,10 +203,6 @@ table {
   table tbody tr {
     height: 50px;
   }
-
-//   table tbody tr:last-child {
-//     border: 0;
-//   }
 
   table td, table th {
     text-align: center;
@@ -311,3 +309,5 @@ table {
     white-space: pre;
     display: block;
   }
+
+  
