@@ -5,7 +5,11 @@ import axios from 'axios';
 import VueResizeText from 'vue-resize-text';
 import 'font-awesome/css/font-awesome.css';
 import VueCarousel from 'vue-carousel';
-import * as VueGoogleMaps from 'vue2-google-maps'
+import * as VueGoogleMaps from 'vue2-google-maps';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
  
 Vue.use(VueGoogleMaps, {
   load: {
