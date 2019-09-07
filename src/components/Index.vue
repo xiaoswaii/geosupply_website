@@ -68,7 +68,7 @@ import Carousel from './Carousel.vue';
 
 <style lang="scss">
   .index {
-    height: 250%;
+    height: 240%;
     width: 100%;
   }
 
@@ -110,7 +110,7 @@ import Carousel from './Carousel.vue';
   .aboutus_index {
       margin-top: 2%;
       display: block;
-      height: 15%;
+      height: 18%;
       width: 100%;
   }
 
@@ -160,7 +160,7 @@ import Carousel from './Carousel.vue';
 
   .product_index {
     background-color: #f4f4f4;
-    height: 20%;
+    height: 23%;
     width: 100%;
     display: block;
     font-size: 2em;
@@ -216,7 +216,7 @@ import Carousel from './Carousel.vue';
     background-color: #f4f4f4;
     display: block;
     margin-top: 1%;
-    height: 19%;
+    height: 20%;
     width: 100%;
 
     .project_index_title {
@@ -278,6 +278,9 @@ import Carousel from './Carousel.vue';
         a {
           text-decoration: none;
           color: white;
+          display: block;
+          width: 100%;
+          height: 100%;
         }
       }
 
