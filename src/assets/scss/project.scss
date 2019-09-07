@@ -1,5 +1,5 @@
 .project{
-    height: 145%;
+    height: 100%;
     width: 100%;
     overflow: hidden;
 }
@@ -101,6 +101,7 @@
 }
 
 .project_detail_table_whole{
+  width: fit-content;
   display: none;
 }
 

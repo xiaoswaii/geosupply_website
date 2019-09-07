@@ -33,7 +33,7 @@
             <img src="../assets/img/service.jpg">
           </div>
       </div>
-      <div class="project_index" data-aos="fade-up" data-aos-delay="50"
+      <div class="project_index" data-aos="fade-up" data-aos-delay="100"
     data-aos-duration="1000">
         <span class="project_index_title">Our Project</span>
         <div class="project_index_content">
