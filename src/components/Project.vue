@@ -33,10 +33,10 @@
     <div class="project_detail">
       <div class="project_detail_list" id="project_list">
         <GmapMap
-        :center="{lat:10.611474, lng:120.4516083}"
-        :zoom="3.3"
+        :center="{lat:11.611474, lng:120.4516083}"
+        :zoom="3.9"
         map-type-id="terrain"
-        style="width: 500px; height: 300px"
+        style="width: 750px; height: 400px"
       >
         <GmapMarker
           :key="index"
