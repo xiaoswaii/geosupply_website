@@ -1,7 +1,11 @@
 <template>
   <div class="index">
     <Carousel></Carousel>
-    <div class="index_banner">Home</div>
+    <div class="index_banner">
+      <div class="index_banner_word">
+          Home
+      </div>
+    </div>
       <div class="aboutus_index">
           <div class="aboutus_left"><img src="../assets/img/burning.jpg"></div>
           <div class="aboutus_right" data-aos="fade-in">
@@ -55,7 +59,7 @@ import Carousel from './Carousel.vue';
   },
     data() {
       return {
-        services: ['Cloud Database','Monitor System','Noise Measurement'],
+        services: ['Cloud Database','Monitor System','Noise Measurement','Seismic monitoring system','Data Analysis'],
 
       };
     },
@@ -69,11 +73,21 @@ import Carousel from './Carousel.vue';
   }
 
   .index_banner {
-    height: 1.5%;
-    line-height: 150%;
+    height: 2%;
     width: 100%;
     background-color: #41b6e6;
-    font-size: 1.2em;
+  }
+
+  .index_banner_word {
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-family: "RobotoCondensedBold";
+    position: relative;
+    margin-left: 1%;
+    font-weight: bold;
+    color: #4d4a4a;
   }
 
   .triangle {

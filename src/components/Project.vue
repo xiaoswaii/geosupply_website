@@ -3,7 +3,7 @@
     <div class="project_img"></div>
     <div class="project_banner">
       <div class="project_banner_word">
-        Project
+        Project <div class="project_banner_country" v-if="countriesSelect.length == 1"> > {{ countriesSelect[0] }} </div><div class="project_banner_country" v-if="projectDetail"> > {{ projectDetail.name }}</div>
       </div>
     </div>
   <div class="project_info">
@@ -120,7 +120,7 @@ export default {
       countries: ['Malaysia','Taiwan','Indonesia'],
       countriesSelect: ['Malaysia','Taiwan','Indonesia'],
 		  raw: [],
-		  nowCountry: 'Malaysia',
+		  nowCountry: '',
 		  projectList: [],
       projectDetail: [],
       projectAlbum: [],
@@ -173,6 +173,7 @@ export default {
 	
 	showCountry (country) {
       this.projectCountry = [];
+      this.projectDetail = {};
       this.countriesSelect = [country];
 		  this.projectCountry = this.raw.filter(element => element.place == country);
       document.getElementById('project_list').style.display = 'block';
@@ -182,6 +183,7 @@ export default {
 
   listAll () {
     this.countriesSelect = ['Malaysia','Taiwan','Indonesia'];
+    this.projectDetail = {};
     this.projectCountry = this.raw;
     document.getElementById('project_list').style.display = 'block';
     document.getElementById('project_detail_table').style.display = 'none';

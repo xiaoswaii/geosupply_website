@@ -24,7 +24,7 @@ import { swiper, swiperSlide } from 'vue-awesome-swiper'
           slidesPerView: 1,
           spaceBetween: 30,
           autoplay: {
-            delay: 4000,
+            delay: 3000,
             disableOnInteraction: false
           },
           pagination: {
