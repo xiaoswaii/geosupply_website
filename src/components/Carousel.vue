@@ -43,7 +43,7 @@ import { swiper, swiperSlide } from 'vue-awesome-swiper'
 
 <style lang="scss">
 .swiper-container {
-  height:30%;
+  height:25%;
 }
 
 .swiper_img {

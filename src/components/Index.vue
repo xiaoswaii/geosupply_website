@@ -1,7 +1,7 @@
 <template>
   <div class="index">
     <Carousel></Carousel>
-    <div class="index_banner"></div>
+    <div class="index_banner">Home</div>
       <div class="aboutus_index">
           <div class="aboutus_left"><img src="../assets/img/burning.jpg"></div>
           <div class="aboutus_right" data-aos="fade-in">
@@ -33,6 +33,16 @@
             <img src="../assets/img/service.jpg">
           </div>
       </div>
+      <div class="project_index" data-aos="fade-up" data-aos-delay="50"
+    data-aos-duration="1000">
+        <span class="project_index_title">Our Project</span>
+        <div class="project_index_content">
+          <div class="project_index_img"><img src="../assets/img/malaysia.jpg"><div class="inner">Malaysia</div></div>
+          <div class="project_index_img"><img src="../assets/img/indo.jpg"><div class="inner">Indonesia</div></div>
+          <div class="project_index_img"><img src="../assets/img/taiwan.jpg"><div class="inner">Taiwan</div></div>
+        </div>
+        <span class="read_more"><a href="./project">Read more</a></span>
+      </div>
   </div>
 </template>
 
@@ -54,14 +64,16 @@ import Carousel from './Carousel.vue';
 
 <style lang="scss">
   .index {
-    height: 200%;
+    height: 250%;
     width: 100%;
   }
 
   .index_banner {
-    height: 2%;
+    height: 1.5%;
+    line-height: 150%;
     width: 100%;
     background-color: #41b6e6;
+    font-size: 1.2em;
   }
 
   .triangle {
@@ -84,7 +96,7 @@ import Carousel from './Carousel.vue';
   .aboutus_index {
       margin-top: 2%;
       display: block;
-      height: 18%;
+      height: 15%;
       width: 100%;
   }
 
@@ -134,7 +146,7 @@ import Carousel from './Carousel.vue';
 
   .product_index {
     background-color: #f4f4f4;
-    height: 25%;
+    height: 20%;
     width: 100%;
     display: block;
     font-size: 2em;
@@ -149,7 +161,7 @@ import Carousel from './Carousel.vue';
   }
   .service_index {
       display: block;
-      height: 20%;
+      height: 15%;
       width: 100%;
   }
 
@@ -184,5 +196,79 @@ import Carousel from './Carousel.vue';
     .fa{
       color: #41b6e6;
     }
+  }
+
+  .project_index {
+    background-color: #f4f4f4;
+    display: block;
+    margin-top: 1%;
+    height: 19%;
+    width: 100%;
+
+    .project_index_title {
+      display: block;
+      height: 15%;
+      width: 100%;
+      text-align: center;
+      font-size: 2em;
+      text-decoration: underline;
+      text-decoration-color: grey; 
+    }
+
+    .project_index_content {
+      height: 60%;
+      width: 65%;
+      display: flex;
+      margin:0 auto;
+      justify-content: space-around;
+
+      .project_index_img {
+        position: relative;
+        width: 30%;
+        height: 95%;
+        margin-top: 1.5%;
+        
+        color: white;
+        text-align: center;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .inner {
+        position: absolute;
+        height: 50px;
+        bottom: 0;
+        z-index: 2;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 2.5em;
+      }
+    }
+
+      .read_more {
+        display: block;
+        margin: 0 auto;
+        margin-top: 2%;
+        color: white;
+        text-align: center;
+        line-height: 200%;
+        font-size: 1.2em;
+        cursor: pointer;
+        height: 10%;
+        width: 10%;
+        background-color: #41b6e6;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+
+      .read_more:hover {
+        background-color: #5f818f;
+      }
   }
 </style>
