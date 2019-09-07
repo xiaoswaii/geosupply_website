@@ -51,7 +51,7 @@
           <span >{{ country }}</span>
           <ul>
             <div :key="project.name" v-for="project in projectCountry">
-              <li v-if="project.place == country" @click="showProject( project.name )">{{ project.name }}</li>
+              <li class="li" v-if="project.place == country" @click="showProject( project.name )">{{ project.name }}</li>
             </div>
           </ul>
         </div>
@@ -129,6 +129,7 @@ export default {
       projectTaiwan: [],
       projectIndonesia: [],
       projectCountry: [],
+      standardWidth:'',
       }
 	},	
 
@@ -148,6 +149,7 @@ export default {
 
 	mounted () {
       this.openFile();	  
+      this.standardWidth = window.innerWidth * 0.52 + 'px';
 	},
 
 	methods: {
