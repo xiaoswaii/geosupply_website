@@ -66,7 +66,8 @@
         </div>
         </div>
       </div>
-        <table class="project_detail_table_whole" id="project_detail_table">
+      <div class="project_table">
+         <table class="project_detail_table_whole" id="project_detail_table">
 						<thead>
 							<tr class="table100-head">
 								<th class="column" colspan="2">Project Detail</th>
@@ -98,7 +99,8 @@
 									<td class="">{{ projectDetail.detail }}</td>
 								</tr>
 						</tbody>
-					</table>
+					</table> 
+          </div>
       </div>
     </div>
   </div>
@@ -179,6 +181,7 @@ export default {
       document.getElementById('project_list').style.display = 'block';
       document.getElementById('project_detail_table').style.display = 'none';
       document.getElementById('fit_project_album').style.display = 'none';
+      //document.getElementById('project_album').style.display = 'none';
 	},
 
   listAll () {
@@ -188,6 +191,7 @@ export default {
     document.getElementById('project_list').style.display = 'block';
     document.getElementById('project_detail_table').style.display = 'none';
     document.getElementById('fit_project_album').style.display = 'none';
+    //document.getElementById('project_album').style.display = 'none';
   },
 
 	showProject (project) {
@@ -198,6 +202,7 @@ export default {
       this.projectPhotoNow = tempProjectDetail[0].img[0];
       document.getElementById('project_detail_table').style.display = 'block';
       document.getElementById('fit_project_album').style.display = 'block';
+      //document.getElementById('project_album').style.display = 'block';
   },
   
   changePhoto (img) {
