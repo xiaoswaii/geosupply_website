@@ -62,11 +62,11 @@
           <img v-if="projectPhotoNow" class="project_album_show" :src="projectPhotoNow">
         </div>
         <div v-if="projectAlbum" class="project_album_list">
-          <img :key="pic" v-for="pic in projectAlbum" class="project_album_photo" :src="pic" @click="changePhoto">
+          <img :key="pic" v-for="pic in projectAlbum" class="project_album_photo" :src="pic" @click="changePhoto"><br>
         </div>
         </div>
       </div>
-      <div class="project_table">
+      <div class="project_table" id="project_table">
          <table class="project_detail_table_whole" id="project_detail_table">
 						<thead>
 							<tr class="table100-head">
@@ -179,7 +179,7 @@ export default {
       this.countriesSelect = [country];
 		  this.projectCountry = this.raw.filter(element => element.place == country);
       document.getElementById('project_list').style.display = 'block';
-      document.getElementById('project_detail_table').style.display = 'none';
+      document.getElementById('project_table').style.display = 'none';
       document.getElementById('fit_project_album').style.display = 'none';
       //document.getElementById('project_album').style.display = 'none';
 	},
@@ -189,7 +189,7 @@ export default {
     this.projectDetail = {};
     this.projectCountry = this.raw;
     document.getElementById('project_list').style.display = 'block';
-    document.getElementById('project_detail_table').style.display = 'none';
+    document.getElementById('project_table').style.display = 'none';
     document.getElementById('fit_project_album').style.display = 'none';
     //document.getElementById('project_album').style.display = 'none';
   },
@@ -200,7 +200,7 @@ export default {
       this.projectDetail = tempProjectDetail[0];
       this.projectAlbum = tempProjectDetail[0].img;
       this.projectPhotoNow = tempProjectDetail[0].img[0];
-      document.getElementById('project_detail_table').style.display = 'block';
+      document.getElementById('project_table').style.display = 'block';
       document.getElementById('fit_project_album').style.display = 'block';
       //document.getElementById('project_album').style.display = 'block';
   },
