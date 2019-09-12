@@ -8,7 +8,8 @@ body{
     overflow: hidden;
     color: #000!important;
     background-color: #fff!important;
-    padding: 8px 16px!important;
+    padding-right: 16px!important;
+    padding-left: 16px!important;
     display: block;
     letter-spacing: 2px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
@@ -31,7 +32,7 @@ body{
 .button{
     border: none;
     display: inline-block;
-    padding: 5px 16px;
+    padding: 8px 16px;
     vertical-align: middle;
     overflow: hidden;
     text-decoration: none;
@@ -48,36 +49,39 @@ body{
 }
 
 .title{
-    padding: 8px 16px;
+    padding: 5% 16px;
     float: left;
     width: auto;
     border: none;
     display: block;
     outline:0;
     white-space: normal;
+    font-size: 80%;
 }
 .title:hover {
-    font-weight: bolder;
+   font-weight: bolder;
+   background: aquamarine; 
 }
 
 .title:active {
-    color: #ddd;
+    //color: #ddd;
 }
   
 .nav-right {
     float: right!important;
+    margin-right: -16px;
 }
 
-.title:after {
-    content: '';
-    width: 0px;
-    height: 1px;
-    display: block;
-    background: black;
-    transition: 300ms;
-  }
+// .title:after {
+//     content: '';
+//     width: 0px;
+//     height: 1px;
+//     display: block;
+//     background: black;
+//     transition: 300ms;
+//   }
   
-  .title:hover:after {
-    width: 100%;
-  }
+//   .title:hover:after {
+//     width: 100%;
+//   }
   
