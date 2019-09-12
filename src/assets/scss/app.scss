@@ -14,7 +14,7 @@ body{
   
 #app{
   height: 100%;
-  width: 80%;
+  width: 70%;
   display: block;
   margin: 0 auto;
 }
@@ -27,4 +27,15 @@ body{
   font-size: 1.5rem;
   justify-content: center;
   min-height: 10rem;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  #app{
+    height: 100%;
+    width: 100%;
+    display: block;
+    font-size: 1em;
+  }
+  
 }

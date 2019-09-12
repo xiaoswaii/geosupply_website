@@ -3,7 +3,7 @@
     <div class="project_img"></div>
     <div class="project_banner">
       <div class="project_banner_word">
-        Project
+        Project <div class="project_banner_country" v-if="countriesSelect.length == 1"> > {{ countriesSelect[0] }} </div><div class="project_banner_country" v-if="projectDetail"> > {{ projectDetail.name }}</div>
       </div>
     </div>
   <div class="project_info">
@@ -61,11 +61,12 @@
           <img v-if="projectPhotoNow" class="project_album_show" :src="projectPhotoNow">
         </div>
         <div v-if="projectAlbum" class="project_album_list">
-          <img :key="pic" v-for="pic in projectAlbum" class="project_album_photo" :src="pic" @click="changePhoto">
+          <img :key="pic" v-for="pic in projectAlbum" class="project_album_photo" :src="pic" @click="changePhoto"><br>
         </div>
         </div>
       </div>
-        <table class="project_detail_table_whole" id="project_detail_table">
+      <div class="project_table" id="project_table">
+         <table class="project_detail_table_whole" id="project_detail_table">
 						<thead>
 							<tr class="table100-head">
 								<th class="column" colspan="2">Project Detail</th>
@@ -97,7 +98,8 @@
 									<td class="">{{ projectDetail.detail }}</td>
 								</tr>
 						</tbody>
-					</table>
+					</table> 
+          </div>
       </div>
     </div>
   </div>
@@ -119,7 +121,7 @@ export default {
       countries: ['Malaysia','Taiwan','Indonesia'],
       countriesSelect: ['Malaysia','Taiwan','Indonesia'],
 		  raw: [],
-		  nowCountry: 'Malaysia',
+		  nowCountry: '',
 		  projectList: [],
       projectDetail: [],
       projectAlbum: [],
@@ -172,19 +174,23 @@ export default {
 	
 	showCountry (country) {
       this.projectCountry = [];
+      this.projectDetail = {};
       this.countriesSelect = [country];
 		  this.projectCountry = this.raw.filter(element => element.place == country);
       document.getElementById('project_list').style.display = 'block';
-      document.getElementById('project_detail_table').style.display = 'none';
+      document.getElementById('project_table').style.display = 'none';
       document.getElementById('fit_project_album').style.display = 'none';
+      //document.getElementById('project_album').style.display = 'none';
 	},
 
   listAll () {
     this.countriesSelect = ['Malaysia','Taiwan','Indonesia'];
+    this.projectDetail = {};
     this.projectCountry = this.raw;
     document.getElementById('project_list').style.display = 'block';
-    document.getElementById('project_detail_table').style.display = 'none';
+    document.getElementById('project_table').style.display = 'none';
     document.getElementById('fit_project_album').style.display = 'none';
+    //document.getElementById('project_album').style.display = 'none';
   },
 
 	showProject (project) {
@@ -193,8 +199,9 @@ export default {
       this.projectDetail = tempProjectDetail[0];
       this.projectAlbum = tempProjectDetail[0].img;
       this.projectPhotoNow = tempProjectDetail[0].img[0];
-      document.getElementById('project_detail_table').style.display = 'block';
+      document.getElementById('project_table').style.display = 'block';
       document.getElementById('fit_project_album').style.display = 'block';
+      //document.getElementById('project_album').style.display = 'block';
   },
   
   changePhoto (img) {

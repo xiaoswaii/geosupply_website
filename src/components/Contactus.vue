@@ -9,9 +9,9 @@
         <div class="contact_detail">
             <div class="contact_detail_table">
                 <h1>Contact Info</h1>
-                <span class="contact_detail_list"><span class="contact_detail_logo"><i class="fa fa-home fa-lg"></i></span><span class="contact_detail_word">221新北市汐止區建成路57巷28號6樓</span></span>
+                <span class="contact_detail_list"><span class="contact_detail_logo"><i class="fa fa-home fa-lg"></i></span><span class="contact_detail_word">6F., No.28, Ln. 57, Jiancheng Rd., Xizhi Dist., New Taipei City 221, Taiwan (R.O.C.)</span></span>
                 <span class="contact_detail_list"><span class="contact_detail_logo"><i class="fa fa-envelope fa-cus"></i></span><span class="contact_detail_word">geosupply.tw@gmail.com</span></span>
-                <span class="contact_detail_list"><span class="contact_detail_logo"><i class="fa fa-phone fa-lg"></i></span><span class="contact_detail_word">0918883451</span></span>
+                <span class="contact_detail_list"><span class="contact_detail_logo"><i class="fa fa-phone fa-lg"></i></span><span class="contact_detail_word">+886918883451 +886‐2‐26481050</span></span>
             </div>
         </div>
         <div class="mapouter" :height="height" :width="width">
@@ -33,8 +33,14 @@ export default {
       }
   },
   mounted () {
-      this.height = ( window.innerHeight * 0.45 ) + 'px';
-      this.width = ( window.innerWidth * 0.3 ) + 'px';
+      if(window.innerWidth < 400){
+           this.height = ( window.innerHeight * 0.45 ) + 'px';
+           this.width = ( window.innerWidth * 0.9 ) + 'px';
+      }
+      else {
+            this.height = ( window.innerHeight * 0.45 ) + 'px';
+            this.width = ( window.innerWidth * 0.3 ) + 'px';
+      }
   }
 }
 </script>

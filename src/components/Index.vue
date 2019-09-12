@@ -1,15 +1,22 @@
 <template>
   <div class="index">
     <Carousel></Carousel>
-    <div class="index_banner">Home</div>
+    <div class="index_banner">
+      <div class="index_banner_word">
+          Home
+      </div>
+    </div>
       <div class="aboutus_index">
           <div class="aboutus_left"><img src="../assets/img/burning.jpg"></div>
           <div class="aboutus_right" data-aos="fade-in">
             <span class="triangle"></span>
             <span class="aboutus_right_title">About Us</span>
-            <span class="aboutus_content">Since Geosupply is established, it has provided domestic and international automated monitoring system engineering services. 
-              Such as high-speed rail, MRT, roads and civil engineering, geotechnical field and other related engineering monitoring systems professional services. 
-              The company's colleagues have more th an 15 years of monitoring experience. </span>
+            <span class="aboutus_content">Ever since Geosupply is established, it has been providing domestic and international automated monitoring system and engineering services in high‐speed rail, MRT, toll road, civil and geotechnical construction field. 
+              The company's colleagues have more than 15 years of monitoring experience.
+              <br>
+              <br>
+              Geosupply Cloud Platform (GeoSupply Real Time Monitoring Cloud Platform) has been implemented in several mega public work project, 
+              in both domestic and international. </span>
             <span class="triangle_flip"></span>
           </div>
       </div>
@@ -55,8 +62,12 @@ import Carousel from './Carousel.vue';
   },
     data() {
       return {
-        services: ['Cloud Database','Monitor System','Noise Measurement'],
-
+        services: ['Instrumentation Monitoring System(MRT, High Speed Railway, Bridges, Dams, Slope, Embankments, Excavation, Land Fills, Ground Water, Mines, Pipelines, Tunnels and Wind Turbines)',
+                    'Noise Monitoring',
+                    'Earthquake Monitoring',
+                    'Fiber Optic Real Time Monitoring System', 
+                    'Web‐based Cloud‐based RTMS',
+                    'Display and Analysis Software']
       };
     },
   };
@@ -64,16 +75,26 @@ import Carousel from './Carousel.vue';
 
 <style lang="scss">
   .index {
-    height: 250%;
+    height: 240%;
     width: 100%;
   }
 
   .index_banner {
-    height: 1.5%;
-    line-height: 150%;
+    height: 2%;
     width: 100%;
-    background-color: #41b6e6;
-    font-size: 1.2em;
+    background-color: #006699;
+  }
+
+  .index_banner_word {
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-family: "RobotoCondensedBold";
+    position: relative;
+    margin-left: 1%;
+    font-weight: bold;
+    color: white;
   }
 
   .triangle {
@@ -96,7 +117,7 @@ import Carousel from './Carousel.vue';
   .aboutus_index {
       margin-top: 2%;
       display: block;
-      height: 15%;
+      height: 18%;
       width: 100%;
   }
 
@@ -117,9 +138,10 @@ import Carousel from './Carousel.vue';
   }
   .aboutus_right {
       display: block;
-      float: left;
+      float: right;
       height: 100%;
-      width: 50%;
+      width: 49%;
+      //margin: 0 auto;
   }
 
   .aboutus_left_img {
@@ -140,13 +162,14 @@ import Carousel from './Carousel.vue';
   .aboutus_content {
     display: block;
     /* border-bottom: 1px solid black; */
+    font-size: 1.2em;
     height: 65%;
     width: 100%;
   }
 
   .product_index {
     background-color: #f4f4f4;
-    height: 20%;
+    height: 23%;
     width: 100%;
     display: block;
     font-size: 2em;
@@ -191,10 +214,10 @@ import Carousel from './Carousel.vue';
   }
 
   .service_list {
-    font-size: 1.5em;
+    font-size: 1.1em;
 
     .fa{
-      color: #41b6e6;
+      color: #006699;
     }
   }
 
@@ -202,7 +225,7 @@ import Carousel from './Carousel.vue';
     background-color: #f4f4f4;
     display: block;
     margin-top: 1%;
-    height: 19%;
+    height: 20%;
     width: 100%;
 
     .project_index_title {
@@ -217,7 +240,7 @@ import Carousel from './Carousel.vue';
 
     .project_index_content {
       height: 60%;
-      width: 65%;
+      width: 75%;
       display: flex;
       margin:0 auto;
       justify-content: space-around;
@@ -259,16 +282,19 @@ import Carousel from './Carousel.vue';
         cursor: pointer;
         height: 10%;
         width: 10%;
-        background-color: #41b6e6;
+        background-color: #006699;
 
         a {
           text-decoration: none;
           color: white;
+          display: block;
+          width: 100%;
+          height: 100%;
         }
       }
 
       .read_more:hover {
-        background-color: #5f818f;
+        background-color: #6db8d8;
       }
   }
 </style>
