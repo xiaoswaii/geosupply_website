@@ -36,6 +36,7 @@
         :center="{lat:11.611474, lng:120.4516083}"
         :zoom="3.9"
         map-type-id="terrain"
+        style="width: 750px; height: 400px"
       >
         <GmapMarker
           :key="index"
@@ -73,33 +74,38 @@
 							</tr>
 						</thead>
               <ul class="project_details_list">
-                <li>
+                <li class="project_detail_li">
                     <span>Name of Project:</span>
                     <span>{{ projectDetail.name }}</span>
                 </li>
                 <br>
-                <li>
+                
+                <li class="project_detail_li place">
                   <span>Project Location:</span>
                   <span>{{ projectDetail.location }}</span>
                 </li>
+     
                 <br>
-                <li>
+                <li class="project_detail_li contractor">
                   <span>Main Contractor:</span>
                   <span>{{ projectDetail.contractor }}</span>
                 </li>
                 <br>
-                <li>
-                  <span>Software</span>
+                
+                <li class="project_detail_li grey">
+                  <span>Software:</span>
                   <span>{{ projectDetail.software }}</span>
                 </li>
                 <br>
-                <li>
-                  <span>Project Detail</span>
+                
+                <li class="project_detail_li">
+                  <span>Project Detail:</span>
                   <span>{{ projectDetail.detail }}</span>
                 </li>
                 <br>
-                <li>
-                  <span>Instrument</span>
+                
+                <li class="instrument">
+                  <span>Instrument:</span>
                   <span :key="instrument" v-for="instrument in projectDetail.instrument">{{ instrument }}</span>
                 </li>
               </ul>
