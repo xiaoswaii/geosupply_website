@@ -18,20 +18,7 @@
 				</p>
 				<p class="footer-company-name">GeoSupply &copy; 2019</p>
 			</div>
-			<div class="footer-center">
-				<div>
-					<i class="fa fa-map-marker"></i>
-					<p><span>221新北市汐止區建成路57巷28號6樓</span> </p>
-				</div>
-				<div>
-					<i class="fa fa-phone"></i>
-					<p>0918883451</p>
-				</div>
-				<div>
-					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:geosupply.tw@gmail.com">geosupply.tw@gmail.com</a></p>
-				</div>
-			</div>
+
 			<div class="footer-right">
 
 				<p class="footer-company-about">
@@ -46,6 +33,20 @@
 					<a href="#"><i class="fa fa-github"></i></a>
 
 				</div> -->
+			</div>
+			<div class="footer-center">
+				<div class="logo_section">
+					<i class="fa fa-map-marker"></i>
+					<p><span>6F., No.28, Ln. 57, Jiancheng Rd., Xizhi Dist., New Taipei City 221, Taiwan (R.O.C.)</span> </p>
+				</div>
+				<div class="logo_section">
+					<i class="fa fa-phone"></i>
+					<p>+886918883451 +886‐2‐26481050</p>
+				</div>
+				<div class="logo_section_last">
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:geosupply.tw@gmail.com">geosupply.tw@gmail.com</a></p>
+				</div>
 			</div>
 		</footer>
 </template>

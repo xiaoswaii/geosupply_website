@@ -39,7 +39,7 @@ export default {
       }
       else {
             this.height = ( window.innerHeight * 0.45 ) + 'px';
-            this.width = ( window.innerWidth * 0.3 ) + 'px';
+            this.width = ( window.innerWidth * 0.31 ) + 'px';
       }
   }
 }

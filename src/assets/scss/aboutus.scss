@@ -43,17 +43,21 @@
   height: 10%;
   width: 100%;
   margin-bottom: 5%;
-  text-align: center;
-  font-size: 3.5vh;
+  text-align: left;
+  font-size: 18px;
+  font-family: Verdana, Tahoma, sans-serif;
 }
 
 .aboutus_content{
   display: block;
   height: 95%;
   width: 90%;
-  font-size: 2.5vh;
+  font-size: 16px;
   //color: white;
   margin: 0 auto;
+  font-family: Verdana, Tahoma, sans-serif;
+  text-align: justify;
+  text-justify:inter-ideograph;
 }
 
 @keyframes fadein{
@@ -73,8 +77,9 @@
   display: inline-block;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 1em;
-  font-family: "RobotoCondensedBold";
+  font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica, Frutiger, Univers, sans-serif;
+  position: relative;
   position: relative;
   margin-left: 1%;
   font-weight: bold;
@@ -82,7 +87,48 @@
 }
 
 .aboutus_banner {
-  background-color: #006699;
+  background-color: #0182CA;
   width: 100%;
   height: 5%;
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  .aboutus_detail {
+    font-size: 0.7em;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+    float: none;
+    display: block;
+    height: 105%;
+  }
+
+  .aboutus_title {
+    display: block;
+    border-bottom: 1px grey solid;
+    height: 10%;
+    width: 100%;
+    margin-bottom: 5%;
+    text-align: left;
+    //font-size: 1.3em;
+  }
+
+  .aboutus_content {
+    display: block;
+    //font-size: 0.85em;
+    height: 65%;
+    width: 100%;
+  }
+
+  .aboutus_detail_img {
+    display: none;
+  }
+
+  .aboutus_img {
+    height: 30%;
+  }
+
+  .aboutusBack {
+    height: 75%;
+  }
 }

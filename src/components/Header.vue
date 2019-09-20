@@ -2,13 +2,13 @@
 <div class="top">
   <div class="nav">
     <header>
-      <a href="/" class="logo button"><img src="../assets/img/header_logo.png"></a>
+      <div class="nav_logo"><a href="/" class="logo"><img src="../assets/img/header_logo.png"></a></div>
       <div class="nav-right">
-        <router-link to="./" class="title button">Home</router-link>
-        <router-link to="./Project" class="title button">Project</router-link>
-        <router-link to="/Product" class="title button">Product</router-link>
-        <router-link to="./Contactus" class="title button">Contact Us</router-link>
-        <router-link to="./Aboutus" class="title button">About Us</router-link>
+        <router-link to="./" class="title button">HOME</router-link>
+        <router-link to="./Project" class="title button">PROJECT</router-link>
+        <router-link to="/Product" class="title button">PRODUCT</router-link>
+        <router-link to="./Contactus" class="title button">CONTACT US</router-link>
+        <router-link to="./Aboutus" class="title button">ABOUT US</router-link>
       </div>
     </header>
   </div>

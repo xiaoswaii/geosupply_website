@@ -3,7 +3,7 @@
     <div class="project_img"></div>
     <div class="project_banner">
       <div class="project_banner_word">
-        Project <div class="project_banner_country" v-if="countriesSelect.length == 1"> > {{ countriesSelect[0] }} </div><div class="project_banner_country" v-if="projectDetail"> > {{ projectDetail.name }}</div>
+        PROJECT <div class="project_banner_country" v-if="countriesSelect.length == 1"> > {{ countriesSelect[0] }} </div><div class="project_banner_country" v-if="projectDetail"> > {{ projectDetail.name }}</div>
       </div>
     </div>
   <div class="project_info">
@@ -16,7 +16,7 @@
         <table class="project_list_table">
 						<thead>
 							<tr class="project_list_table_header">
-								<th class="project_list_title" colspan="2">List of Country</th>
+								<th class="project_list_title" colspan="2">LIST OF COUNTRY</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -24,7 +24,7 @@
 									<td class="column1_project" @click="showCountry(country)">{{ country }}</td>
 								</tr>
                 <tr class="project_list_item">
-									<td class="column1_project" @click="listAll()">List All</td>
+									<td class="column1_project" @click="listAll()">LIST ALL</td>
 								</tr>
 						</tbody>
 					</table>
@@ -48,6 +48,7 @@
         />
       </GmapMap>
         <div :key="country" v-for="country in countriesSelect">
+          <br>
           <span >{{ country }}</span>
           <ul>
             <div :key="project.name" v-for="project in projectCountry">
@@ -74,67 +75,51 @@
 							</tr>
 						</thead>
               <ul class="project_details_list">
-                <li class="project_detail_li">
+                <br>
+                <li v-if="projectDetail.name" class="project_detail_li">
                     <span>Name of Project:</span>
                     <span>{{ projectDetail.name }}</span>
                 </li>
-                <br>
+                <br v-if="projectDetail.name">
+                <div class="line"></div>
                 
-                <li class="project_detail_li place">
+                
+                <li v-if="projectDetail.location" class="project_detail_li place">
                   <span>Project Location:</span>
                   <span>{{ projectDetail.location }}</span>
                 </li>
+                <br v-if="projectDetail.location">
+                <div v-if="projectDetail.location" class="line"></div>
      
-                <br>
-                <li class="project_detail_li contractor">
+                <li v-if="projectDetail.contractor" class="project_detail_li contractor">
                   <span>Main Contractor:</span>
                   <span>{{ projectDetail.contractor }}</span>
                 </li>
-                <br>
+                <br v-if="projectDetail.contractor">
+                <div v-if="projectDetail.contractor" class="line"></div>
                 
-                <li class="project_detail_li grey">
+                
+                <li v-if="projectDetail.software" class="project_detail_li grey">
                   <span>Software:</span>
                   <span>{{ projectDetail.software }}</span>
                 </li>
-                <br>
+                <br v-if="projectDetail.software">
+                <div v-if="projectDetail.software" class="line"></div>
                 
-                <li class="project_detail_li">
+                
+                <li v-if="projectDetail.detail" class="project_detail_li">
                   <span>Project Detail:</span>
                   <span>{{ projectDetail.detail }}</span>
                 </li>
-                <br>
+                <br v-if="projectDetail.detail">
+                <div v-if="projectDetail.detail" class="line"></div>
                 
-                <li class="instrument">
+                <li class="project_detail_li">
                   <span>Instrument:</span>
                   <span :key="instrument" v-for="instrument in projectDetail.instrument">{{ instrument }}</span>
                 </li>
+                <br>
               </ul>
-            <!-- <tbody>
-              <tr>
-                  <td>Name of Project:</td>
-                  <td>{{ projectDetail.name }}</td>
-                </tr>
-                <tr class="">
-									<td class="">Project Location:</td>
-									<td class="">{{ projectDetail.location }}</td>
-								</tr>
-                <tr class="">
-									<td class="">Main Contractor:</td>
-									<td class="">{{ projectDetail.contractor }}</td>
-								</tr>
-                <tr class="">
-									<td class="">Software</td>
-									<td class="">{{ projectDetail.software }}</td>
-								</tr>
-                <tr class="">
-									<td class="">Instrument</td>
-									<td class=""><span :key="instrument" v-for="instrument in projectDetail.instrument">{{ instrument }}</span></td>
-								</tr>
-                <tr class="">
-									<td class="">Project Detail</td>
-									<td class="">{{ projectDetail.detail }}</td>
-								</tr>
-						</tbody> -->
 					</table> 
           </div>
       </div>
@@ -155,8 +140,8 @@ export default {
         },
         {position:{lat: -6.229728, lng: 106.6894348}},
         {position:{lat: 25.0169639, lng: 121.2261992}}],
-      countries: ['Malaysia','Taiwan','Indonesia'],
-      countriesSelect: ['Malaysia','Taiwan','Indonesia'],
+      countries: ['TAIWAN','MALAYSIA','INDONESIA'],
+      countriesSelect: ['TAIWAN','MALAYSIA','INDONESIA'],
 		  raw: [],
 		  nowCountry: '',
 		  projectList: [],
@@ -200,9 +185,9 @@ export default {
               console.log(this.raw);
           })
           .then(res =>{
-              this.projectMalaysia = this.raw.filter(element => element.place == 'Malaysia');
-              this.projectIndonesia = this.raw.filter(element => element.place == 'Indonesia');
-              this.projectTaiwan = this.raw.filter(element => element.place == 'Taiwan');
+              this.projectMalaysia = this.raw.filter(element => element.place == 'MALAYSIA');
+              this.projectIndonesia = this.raw.filter(element => element.place == 'INDONESIA');
+              this.projectTaiwan = this.raw.filter(element => element.place == 'TAIWAN');
           })   
           // .catch(err => {
 		  	  //     console.log(err);
@@ -221,7 +206,7 @@ export default {
 	},
 
   listAll () {
-    this.countriesSelect = ['Malaysia','Taiwan','Indonesia'];
+    this.countriesSelect = ['TAIWAN','MALAYSIA','INDONESIA'];
     this.projectDetail = {};
     this.projectCountry = this.raw;
     document.getElementById('project_list').style.display = 'block';

@@ -3,7 +3,7 @@
     <div class="aboutus_img"></div>
         <div class="aboutus_banner">
             <div class="aboutus_banner_word">
-            About Us
+            ABOUT US
             </div>
         </div>
      <div class="aboutus">

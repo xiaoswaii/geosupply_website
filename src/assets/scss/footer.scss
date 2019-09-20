@@ -13,11 +13,13 @@
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	font: bold 16px sans-serif;
-	padding-top: 3%;
-	padding-bottom: 3%;
-	padding-right: 5%;
-	padding-left: 5%;
+	font-family: Verdana, Tahoma, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	padding-top: -1%;
+	//padding-bottom: 1%;
+	padding-right: 1%;
+	padding-left: 1%;
 	//margin-top: 80px;
 }
 
@@ -31,7 +33,8 @@
 /* Footer left */
 
 .footer-distributed .footer-left{
-	width: 40%;
+	width: 35%;
+	margin-top:2%;
 }
 
 /* The company logo */
@@ -44,7 +47,7 @@
 
 .footer_logo{
 	height: 50%;
-	width: 25%;
+	width: 30%;
 
 	img{
 		max-width: 100%;
@@ -69,6 +72,7 @@
 	line-height: 1.8;
 	text-decoration: none;
 	color:  inherit;
+	font-size: 14px;
 }
 
 .footer-distributed .footer-company-name{
@@ -81,7 +85,24 @@
 /* Footer Center */
 
 .footer-distributed .footer-center{
-	width: 35%;
+	width: 40%;
+	height: 100%;
+	margin-top: 1%;
+}
+
+.logo_section {
+	height:20% ;
+	width: 100%;
+	margin-bottom: -1%;
+	font-family: Verdana, Tahoma, sans-serif;
+	font-weight: normal;
+}
+
+.logo_section_last {
+	height:20% ;
+	width: 100%;
+	font-family: Verdana, Tahoma, sans-serif;
+	font-weight: normal;
 }
 
 .footer-distributed .footer-center i{
@@ -95,10 +116,11 @@
 	line-height: 42px;
 	margin: 10px 15px;
 	vertical-align: middle;
+	//display: block;
 }
 
 .footer-distributed .footer-center i.fa-envelope{
-	font-size: 17px;
+	font-size: 15px;
 	line-height: 38px;
 }
 
@@ -107,13 +129,14 @@
 	color: #ffffff;
 	vertical-align: middle;
 	margin:0;
+	width: 75%;
 }
 
 .footer-distributed .footer-center p span{
 	display:block;
 	font-weight: normal;
 	font-size:14px;
-	line-height:2;
+	line-height:1;
 }
 
 .footer-distributed .footer-center p a{
@@ -125,7 +148,7 @@
 /* Footer Right */
 
 .footer-distributed .footer-right{
-	width: 20%;
+	width: 25%;
 }
 
 .footer-distributed .footer-company-about{
@@ -135,11 +158,6 @@
 	font-weight: normal;
 	margin-top: 15%;
 }
-
-.footer-company-about {
-	margin-left: 15%;
-}
-
 
 .footer-distributed .footer-company-about span{
 	display: block;
@@ -181,7 +199,6 @@
 	.footer-distributed .footer-right{
 		display: block;
 		width: 100%;
-		margin-bottom: 40px;
 		text-align: center;
 	}
 
@@ -189,4 +206,25 @@
 		margin-left: 0;
 	}
 
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.footer-distributed
+	.footer-company-about {
+		margin-left: 0;
+		line-height: 20px;
+		color: #92999f;
+		font-size: 13px;
+		font-weight: normal;
+		margin-top: 5%;
+
+		span {
+			margin-bottom: 1%;
+		}
+	}
+
+	.footer_logo {
+		margin:0 auto;
+	}
 }
