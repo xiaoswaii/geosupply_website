@@ -86,6 +86,7 @@
     display: block;
     text-align: left;
     font-size: 1em;
+    font-family: Verdana, Tahoma, sans-serif;
     color: white;
     padding-left: 5%;
 }
@@ -163,6 +164,8 @@
 
 .project_detail_li {
   overflow: auto;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 15px;
 }
 
 .fit_project_album{
@@ -287,7 +290,7 @@ table {
   // }
   
   .table100-head th{
-    font-family: OpenSans-Regular;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 18px;
     color: black;
     line-height: 1.2;
@@ -299,7 +302,7 @@ table {
   }
   
   tbody tr {
-    font-family: OpenSans-Regular;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 16px;
     color: #808080;
     line-height: 1.2;
@@ -314,7 +317,7 @@ table {
   
   .column{
     width: 100%;
-    text-align: left;
+    text-align: center;
     color: black;
     //background: #006699;
     border-bottom:1px solid rgb(158, 158, 158);
