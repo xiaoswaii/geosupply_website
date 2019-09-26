@@ -6,7 +6,7 @@
       <div class="nav-right">
         <router-link to="./" class="title button">HOME</router-link>
         <router-link to="./Project" class="title button">PROJECT</router-link>
-        <router-link to="/Product" class="title button">PRODUCT</router-link>
+        <router-link to="./Product" class="title button">PRODUCT</router-link>
         <router-link to="./Contactus" class="title button">CONTACT US</router-link>
         <router-link to="./Aboutus" class="title button">ABOUT US</router-link>
       </div>
