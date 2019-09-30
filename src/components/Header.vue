@@ -27,7 +27,7 @@ export default {
   mounted(){
     console.log(window.innerHeight);
     console.log(window.innerWidth);
-    this.logoStyle= `max-width:${((document.getElementById('nav').offsetWidth) - (document.getElementById('navright').offsetWidth)) * 0.8}px;max-height:100%;`;
+    this.logoStyle= `max-width:${((document.getElementById('nav').offsetWidth) - (document.getElementById('navright').offsetWidth)) * 0.7}px;max-height:100%;`;
   }
 }
 </script>

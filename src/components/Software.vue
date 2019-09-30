@@ -16,8 +16,14 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr class="software_list_item" :key="country" v-for="country in countries">
-								<td class="column1_software" @click="showCountry(country)">{{ country }}</td>
+							<tr class="software_list_item" @click="relocate()">
+								<td class="column1_software">Client Login</td>
+							</tr>
+              <tr class="software_list_item" @click="relocate()">
+								<td class="column1_software">Client Login</td>
+							</tr>
+              <tr class="software_list_item">
+								<td class="column1_software">Demo</td>
 							</tr>
 						</tbody>
 					</table>
@@ -146,67 +152,16 @@ export default {
     }
   },
 
-	mounted () {
-      this.openFile();	  
+	mounted () {	  
       var standardWidth = window.innerWidth * 0.49 + 'px';
       var standardHeight = window.innerHeight * 0.52 + 'px';
       this.mapStyle= `width:${standardWidth};height:${standardHeight}`
 	},
 
 	methods: {
-      openFile () {
-          	  axios.get(`${window.location.protocol}/project.json`)
-		  	  .then(res =>{
-		  	  	  console.log(res);
-              this.raw = res.data.project;
-              this.projectCountry = res.data.project;
-              console.log(this.raw);
-          })
-          .then(res =>{
-              this.projectMalaysia = this.raw.filter(element => element.place == 'MALAYSIA');
-              this.projectIndonesia = this.raw.filter(element => element.place == 'INDONESIA');
-              this.projectTaiwan = this.raw.filter(element => element.place == 'TAIWAN');
-          })   
-          // .catch(err => {
-		  	  //     console.log(err);
-          // })
-	},
-	
-	showCountry (country) {
-      this.projectCountry = [];
-      this.projectDetail = {};
-      this.countriesSelect = [country];
-		  this.projectCountry = this.raw.filter(element => element.place == country);
-      document.getElementById('project_list').style.display = 'block';
-      document.getElementById('project_table').style.display = 'none';
-      document.getElementById('fit_project_album').style.display = 'none';
-      //document.getElementById('project_album').style.display = 'none';
-	},
-
-  listAll () {
-    this.countriesSelect = ['TAIWAN','MALAYSIA','INDONESIA'];
-    this.projectDetail = {};
-    this.projectCountry = this.raw;
-    document.getElementById('project_list').style.display = 'block';
-    document.getElementById('project_table').style.display = 'none';
-    document.getElementById('fit_project_album').style.display = 'none';
-    //document.getElementById('project_album').style.display = 'none';
-  },
-
-	showProject (project) {
-      document.getElementById('project_list').style.display = 'none';
-      var tempProjectDetail = this.raw.filter(element => element.name == project);
-      this.projectDetail = tempProjectDetail[0];
-      this.projectAlbum = tempProjectDetail[0].img;
-      this.projectPhotoNow = tempProjectDetail[0].img[0];
-      document.getElementById('project_table').style.display = 'block';
-      document.getElementById('fit_project_album').style.display = 'block';
-      //document.getElementById('project_album').style.display = 'block';
-  },
-  
-  changePhoto (img) {
-      this.projectPhotoNow = img.srcElement.src;
-  }
+      relocate(){
+        document.location.href="/ContactUs";
+      }
 	}
 }
 </script>

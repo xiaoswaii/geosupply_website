@@ -1,5 +1,5 @@
 .index {
-    height: 240%;
+    height: 1971px;
     width: 100%;
   }
 
@@ -141,7 +141,7 @@
 
   .service_index {
       display: block;
-      height: 15.5%;
+      height: 16.5%;
       width: 100%;
   }
 
@@ -321,7 +321,7 @@
     }
 
     .service_index {
-        height: 18%;
+        height: 19%;
     }
 
     .service_title {
@@ -349,6 +349,8 @@
     .project_index .read_more {
         font-size: 0.1em;
     }
+}
 
-    
+@media (min-height: 320px) and (max-width: 480px) {
+
 }

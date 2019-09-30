@@ -47,7 +47,7 @@
           @click="center=m.position"
         />
       </GmapMap>
-        <div>
+        <div id="country_list">
           <div :key="country" v-for="country in countriesSelect">
           <br>
           <span>{{ country }}</span>
@@ -175,14 +175,22 @@ export default {
 
 	mounted () {
       this.openFile();	  
-      //var standardWidth = window.innerWidth * 0.49 + 'px';
-      //var standardHeight = window.innerHeight * 0.52 + 'px';
-      var standardWidth= (document.getElementById('project_detail').offsetWidth)
-      var standardHeight = (document.getElementById('project_detail').offsetHeight)* 0.47;
-      this.mapStyle= `width:${standardWidth}px;height:${standardHeight}px`
-      console.log(document.getElementById('project_detail').offsetWidth);
-      console.log(document.getElementById('project_detail').offsetHeight);
+      var standardWidth = window.innerWidth * 0.49 + 'px';
+      var standardHeight = window.innerHeight * 0.52 + 'px';
+       console.log(document.getElementById('country_list').clientHeight)
+       var standardWidth= (document.getElementById('project_detail').offsetWidth)
+       var standardHeight = (document.getElementById('project_detail').offsetHeight)* 0.47;
+       this.mapStyle= `width:${standardWidth}px;height:${standardHeight}px`
+       console.log(document.getElementById('project_detail').offsetWidth);
+       console.log(document.getElementById('project_detail').offsetHeight);
 	},
+
+  created() {
+    // console.log(document.getElementById('country_list').clientHeight)
+    // var standardWidth= (document.getElementById('project_detail').offsetWidth)
+    // var standardHeight = ((document.getElementById('project_detail').offsetHeight)-(document.getElementById('country_list').offsetHeight))*0.8;
+    // this.mapStyle= `width:${standardWidth}px;height:${standardHeight}px`
+  },
 
 	methods: {
       openFile () {
