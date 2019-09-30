@@ -1,0 +1,143 @@
+.software{
+    height: 145%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.software_banner_word{
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    font-family: "Helvetica Neue", Helvetica, Frutiger, Univers, sans-serif;
+    position: relative;
+    margin-left: 1%;
+    font-weight: bold;
+    color: white;
+}
+
+.software_banner_country {
+  display: inline-block;
+  white-space: pre;
+  font-weight: bold;
+}
+
+.software_img{
+    background-image: url('../assets/img/project.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 28%;
+}
+
+.software_banner{
+    background-color: #0182CA;
+    width: 100%;
+    height: 4%;
+}
+
+.software_info{
+    width: 100%;
+    //height: max-content;
+    height: 70%;
+}
+
+.fit_software_list{
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.software_list{
+    width: 81%;
+    height: 100%;
+    border-right:1px solid grey;
+    border-left:1px solid grey;
+    //margin: 0 auto;
+}
+
+.software_list_table{
+    //margin-top: 20px;
+    border-radius: 0;
+    //border-right: 1px solid grey;
+}
+
+.software_list_table_header{
+    height: 40px;
+    background-color: #26a6f1;
+    line-height: 2;
+}
+
+.software_list_title{
+    width: 100%;
+    //height: 100%;
+    display: block;
+    text-align: left;
+    font-size: 1em;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: white;
+    padding-left: 5%;
+}
+
+.software_list_item{
+    background-color: #ffffff;
+    color: black;
+    //border: 1.5px solid #e2e2e2;
+    //border-right: 2px solid #e2e2e2;
+}
+
+.software_list_item:hover{
+    background-color: #ecf5ff;
+    color: black;
+    cursor: pointer;
+}
+
+.software_detail {
+    width: 66%;
+    display: block;
+    float: left;
+    height: 93%;
+    margin-top:2%;
+    box-shadow: 0px 0px 15px 0px #ADADAD;
+}
+
+.software_detail_list{
+    width: 100%;
+    height: 9%;
+    margin-top: 1%;
+
+    .software_detail_list_logo{
+        width: 25%;
+        height: 100%;
+        float:left;
+
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            margin:0 auto;
+            display: block;
+        }
+    }
+
+    .software_detail_list_intro {
+        width: 75%;
+        float: left;
+
+        li{
+            font-size: 16px;
+            font-family: "Helvetica Neue", Helvetica, Frutiger, Univers, sans-serif;
+        }
+    }
+}
+
+.software_detail_bottom{
+    height:30%;
+    width:100%;
+
+    img{
+        max-width: 100%;
+        max-height: 100%;
+        margin:0 auto;
+        display: block;
+    }
+}

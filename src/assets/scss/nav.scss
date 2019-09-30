@@ -34,11 +34,6 @@ header {
     width: 100%;
     border: none;
     
-
-    img {
-        max-width: 100%;
-        max-height: 100%;
-    }
 }
   
 .button{
@@ -56,6 +51,12 @@ header {
     user-select: none;
 }
 
+.router-link-exact-active{
+    font-weight: bolder;
+    background: #ecf5ff;
+    color: #0B8BF9;
+}
+
 .nav_logo {
     height:100%;
     width:20%;
@@ -67,7 +68,7 @@ header {
 }
 
 .title{
-    padding: 4% 16px;
+    padding: 3.5% 16px;
     float: left;
     width: auto;
     border: none;
@@ -92,6 +93,8 @@ header {
     float: right!important;
     margin-right: -16px;
 }
+
+
 
 // .title:after {
 //     content: '';

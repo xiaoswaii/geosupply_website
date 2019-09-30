@@ -7,7 +7,7 @@
       </div>
     </div>
       <div class="aboutus_index">
-          <div class="aboutus_left"><img src="../assets/img/burning.jpg"></div>
+          <div class="aboutus_left"><img src="../assets/img/aboutus_index.jpg"></div>
           <div class="aboutus_right" data-aos="fade-in">
             <span class="triangle"></span>
             <span class="aboutus_right_title">About Us</span>
@@ -25,9 +25,10 @@
     data-aos-duration="1000">
         <div class="product_index_title">Product</div>
         <div class="product_index_content">
-          <div class="product_index_img"><img src="../assets/img/taiwan.jpg"><div class="inner">Taiwan</div></div>
-          <div class="product_index_img"><img src="../assets/img/taiwan.jpg"><div class="inner">Taiwan</div></div>
-          <div class="product_index_img"><img src="../assets/img/taiwan.jpg"><div class="inner">Taiwan</div></div>
+          <div class="product_index_img"><img src="../assets/img/Product1.jpg"><div class="inner_product">Sensor</div></div>
+          <div class="product_index_img"><img src="../assets/img/Product2.jpg"><div class="inner_product">Datalogger</div></div>
+          <div class="product_index_img"><img src="../assets/img/Product3.jpg"><div class="inner_product">Wireless Node</div></div>
+          <div class="product_index_img"><img src="../assets/img/product/17_CloudSoftware.jpg"><div class="inner_product">Software</div></div>
         </div>
       </div>
       <br>
@@ -35,6 +36,7 @@
     data-aos-duration="1000">
           <div class="service_left">
             <span class="service_title">Service Provided</span>
+            <br>
             <br>
             <div class="service_special">
             <i class="fa fa-check-circle"></i><p>Instrumentation Monitoring System<br>
@@ -56,7 +58,7 @@
         <div class="project_index_content">
           <div class="project_index_img"><img src="../assets/img/taiwan.jpg"><div class="inner">Taiwan</div></div>
           <div class="project_index_img"><img src="../assets/img/malaysia.jpg"><div class="inner">Malaysia</div></div>
-          <div class="project_index_img"><img src="../assets/img/indo.jpg"><div class="inner">Indonesia</div></div>
+          <div class="project_index_img"><img src="../assets/img/indonesia.jpg"><div class="inner">Indonesia</div></div>
         </div>
         <span class="read_more"><a href="./project">Read more</a></span>
       </div>
@@ -74,7 +76,7 @@ import Carousel from './Carousel.vue';
       return {
         services: ['Noise Monitoring',
                     'Earthquake Monitoring',
-                    'Fiber Optic Real Time Monitoring System', 
+                    'Fiber Optic(FBG) Real Time Monitoring System', 
                     'Web‐based Cloud‐based RTMS',
                     'Display and Analysis Software']
       };

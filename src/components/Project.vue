@@ -3,7 +3,7 @@
     <div class="project_img"></div>
     <div class="project_banner">
       <div class="project_banner_word">
-        PROJECT <div class="project_banner_country" v-if="countriesSelect.length == 1"> > {{ countriesSelect[0] }} </div><div class="project_banner_country" v-if="projectDetail"> > {{ projectDetail.name }}</div>
+        Project <div class="project_banner_country" v-if="countriesSelect.length == 1"> > {{ countriesSelect[0] }} </div><div class="project_banner_country" v-if="projectDetail"> > {{ projectDetail.name }}</div>
       </div>
     </div>
   <div class="project_info">
@@ -30,13 +30,13 @@
 					</table>
       </div>
     </div>
-    <div class="project_detail">
+    <div class="project_detail" id="project_detail">
       <div class="project_detail_list" id="project_list">
         <GmapMap
         :center="{lat:11.611474, lng:120.4516083}"
         :zoom="3.9"
         map-type-id="terrain"
-        style="width: 750px; height: 400px"
+        :style="mapStyle"
       >
         <GmapMarker
           :key="index"
@@ -47,14 +47,17 @@
           @click="center=m.position"
         />
       </GmapMap>
-        <div :key="country" v-for="country in countriesSelect">
+        <div>
+          <div :key="country" v-for="country in countriesSelect">
           <br>
-          <span >{{ country }}</span>
+          <span>{{ country }}</span>
+          <span class="country_br"></span>
           <ul>
             <div :key="project.name" v-for="project in projectCountry">
               <li class="li" v-if="project.place == country" @click="showProject( project.name )">{{ project.name }}</li>
             </div>
           </ul>
+          </div>
         </div>
       </div>
       <div class="fit_project_album" id="fit_project_album">
@@ -135,6 +138,7 @@ export default {
 	props: [],	
 	data () {
       return {
+      mapStyle:"",
       markers: [{
         position: {lat: 3.1385036, lng: 101.6169498}
         },
@@ -152,7 +156,6 @@ export default {
       projectTaiwan: [],
       projectIndonesia: [],
       projectCountry: [],
-      standardWidth:'',
       }
 	},	
 
@@ -172,7 +175,13 @@ export default {
 
 	mounted () {
       this.openFile();	  
-      this.standardWidth = window.innerWidth * 0.52 + 'px';
+      //var standardWidth = window.innerWidth * 0.49 + 'px';
+      //var standardHeight = window.innerHeight * 0.52 + 'px';
+      var standardWidth= (document.getElementById('project_detail').offsetWidth)
+      var standardHeight = (document.getElementById('project_detail').offsetHeight)* 0.47;
+      this.mapStyle= `width:${standardWidth}px;height:${standardHeight}px`
+      console.log(document.getElementById('project_detail').offsetWidth);
+      console.log(document.getElementById('project_detail').offsetHeight);
 	},
 
 	methods: {

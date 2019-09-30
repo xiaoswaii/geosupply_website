@@ -96,12 +96,9 @@
 
   .product_index {
     background-color: #f4f4f4;
-    height: 23%;
+    height: 22%;
     width: 100%;
     display: block;
-    font-size: 2em;
-
-    
   }
 
   .product_index_title {
@@ -111,22 +108,29 @@
     text-decoration: underline;
     text-decoration-color: grey;
     font-family: Verdana, Tahoma, sans-serif;
+    font-size: 20px;
   }
 
   .product_index_content {
       height: 60%;
-      width: 75%;
+      width: 100%;
       display: flex;
       margin:0 auto;
       justify-content: space-around;
 
       .product_index_img {
         position: relative;
-        width: 30%;
+        width: 22%;
         height: 95%;
         margin-top: 1.5%; 
         color: white;
         text-align: center;
+
+        .inner_product {
+          color: black;
+          font-family: "Helvetica Neue", Helvetica, Frutiger, Univers, sans-serif;
+          font-family: 14px;
+        }
       }
 
         img {
@@ -137,7 +141,7 @@
 
   .service_index {
       display: block;
-      height: 15%;
+      height: 15.5%;
       width: 100%;
   }
 
@@ -157,6 +161,7 @@
       img {
         max-width: 100%;
         max-height: 100%;
+        float: right;
       }
   }
 
@@ -214,7 +219,7 @@
       height: 15%;
       width: 100%;
       text-align: center;
-      font-size: 2em;
+      font-size: 18px;
       text-decoration: underline;
       text-decoration-color: grey; 
       font-family: Verdana, Tahoma, sans-serif;
@@ -222,14 +227,14 @@
 
     .project_index_content {
       height: 60%;
-      width: 75%;
+      width: 90%;
       display: flex;
       margin:0 auto;
       justify-content: space-around;
 
       .project_index_img {
         position: relative;
-        width: 30%;
+        width: 25%;
         height: 95%;
         margin-top: 1.5%;
         
@@ -244,12 +249,12 @@
 
       .inner {
         position: absolute;
-        height: 50px;
+        height: 20px;
         bottom: 0;
         z-index: 2;
         width: 100%;
         background: rgba(0, 0, 0, 0.5);
-        font-size: 2.5em;
+        font-size: 16px;
         font-family: Verdana, Tahoma, sans-serif;
       }
     }

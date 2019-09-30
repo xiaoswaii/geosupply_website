@@ -1,14 +1,15 @@
 <template>
 <div class="top">
-  <div class="nav">
+  <div class="nav" id="nav">
     <header>
-      <div class="nav_logo"><a href="/" class="logo"><img src="../assets/img/header_logo.png"></a></div>
-      <div class="nav-right">
-        <router-link to="./" class="title button">HOME</router-link>
-        <router-link to="./Project" class="title button">PROJECT</router-link>
-        <router-link to="./Product" class="title button">PRODUCT</router-link>
-        <router-link to="./Contactus" class="title button">CONTACT US</router-link>
-        <router-link to="./Aboutus" class="title button">ABOUT US</router-link>
+      <div class="nav_logo"><a href="/" class="logo"><img :style="logoStyle" src="../assets/img/header_logo.png" id="headerlogo"></a></div>
+      <div class="nav-right" id="navright">
+        <router-link active-class="router-active" to="./" class="title button">HOME</router-link>
+        <router-link active-class="router-active" to="./Project" class="title button">PROJECT</router-link>
+        <router-link active-class="router-active" to="./Software" class="title button">SOFTWARE</router-link>
+        <router-link active-class="router-active" to="./Product" class="title button">PRODUCT</router-link>
+        <router-link active-class="router-active" to="./Contactus" class="title button">CONTACT US</router-link>
+        <router-link active-class="router-active" to="./Aboutus" class="title button">ABOUT US</router-link>
       </div>
     </header>
   </div>
@@ -18,8 +19,15 @@
 <script>
 export default {
   name: 'Header',
-  props: {
-    msg: String
+  data(){
+    return{
+      logoStyle:'',
+    }
+  },
+  mounted(){
+    console.log(window.innerHeight);
+    console.log(window.innerWidth);
+    this.logoStyle= `max-width:${((document.getElementById('nav').offsetWidth) - (document.getElementById('navright').offsetWidth)) * 0.8}px;max-height:100%;`;
   }
 }
 </script>

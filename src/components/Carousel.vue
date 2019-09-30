@@ -1,11 +1,10 @@
 <template>
   <swiper :options="swiperOption">
-        <swiper-slide><img class="swiper_img" src="../assets/img/train.jpg"></swiper-slide>
-        <swiper-slide><img class="swiper_img" src="../assets/img/city.jpg"></swiper-slide>
-        <swiper-slide><img class="swiper_img" src="../assets/img/city2.jpg"></swiper-slide>
-        <swiper-slide><img class="swiper_img" src="../assets/img/00_cloud.jpg"></swiper-slide>
-        <swiper-slide><img class="swiper_img" src="../assets/img/05_cloud.jpg"></swiper-slide>
-        <swiper-slide><img class="swiper_img" src="../assets/img/07_cloud.jpg"></swiper-slide>
+        <swiper-slide><img class="swiper_img" src="../assets/img/005.jpg"></swiper-slide>
+        <swiper-slide><img class="swiper_img" src="../assets/img/006.jpg"></swiper-slide>
+        <swiper-slide><img class="swiper_img" src="../assets/img/002.png"></swiper-slide>
+        <swiper-slide><img class="swiper_img" src="../assets/img/003.png"></swiper-slide>
+        <swiper-slide><img class="swiper_img" src="../assets/img/004.png"></swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
         <div class="swiper-button-prev" slot="button-prev"></div>
         <div class="swiper-button-next" slot="button-next"></div>

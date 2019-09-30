@@ -5,6 +5,7 @@ import Aboutus from '@/components/Aboutus'
 import Contactus from '@/components/Contactus'
 import Index from '@/components/Index'
 import Product from '@/components/Product'
+import Software from '@/components/Software'
 //import xxx from  '@/components/xxx' 中的@表示src
 // 因为webpack.base.conf中别名这样写了==> alias: {'@': resolve('src')}
 import Project from '@/components/Project' //引入Project Componenet
@@ -34,7 +35,11 @@ export default new Router({
         path: '/Product',
         name: 'Product',
         component: Product,
-    }
+    },{
+      path: '/Software',
+      name: 'Software',
+      component: Software,
+  }
 
   ]
 })
