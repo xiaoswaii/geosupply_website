@@ -1,5 +1,5 @@
 <template>
-    <div class="contact">
+    <div id="contact" class="contact">
         <div class="contact_img"></div>
         <div class="contact_banner">
             <div class="contact_banner_word">
@@ -35,12 +35,12 @@ export default {
   },
   mounted () {
       if(window.innerWidth < 400){
-           this.height = ( window.innerHeight * 0.45 ) + 'px';
+           this.height = ( window.innerHeight * 0.5 ) + 'px';
            this.width = ( window.innerWidth * 0.9 ) + 'px';
       }
       else {
-            this.height = ( window.innerHeight * 0.45 ) + 'px';
-            this.width = ( window.innerWidth * 0.31 ) + 'px';
+            this.height = ( document.getElementById("contact").offsetHeight * 0.5 ) + 'px';
+            this.width = ( document.getElementById("app").offsetWidth * 0.45 ) + 'px';
       }
   }
 }

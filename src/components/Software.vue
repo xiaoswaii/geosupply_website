@@ -16,10 +16,10 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr class="software_list_item" @click="relocate()">
+							<tr class="software_list_item" @click="relocate('http://104.199.169.90')">
 								<td class="column1_software">Client Login</td>
 							</tr>
-              <tr class="software_list_item" @click="relocate()">
+              <tr class="software_list_item" @click="relocate('http://geo.geosupply.com')">
 								<td class="column1_software">Client Login</td>
 							</tr>
               <tr class="software_list_item">
@@ -159,8 +159,8 @@ export default {
 	},
 
 	methods: {
-      relocate(){
-        document.location.href="/ContactUs";
+      relocate(route){
+        document.location.href=route;
       }
 	}
 }
