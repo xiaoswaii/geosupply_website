@@ -9,7 +9,7 @@
   <div class="product_main">
     <div :key="product" v-for="product in products" class="product_img_spec" id="product_img_spec" @click="locationContact()">
       <div class="product_img_part">
-      <div class="overlay">Contact us for more detail</div>
+      <div class="overlay">Contact us for more details</div>
       <img :src="product.product_img">
       </div>
       <div class="product_img_name">{{product.product_name}}</div>

@@ -20,18 +20,16 @@
             <span class="triangle_flip"></span>
           </div>
       </div>
-      <br>
       <div class="product_index" data-aos="fade-in" data-aos-delay="50"
     data-aos-duration="1000">
         <div class="product_index_title">Product</div>
         <div class="product_index_content">
-          <div class="product_index_img"><img src="../assets/img/Product1.jpg"><div class="inner_product">Sensor</div></div>
-          <div class="product_index_img"><img src="../assets/img/Product2.jpg"><div class="inner_product">Datalogger</div></div>
-          <div class="product_index_img"><img src="../assets/img/Product3.jpg"><div class="inner_product">Wireless Node</div></div>
+          <div class="product_index_img"><img src="/product/09_In-Place Inclinometer.jpg"><div class="inner_product">Sensor</div></div>
+          <div class="product_index_img"><img src="/product/13_Datalogger.jpg"><div class="inner_product">Datalogger</div></div>
+          <div class="product_index_img"><img src="/product/14_Wireless Node.jpg"><div class="inner_product">Wireless Node</div></div>
           <div class="product_index_img"><img src="../assets/img/product/17_CloudSoftware.jpg"><div class="inner_product">Software</div></div>
         </div>
       </div>
-      <br>
       <div class="service_index" data-aos="fade-left" data-aos-delay="50"
     data-aos-duration="1000">
           <div class="service_left">
@@ -40,7 +38,7 @@
             <br>
             <div class="service_special">
             <i class="fa fa-check-circle"></i><p>Instrumentation Monitoring System<br>
-(MRT, High Speed Railway, Bridges, Dams, Slope, Embankments, Excavation, Land Fills, Ground Water, Mines, Pipelines, Tunnels and Wind Turbines)</p>  
+<span>(MRT, High Speed Railway, Bridges, Dams, Slope, Embankments, Excavation, Land Fills, Ground Water, Mines, Pipelines, Tunnels and Wind Turbines)</span></p>  
             </div>
             <div :key="service" v-for="service in services" class="service_list">
             <i class="fa fa-check-circle"></i>
@@ -56,9 +54,9 @@
     data-aos-duration="1000">
         <span class="project_index_title">Our Project</span>
         <div class="project_index_content">
-          <div class="project_index_img"><img src="../assets/img/taiwan.jpg"><div class="inner">Taiwan</div></div>
-          <div class="project_index_img"><img src="../assets/img/malaysia.jpg"><div class="inner">Malaysia</div></div>
-          <div class="project_index_img"><img src="../assets/img/indonesia.jpg"><div class="inner">Indonesia</div></div>
+          <div class="project_index_img" id="project_taiwan" @click="goProject('TAIWAN')"><img src="../assets/img/taiwan.jpg"><div class="inner">Taiwan</div></div>
+          <div class="project_index_img" id="project_malaysia" @click="goProject('MALAYSIA')"><img src="../assets/img/malaysia.jpg"><div class="inner">Malaysia</div></div>
+          <div class="project_index_img" id="project_indonesia" @click="goProject('INDONESIA')"><img src="../assets/img/indonesia.jpg"><div class="inner">Indonesia</div></div>
         </div>
         <span class="read_more"><a href="./project">Read more</a></span>
       </div>
@@ -81,6 +79,11 @@ import Carousel from './Carousel.vue';
                     'Display and Analysis Software']
       };
     },
+    methods: {
+      goProject (location) {
+        document.location.href=`/Project?country=${location}`
+      }
+    }
   };
 </script>
 

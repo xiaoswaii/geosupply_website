@@ -57,7 +57,7 @@
             "detail"    :"24Hr Real Time Slope Stability Monitoring",
             "contrator" :"Taoyuan Metro Corporation",
             "software"  :"Real Time Monitoring System ( Geosupply Cloud Platform)",
-            "instrument":["In-Place Inclinometer","Piezometer","Crack Meter","Tilt Meter","Water Level sensor","Rain Gauges","GPS system","CCTV"],
+            "instrument":["In-Place Inclinometer","Piezometer","Tilt Meter","Rain Gauges","Flow Meter"],
             "img"       :["project_img/project6/picture1.png","project_img/project6/picture2.png"]
         },
         {

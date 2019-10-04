@@ -1,10 +1,10 @@
 .index {
-    height: 1971px;
+    height: 1870px;
     width: 100%;
   }
 
   .index_banner {
-    height: 2%;
+    height: 40px;
     width: 100%;
     background-color: #0182CA;
   }
@@ -39,9 +39,9 @@
   }
 
   .aboutus_index {
-      margin-top: 2%;
+      margin-top: 1%;
       display: block;
-      height: 18%;
+      height: 355px;
       width: 100%;
   }
 
@@ -96,13 +96,13 @@
 
   .product_index {
     background-color: #f4f4f4;
-    height: 22%;
+    height: 375px;
     width: 100%;
     display: block;
   }
 
   .product_index_title {
-    height: 10%;
+    height: 15%;
     width: 100%;
     text-align: center;
     text-decoration: underline;
@@ -112,7 +112,7 @@
   }
 
   .product_index_content {
-      height: 60%;
+      height: 70%;
       width: 100%;
       display: flex;
       margin:0 auto;
@@ -134,15 +134,16 @@
       }
 
         img {
-          height: 100%;
-          width: 100%;
+          height: 221px;
+          width: 221px;
         }
   }
 
   .service_index {
       display: block;
-      height: 16.5%;
+      height: 325px;
       width: 100%;
+      margin-top: 1%;
   }
 
   .service_left {
@@ -204,6 +205,12 @@
       margin-inline-start: 0px;
       margin-inline-end: 0px;
       margin-left: 10px;
+
+      span {
+        display: block;
+        text-align: justify;
+        text-justify: inter-ideograph;
+      }
       
     }
   }
@@ -211,7 +218,7 @@
     background-color: #f4f4f4;
     display: block;
     margin-top: 1%;
-    height: 20%;
+    height: 394.5px;
     width: 100%;
 
     .project_index_title {
@@ -219,7 +226,7 @@
       height: 15%;
       width: 100%;
       text-align: center;
-      font-size: 18px;
+      font-size: 20px;
       text-decoration: underline;
       text-decoration-color: grey; 
       font-family: Verdana, Tahoma, sans-serif;
@@ -257,6 +264,11 @@
         font-size: 16px;
         font-family: Verdana, Tahoma, sans-serif;
       }
+    }
+
+    .project_index_img:hover {
+      cursor: pointer;
+      opacity: 0.5;
     }
 
       .read_more {

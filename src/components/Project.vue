@@ -175,22 +175,19 @@ export default {
 
 	mounted () {
       this.openFile();	  
-      var standardWidth = window.innerWidth * 0.49 + 'px';
-      var standardHeight = window.innerHeight * 0.52 + 'px';
-       console.log(document.getElementById('country_list').clientHeight)
+      //  console.log(document.getElementById('country_list').clientHeight)
        var standardWidth= (document.getElementById('project_detail').offsetWidth)
        var standardHeight = (document.getElementById('project_detail').offsetHeight)* 0.47;
        this.mapStyle= `width:${standardWidth}px;height:${standardHeight}px`
-       console.log(document.getElementById('project_detail').offsetWidth);
-       console.log(document.getElementById('project_detail').offsetHeight);
+      //  console.log(document.getElementById('project_detail').offsetWidth);
+      //  console.log(document.getElementById('project_detail').offsetHeight);
+       var country = location.href.split('=')[1]
+       if(country){
+         this.showCountry(country);
+          var element = document.getElementById("project");
+          element.classList.add("router-link-exact-active");
+       }
 	},
-
-  created() {
-    // console.log(document.getElementById('country_list').clientHeight)
-    // var standardWidth= (document.getElementById('project_detail').offsetWidth)
-    // var standardHeight = ((document.getElementById('project_detail').offsetHeight)-(document.getElementById('country_list').offsetHeight))*0.8;
-    // this.mapStyle= `width:${standardWidth}px;height:${standardHeight}px`
-  },
 
 	methods: {
       openFile () {

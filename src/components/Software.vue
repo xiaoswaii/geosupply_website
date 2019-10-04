@@ -12,7 +12,7 @@
         <table class="software_list_table">
 						<thead>
 							<tr class="software_list_table_header">
-								<th class="software_list_title" colspan="2">CLOUD PLATFORM</th>
+								<th class="software_list_title" colspan="2">Cloud Platform</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -35,7 +35,7 @@
                 <img src="../assets/img/software/gcp.png">
               </div>
               <div class="software_detail_list_intro">
-                <ul>
+                <ul class="gcp">
                   <li>GeoSupply Cloud Server at Google Cloud Platform</li>
                   <li>Trust and Security</li>
                   <li>Safe and secure</li>
@@ -59,7 +59,7 @@
               <div class="software_detail_list_logo">
                 <img src="../assets/img/software/data-collection.png">
               </div>
-              <div class="software_detail_list_intro">
+              <div class="software_detail_list_intro double">
                 <ul>
                   <li>Collect Data</li>
                   <li>Manual and real-time data capture</li>
@@ -71,7 +71,7 @@
                 <img src="../assets/img/software/analysis.png">
               </div>
               <div class="software_detail_list_intro">
-                <ul>
+                <ul class="data">
                   <li>Data processing </li>
                   <li>Calculation </li>
                   <li>Data analysis </li>
@@ -83,7 +83,7 @@
               <div class="software_detail_list_logo">
                 <img src="../assets/img/software/line-chart.png">
               </div>
-              <div class="software_detail_list_intro">
+              <div class="software_detail_list_intro double">
                 <ul>
                   <li>Custom Graphing</li>
                   <li>Multi-axis (different sensors plot in one graph)</li>
@@ -94,7 +94,7 @@
               <div class="software_detail_list_logo">
                 <img src="../assets/img/software/map-location.png">
               </div>
-              <div class="software_detail_list_intro">
+              <div class="software_detail_list_intro map">
                 <ul>
                   <li>GIS Mapping</li>
                   <li>Geographical View (OpenStreetMap)</li>
@@ -106,7 +106,7 @@
               <div class="software_detail_list_logo">
                 <img src="../assets/img/software/alarm.png">
               </div>
-              <div class="software_detail_list_intro">
+              <div class="software_detail_list_intro double">
                 <ul>
                   <li>Trigger system</li>
                   <li>Email / SMS notification</li>
@@ -115,6 +115,9 @@
             </div>
             <div class="software_detail_bottom">
               <img src="../assets/img/17_CloudSoftware.jpg">
+            </div>
+            <div class="software_detail_bottom_title">
+              Geosupply Cloud Platform
             </div>
     </div>
     </div>
