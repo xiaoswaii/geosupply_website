@@ -13,17 +13,10 @@
       <div class="aboutus_detail">
         <span class="aboutus_title">Who is GeoSupply</span>
         <span class="aboutus_content">
-          Since Geosupply is established, it has provided domestic and
-          international automated monitoring system engineering services. Such as
-          high-speed rail, MRT, roads and civil engineering, geotechnical field and
-          other related engineering monitoring systems professional services.
-          The company's colleagues have more th
-          an 15 years of monitoring
-          experience. 
+          GeoSupply is the provider of automated and manual monitoring services.
           <br>
           <br>
-          Geosupply Cloud Platform (GeoSupply Real Time Monitoring Cloud Platform) has been implemented in several important public work
-          project, in domestic and international
+          GeoSupply, headquartered in Taipei, Taiwan, has been expending its business throughout Asia and has successfully implanted its Geosupply Realtime Monitoring Platform in major infrastructure projects in a few South East Asia countries. Through the experiences of integrate cross platform monitoring services, we provide innovative and reliable system.
         </span>
       </div>
     </div>
