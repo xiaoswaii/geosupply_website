@@ -10,7 +10,7 @@
           <div class="aboutus_left"><img src="../assets/img/aboutus_index.jpg"></div>
           <div class="aboutus_right" data-aos="fade-in">
             <span class="triangle"></span>
-            <span class="aboutus_right_title">About Us</span>
+            <span class="aboutus_right_title">Company</span>
             <span class="aboutus_content">Ever since Geosupply is established, it has been providing domestic and international automated monitoring system and engineering services in high‐speed rail, MRT, toll road, civil and geotechnical construction field. 
               The company's colleagues have more than 15 years of monitoring experience.
               <br>
@@ -54,9 +54,9 @@
     data-aos-duration="1000">
         <span class="project_index_title">Our Project</span>
         <div class="project_index_content">
-          <div class="project_index_img" id="project_taiwan" @click="goProject('TAIWAN')"><img src="../assets/img/taiwan.jpg"><div class="inner">Taiwan</div></div>
-          <div class="project_index_img" id="project_malaysia" @click="goProject('MALAYSIA')"><img src="../assets/img/malaysia.jpg"><div class="inner">Malaysia</div></div>
-          <div class="project_index_img" id="project_indonesia" @click="goProject('INDONESIA')"><img src="../assets/img/indonesia.jpg"><div class="inner">Indonesia</div></div>
+          <div class="project_index_img" id="project_taiwan" @click="goProject('Taiwan')"><img src="../assets/img/taiwan.jpg"><div class="inner">Taiwan</div></div>
+          <div class="project_index_img" id="project_malaysia" @click="goProject('Malaysia')"><img src="../assets/img/malaysia.jpg"><div class="inner">Malaysia</div></div>
+          <div class="project_index_img" id="project_indonesia" @click="goProject('Indonesia')"><img src="../assets/img/indonesia.jpg"><div class="inner">Indonesia</div></div>
         </div>
         <span class="read_more"><a href="./project">Read more</a></span>
       </div>

@@ -17,10 +17,10 @@
 						</thead>
 						<tbody>
 							<tr class="software_list_item" @click="relocate('http://104.199.169.90')">
-								<td class="column1_software">Client Login</td>
+								<td class="column1_software">Client Login #1</td>
 							</tr>
               <tr class="software_list_item" @click="relocate('http://geo.geosupply.com')">
-								<td class="column1_software">Client Login</td>
+								<td class="column1_software">Client Login #2</td>
 							</tr>
               <tr class="software_list_item">
 								<td class="column1_software">Demo</td>

@@ -11,7 +11,7 @@
 
        </div>
       <div class="aboutus_detail">
-        <span class="aboutus_title">About GeoSupply</span>
+        <span class="aboutus_title">Who is GeoSupply</span>
         <span class="aboutus_content">
           Since Geosupply is established, it has provided domestic and
           international automated monitoring system engineering services. Such as

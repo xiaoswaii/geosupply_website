@@ -24,7 +24,7 @@
 									<td class="column1_project" @click="showCountry(country)">{{ country }}</td>
 								</tr>
                 <tr class="project_list_item">
-									<td class="column1_project" @click="listAll()">LIST ALL</td>
+									<td class="column1_project" @click="listAll()">List All</td>
 								</tr>
 						</tbody>
 					</table>
@@ -144,8 +144,8 @@ export default {
         },
         {position:{lat: -6.229728, lng: 106.6894348}},
         {position:{lat: 25.0169639, lng: 121.2261992}}],
-      countries: ['TAIWAN','MALAYSIA','INDONESIA'],
-      countriesSelect: ['TAIWAN','MALAYSIA','INDONESIA'],
+      countries: ['Taiwan','Malaysia','Indonesia'],
+      countriesSelect: ['Taiwan','Malaysia','Indonesia'],
 		  raw: [],
 		  nowCountry: '',
 		  projectList: [],
@@ -199,9 +199,9 @@ export default {
               console.log(this.raw);
           })
           .then(res =>{
-              this.projectMalaysia = this.raw.filter(element => element.place == 'MALAYSIA');
-              this.projectIndonesia = this.raw.filter(element => element.place == 'INDONESIA');
-              this.projectTaiwan = this.raw.filter(element => element.place == 'TAIWAN');
+              this.projectMalaysia = this.raw.filter(element => element.place == 'Malaysia');
+              this.projectIndonesia = this.raw.filter(element => element.place == 'Indonesia');
+              this.projectTaiwan = this.raw.filter(element => element.place == 'Taiwan');
           })   
           // .catch(err => {
 		  	  //     console.log(err);
@@ -220,7 +220,7 @@ export default {
 	},
 
   listAll () {
-    this.countriesSelect = ['TAIWAN','MALAYSIA','INDONESIA'];
+    this.countriesSelect = ['Taiwan','Malaysia','Indonesia'];
     this.projectDetail = {};
     this.projectCountry = this.raw;
     document.getElementById('project_list').style.display = 'block';
