@@ -19,7 +19,7 @@
 							<tr class="software_list_item" @click="relocate('http://104.199.169.90')">
 								<td class="column1_software">Client Login #1</td>
 							</tr>
-              <tr class="software_list_item" @click="relocate('http://geo.geosupply.com')">
+              <tr class="software_list_item" @click="relocate('https://geo.geosupply.com.tw')">
 								<td class="column1_software">Client Login #2</td>
 							</tr>
               <tr class="software_list_item">
@@ -171,4 +171,5 @@ export default {
 
 <style lang="scss">
 @import "../assets/scss/software.scss";
+@import "../assets/scss/software_mobile.scss";
 </style>

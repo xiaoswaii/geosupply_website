@@ -11,7 +11,7 @@
           <div class="aboutus_right" data-aos="fade-in">
             <span class="triangle"></span>
             <span class="aboutus_right_title">Company</span>
-            <span class="aboutus_content">Ever since Geosupply is established, it has been providing domestic and international automated monitoring system and engineering services in high‐speed rail, MRT, toll road, civil and geotechnical construction field. 
+            <span class="aboutus_content_index">Ever since Geosupply is established, it has been providing domestic and international automated monitoring system and engineering services in high‐speed rail, MRT, toll road, civil and geotechnical construction field. 
               The company's colleagues have more than 15 years of monitoring experience.
               <br>
               <br>
@@ -89,4 +89,5 @@ import Carousel from './Carousel.vue';
 
 <style lang="scss">
   @import "../assets/scss/index.scss";
+  @import "../assets/scss/index_mobile.scss";
 </style>

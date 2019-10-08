@@ -10,9 +10,9 @@
 					·
 					<a href="#">Project</a>
 					·
-					<a href="#">Product</a>
+					<a href="#">Software</a>
 					·
-					<a href="#">About Us</a>
+					<a href="#">Product</a>
 					·
 					<a href="#">Contact Us</a>
 				</p>
@@ -41,7 +41,7 @@
 				</div>
 				<div class="logo_section">
 					<i class="fa fa-phone"></i>
-					<p>+886918883451 +886‐2‐26481050</p>
+					<p>+886-918-883451 +886‐2‐26481050</p>
 				</div>
 				<div class="logo_section_last">
 					<i class="fa fa-envelope"></i>

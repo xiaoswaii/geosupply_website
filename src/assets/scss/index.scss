@@ -74,18 +74,18 @@
   }
 
   .aboutus_right_title {
-    text-decoration: underline;
-    text-decoration-color: grey;
+    // text-decoration: underline;
+    // text-decoration-color: grey;
     margin-top: 2%;
     display: block;
     font-size: 20px;
     height: 18%;
     width: 100%;
-    font-family: Verdana, Tahoma, sans-serif;
-    color:#3e7ede;
+    font-family:Tahoma, sans-serif;
+    color:#2d72da;
   }
 
-  .aboutus_content {
+  .aboutus_content_index {
     display: block;
     /* border-bottom: 1px solid black; */
     font-size: 16px;
@@ -106,9 +106,9 @@
     text-align: center;
     text-decoration: underline;
     text-decoration-color: grey;
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family:Tahoma, sans-serif;
     font-size: 20px;
-    color: #3e7ede;
+    color: #2d72da;
   }
 
   .product_index_content {
@@ -167,16 +167,14 @@
   }
 
   .service_title {
-    font-size: 18px;
-    text-decoration: underline;
-    text-decoration-color: grey;
-    font-family: Verdana, Tahoma, sans-serif;
-    color: #3e7ede;
+    font-size: 20px;
+    font-family:Tahoma, sans-serif;
+    color: #2d72da;
   }
 
   .service_list {
     font-size: 15px;
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: Tahoma, sans-serif;
 
     .service_list_word {
       display: block;
@@ -198,7 +196,7 @@
     p {
       font-size: 15px;
       
-      font-family: Verdana, Tahoma, sans-serif;
+      font-family:Tahoma, sans-serif;
       width: 90%;
       display: inline-block;
       margin-block-start: 0;
@@ -230,8 +228,8 @@
       font-size: 20px;
       text-decoration: underline;
       text-decoration-color: grey; 
-      font-family: Verdana, Tahoma, sans-serif;
-      color: #3e7ede;
+      font-family: Tahoma, sans-serif;
+      color: #2d72da;
     }
 
     .project_index_content {
@@ -264,7 +262,7 @@
         width: 100%;
         background: rgba(0, 0, 0, 0.5);
         font-size: 16px;
-        font-family: Verdana, Tahoma, sans-serif;
+        font-family: Tahoma, sans-serif;
       }
     }
 
@@ -301,69 +299,7 @@
       }
   }
 
-@media (min-width: 320px) and (max-width: 480px) {
 
-    .index {
-        height: 150%;
-        width: 100%;
-    }
-
-    .aboutus_index {
-        margin-top: 2%;
-        display: block;
-        height: 15%;
-        width: 100%;
-    }
-
-    .aboutus_right_title {
-        text-decoration: underline;
-        -webkit-text-decoration-color: grey;
-        text-decoration-color: grey;
-        margin-top: 2%;
-        display: block;
-        font-size: 1em;
-        height: 13%;
-        width: 100%;
-    }
-
-    .aboutus_content {
-        display: block;
-        /* border-bottom: 1px solid black; */
-        font-size: 0.5em;
-        height: 65%;
-        width: 100%;
-    }
-
-    .service_index {
-        height: 19%;
-    }
-
-    .service_title {
-        font-size: 1em;
-    }
-
-    .service_list {
-        font-size: 0.5em;
-    }   
-
-    .project_index .read_more {
-        display: block;
-        margin: 0 auto;
-        margin-top: 2%;
-        color: white;
-        text-align: center;
-        line-height: 200%;
-        font-size: 1.2em;
-        cursor: pointer;
-        height: 10%;
-        width: 20%;
-        background-color: #006699;
-    }
-
-    .project_index .read_more {
-        font-size: 0.1em;
-    }
-}
 
 @media (min-height: 320px) and (max-width: 480px) {
 

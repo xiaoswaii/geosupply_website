@@ -1,0 +1,228 @@
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .index {
+        height: 850px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .index_banner {
+        height: 30px;
+        width: 100%;
+        background-color: #0182CA;
+      }
+    
+      .index_banner_word {
+        display: inline-block;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1em;
+        font-family: "Helvetica Neue", Helvetica, Frutiger, Univers, sans-serif;
+        position: relative;
+        margin-left: 1%;
+        font-weight: bold;
+        color: white;
+      }
+
+    .aboutus_index {
+        margin-top: 2%;
+        display: block;
+        height: 132px;
+        width: 100%;
+    }
+
+    .aboutus_right_title {
+        text-decoration: underline;
+        -webkit-text-decoration-color: grey;
+        text-decoration-color: grey;
+        margin-top: 2%;
+        display: block;
+        font-size: 0.8em;
+        height: 13%;
+        width: 100%;
+    }
+
+    .aboutus_content_index {
+        display: block;
+        /* border-bottom: 1px solid black; */
+        font-size: 1.5vw;
+        height: 65%;
+        width: 100%;
+    }
+
+    .triangle {
+      display: block;
+      height: 0.1%;
+      width: 0.1%;
+      border-top: 10px solid grey;
+      border-right: 10px solid transparent;
+    }
+  
+    .triangle_flip {
+      display: block;
+      float: right;
+      height: 0.1%;
+      width: 0.1%;
+      border-bottom: 10px solid grey;
+      border-left: 10px solid transparent;
+    }
+
+    .product_index {
+        height: 150px;
+
+        .product_index_title {
+          font-size: 1em;
+        }
+    }
+    .product_index_content {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        margin:0 auto;
+        justify-content: space-around;
+  
+        .product_index_img {
+          position: relative;
+          width: 22%;
+          height: 95%;
+          margin-top: 1.5%; 
+          color: white;
+          text-align: center;
+  
+          .inner_product {
+            color: black;
+            font-family: "Helvetica Neue", Helvetica, Frutiger, Univers, sans-serif;
+            font-size: 2.5vw;
+          }
+        }
+  
+          img {
+            height: 80px;
+            width: 80px;
+          }
+    }
+
+    .service_index {
+        height: 135px;
+    }
+
+    .service_title {
+        font-size: 0.8em;
+    }
+
+    .service_list {
+        font-size: 1.5vw;
+
+        .service_list_word {
+          display: block;
+          margin-left: 10px;
+        }
+    }   
+
+    .fa {
+      margin-top: 3px;
+    }
+
+    .service_special{
+
+      margin-top: -10px;
+        .fa {
+          color: #006699;
+          float: left;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: 1.5vw;
+        }
+    
+        p {
+          font-size: 1.5vw;
+          font-family:Tahoma, sans-serif;
+          width: 90%;
+          //margin-bottom: 15px;
+          display: inline-block;
+          margin-block-start: 0;
+          margin-block-start: 0;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          margin-left: 5px;
+    
+          span {
+            display: block;
+            text-align: justify;
+            text-justify: inter-ideograph;
+          }
+          
+        }
+      }
+
+    .project_index {
+      background-color: #f4f4f4;
+      display: block;
+      margin-top: 1%;
+      height: 200.5px;
+      width: 100%;
+
+      .project_index_title {
+        display: block;
+        height: 15%;
+        width: 100%;
+        text-align: center;
+        font-size: 1em;
+        text-decoration: underline;
+        text-decoration-color: grey; 
+        font-family: Tahoma, sans-serif;
+        color: #2d72da;
+      }
+  
+      .project_index_content {
+        height: 60%;
+        width: 90%;
+        display: flex;
+        margin:0 auto;
+        justify-content: space-around;
+  
+        .project_index_img {
+          position: relative;
+          width: 100px;
+          height: 100px;
+          margin-top: 1.5%;
+          
+          color: white;
+          text-align: center;
+  
+          img {
+            height: 100px;
+            width: 100px;
+          }
+        }
+  
+        .inner {
+          position: absolute;
+          height: 20px;
+          bottom: 0;
+          z-index: 2;
+          width: 100px;
+          background: rgba(0, 0, 0, 0.5);
+          font-size: 16px;
+          font-family: Tahoma, sans-serif;
+        }
+      }  
+    }
+
+    
+    .project_index .read_more {
+        display: block;
+        margin: 0 auto;
+        margin-top: 2%;
+        color: white;
+        text-align: center;
+        line-height: 200%;
+        cursor: pointer;
+        height: 10%;
+        width: 20%;
+        background-color: #006699;
+    }
+
+    .project_index .read_more {
+        font-size: 2.5vw;
+    }
+}

@@ -2,7 +2,7 @@
 <div class="top">
   <div class="nav" id="nav">
     <header>
-      <div class="nav_logo"><a href="/" class="logo"><img :style="logoStyle" src="../assets/img/header_logo.png" id="headerlogo"></a></div>
+      <div class="nav_logo"><a href="/" class="logo"><img class="logo_img" src="../assets/img/header_logo.png" id="headerlogo"></a></div>
       <div class="nav-right" id="navright">
         <router-link active-class="router-active" to="./" class="title button">HOME</router-link>
         <router-link active-class="router-active" to="./Project" class="title button" id="project">PROJECT</router-link>
@@ -26,10 +26,14 @@ export default {
   },
   mounted(){
     this.logoStyle= `max-width:${((document.getElementById('nav').offsetWidth) - (document.getElementById('navright').offsetWidth)) * 0.7}px;max-height:100%;`;
+    if(window.innerWidth < 480){
+      this.logoStyle= `max-width:65px;max-height:100%;`;
+    }
   }
 }
 </script>
 
 <style lang="scss">
 @import "../assets/scss/nav.scss";
+@import "../assets/scss/nav_mobile.scss";
 </style>

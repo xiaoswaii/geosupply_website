@@ -190,9 +190,29 @@
 	margin-bottom: 5px;
 }
 
-@media (max-width: 880px) {
+// @media (max-width: 880px) {
 
-	.footer-distributed{
+// 	.footer-distributed{
+// 		font: bold 14px sans-serif;
+// 	}
+
+// 	.footer-distributed .footer-left,
+// 	.footer-distributed .footer-center,
+// 	.footer-distributed .footer-right{
+// 		display: block;
+// 		width: 100%;
+// 		text-align: center;
+// 	}
+
+// 	.footer-distributed .footer-center i{
+// 		margin-left: 0;
+// 	}
+
+
+// }
+
+@media (min-width: 320px) and (max-width: 480px) {
+		.footer-distributed{
 		font: bold 14px sans-serif;
 	}
 
@@ -207,11 +227,6 @@
 	.footer-distributed .footer-center i{
 		margin-left: 0;
 	}
-
-
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
 	.footer-distributed
 	.footer-company-about {
 		margin-left: 0;

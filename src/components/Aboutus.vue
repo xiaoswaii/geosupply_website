@@ -26,12 +26,10 @@
 <script>
 export default {
   name: 'Footer',
-  props: {
-    msg: String
-  }
 }
 </script>
 
 <style lang="scss">
 @import "../assets/scss/aboutus.scss";
+@import "../assets/scss/aboutus_mobile.scss";
 </style>

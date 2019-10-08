@@ -1,0 +1,76 @@
+@media (min-width: 320px) and (max-width: 480px) {
+    .mapouter{
+        text-align:right;
+        display: block;
+        margin:0 auto;
+        //float: right;
+        margin-top: 5%;
+        //margin-right: 5%;
+    }
+
+    .contact {
+        height: 920px;
+        width: 100%;
+    }
+  
+    .contact_detail {
+        display: block;
+        color: white;
+        background-image: url("../assets/img/bg.jpg");
+        background-size: cover;
+        z-index: 1;
+        float: left;
+        height: 300px;
+        width: 100%;
+        margin-top: 5%;
+        -webkit-box-shadow: 0px 0px 15px 0px #ADADAD; 
+        box-shadow: 0px 0px 15px 0px #ADADAD;
+        position: relative;
+        animation: fadein 3s;
+        //margin-left: 5%;
+    }
+
+    .contact_banner {
+        background-color: #0182CA;
+        width: 100%;
+        height: 30px;
+    }
+
+    .contact_img {
+        background-image: url('../assets/img/contactus.jpg');
+        background-size: cover;
+        background-attachment: initial;
+        width: 100%;
+        height: 200px;
+    }
+
+    .contact_detail_word {
+        font-size: 0.75em;
+        height: 100%;
+        width: 90%;
+        display: inline-block;
+    }
+
+    .contact_detail_table {
+        display: block;
+        height: 70%;
+        width: 75%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+
+        h1 {
+            display: block;
+            font-size: 2em;
+            margin-block-start: 0em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+    }
+    
+}

@@ -12,7 +12,7 @@
                 <span class="contact_detail_list address"><span class="contact_detail_logo"><i class="fa fa-home fa-lg"></i></span><span class="contact_detail_word">6F., No.28, Ln. 57, Jiancheng Rd., Xizhi Dist., New Taipei City 221, Taiwan (R.O.C.)
                     <br><br>1F., No.30, Ln. 56, Jiancheng Rd., Xizhi Dist., New Taipei City 221, Taiwan (R.O.C.)</span></span>
                 <span class="contact_detail_list"><span class="contact_detail_logo"><i class="fa fa-envelope fa-cus"></i></span><span class="contact_detail_word">geosupply.tw@gmail.com</span></span>
-                <span class="contact_detail_list"><span class="contact_detail_logo"><i class="fa fa-phone fa-lg"></i></span><span class="contact_detail_word">+886-918 883451  <br><br>+886‐2‐26481050</span></span>
+                <span class="contact_detail_list"><span class="contact_detail_logo"><i class="fa fa-phone fa-lg"></i></span><span class="contact_detail_word">+886-918-883451  <br><br>+886‐2‐26481050</span></span>
             </div>
         </div>
         <div class="mapouter" :height="height" :width="width">
@@ -36,7 +36,7 @@ export default {
   mounted () {
       if(window.innerWidth < 400){
            this.height = ( window.innerHeight * 0.5 ) + 'px';
-           this.width = ( window.innerWidth * 0.9 ) + 'px';
+           this.width = ( window.innerWidth * 1 ) + 'px';
       }
       else {
             this.height = ( document.getElementById("contact").offsetHeight * 0.5 ) + 'px';
@@ -48,4 +48,5 @@ export default {
 
 <style lang="scss">
 @import "../assets/scss/contactus.scss";
+@import "../assets/scss/contactus_mobile.scss";
 </style>

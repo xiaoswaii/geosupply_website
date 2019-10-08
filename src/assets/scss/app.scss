@@ -31,6 +31,16 @@ body{
 
 @media (min-width: 320px) and (max-width: 480px) {
   
+  body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    font-family: "RobotoCondensedBold";
+    overflow-x: hidden;
+    //padding-left: 5%;
+    //padding-right: 5%;
+  }
+
   #app{
     height: 100%;
     width: 100%;

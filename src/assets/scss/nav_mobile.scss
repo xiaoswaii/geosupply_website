@@ -1,0 +1,42 @@
+@media (min-width: 320px) and (max-width: 480px) {
+    .nav_logo {
+        width:20%;
+        height: 80%;
+    }
+
+    .nav-right {
+        width: auto;
+    }
+
+    .logo_img {
+        max-width: 70px;
+        max-height: 100%;
+    }
+
+    .logo {
+        padding-top: 6px;
+    }
+
+    .title {
+        //padding: 4% 16px; 
+        float: left;
+        width: auto;
+        border: none;
+        display: block;
+        outline: 0;
+        white-space: normal;
+        font-size: 6px;
+        font-family: "Helvetica Neue", Helvetica, Frutiger, Univers, sans-serif;
+        color: #0182CA;
+        letter-spacing: 0.5px;
+    }
+
+    .button {
+        padding: 4% 6px;
+    }
+
+    .top {
+        top: 0;
+        height: 30px;
+    }
+}
