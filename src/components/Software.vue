@@ -171,5 +171,5 @@ export default {
 
 <style lang="scss">
 @import "../assets/scss/software.scss";
-@import "../assets/scss/software_mobile.scss";
+@import "../assets/scss/mobile/software_mobile.scss";
 </style>

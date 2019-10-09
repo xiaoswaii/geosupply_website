@@ -35,5 +35,5 @@ export default {
 
 <style lang="scss">
 @import "../assets/scss/nav.scss";
-@import "../assets/scss/nav_mobile.scss";
+@import "../assets/scss/mobile/nav_mobile.scss";
 </style>

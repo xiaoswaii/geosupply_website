@@ -10,6 +10,10 @@
         height: 30px;
         width: 100%;
         background-color: #0182CA;
+
+        .index_banner_word {
+          font-size: 4vw;
+        }
       }
     
       .index_banner_word {
@@ -32,9 +36,6 @@
     }
 
     .aboutus_right_title {
-        text-decoration: underline;
-        -webkit-text-decoration-color: grey;
-        text-decoration-color: grey;
         margin-top: 2%;
         display: block;
         font-size: 0.8em;
@@ -65,13 +66,14 @@
       width: 0.1%;
       border-bottom: 10px solid grey;
       border-left: 10px solid transparent;
+      margin-right: 1%;
     }
 
     .product_index {
         height: 150px;
 
         .product_index_title {
-          font-size: 1em;
+          font-size: 0.8em;
         }
     }
     .product_index_content {
@@ -120,12 +122,12 @@
     }   
 
     .fa {
-      margin-top: 3px;
+      margin-top: 1%;
     }
 
     .service_special{
 
-      margin-top: -10px;
+      margin-top: -8%;
         .fa {
           color: #006699;
           float: left;
@@ -149,6 +151,7 @@
             display: block;
             text-align: justify;
             text-justify: inter-ideograph;
+            line-height: 1.1;
           }
           
         }
@@ -166,7 +169,7 @@
         height: 15%;
         width: 100%;
         text-align: center;
-        font-size: 1em;
+        font-size: 0.8em;
         text-decoration: underline;
         text-decoration-color: grey; 
         font-family: Tahoma, sans-serif;

@@ -40,5 +40,5 @@ export default {
 
 <style lang="scss">
 @import "../assets/scss/product.scss";
-@import "../assets/scss/product_mobile.scss";
+@import "../assets/scss/mobile/product_mobile.scss";
 </style>

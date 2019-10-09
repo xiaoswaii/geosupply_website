@@ -25,14 +25,6 @@
 					<span>About GeoSupply</span>
 					Provided domestic and international automated monitoring system engineering service
 				</p>
-				<!-- <div class="footer-icons">
-
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
-
-				</div> -->
 			</div>
 			<div class="footer-center">
 				<div class="logo_section">

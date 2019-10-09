@@ -212,6 +212,9 @@
 // }
 
 @media (min-width: 320px) and (max-width: 480px) {
+	footer {
+		padding-top: 1px;
+	}
 		.footer-distributed{
 		font: bold 14px sans-serif;
 	}

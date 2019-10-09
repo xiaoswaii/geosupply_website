@@ -48,5 +48,5 @@ export default {
 
 <style lang="scss">
 @import "../assets/scss/contactus.scss";
-@import "../assets/scss/contactus_mobile.scss";
+@import "../assets/scss/mobile/contactus_mobile.scss";
 </style>

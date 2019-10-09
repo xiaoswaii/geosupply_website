@@ -20,8 +20,7 @@
             <span class="triangle_flip"></span>
           </div>
       </div>
-      <div class="product_index" data-aos="fade-in" data-aos-delay="50"
-    data-aos-duration="1000">
+      <div class="product_index">
         <div class="product_index_title">Product</div>
         <div class="product_index_content">
           <div class="product_index_img"><img src="/product/09_In-Place Inclinometer.jpg"><div class="inner_product">Sensor</div></div>
@@ -58,7 +57,7 @@
           <div class="project_index_img" id="project_malaysia" @click="goProject('Malaysia')"><img src="../assets/img/malaysia.jpg"><div class="inner">Malaysia</div></div>
           <div class="project_index_img" id="project_indonesia" @click="goProject('Indonesia')"><img src="../assets/img/indonesia.jpg"><div class="inner">Indonesia</div></div>
         </div>
-        <span class="read_more"><a href="./project">Read more</a></span>
+        <span class="read_more"><a id="readmore" @click="readmore()">Read more</a></span>
       </div>
   </div>
 </template>
@@ -82,6 +81,10 @@ import Carousel from './Carousel.vue';
     methods: {
       goProject (location) {
         document.location.href=`/Project?country=${location}`
+      },
+
+      readmore() {
+        document.location.href=`/Project`
       }
     }
   };
@@ -89,5 +92,5 @@ import Carousel from './Carousel.vue';
 
 <style lang="scss">
   @import "../assets/scss/index.scss";
-  @import "../assets/scss/index_mobile.scss";
+  @import "../assets/scss/mobile/index_mobile.scss";
 </style>

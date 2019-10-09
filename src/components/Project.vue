@@ -34,7 +34,7 @@
       <div class="project_detail_list" id="project_list">
         <GmapMap
         :center="{lat:11.611474, lng:120.4516083}"
-        :zoom="3.9"
+        :zoom="zooming()"
         map-type-id="terrain"
         :style="mapStyle"
       >
@@ -139,6 +139,8 @@ export default {
 	data () {
       return {
       mapStyle:"",
+      zoomCom:3.9,
+      zoomMobile: 2.5,
       markers: [{
         position: {lat: 3.1385036, lng: 101.6169498}
         },
@@ -178,15 +180,21 @@ export default {
       //  console.log(document.getElementById('country_list').clientHeight)
        var standardWidth= (document.getElementById('project_detail').offsetWidth)
        var standardHeight = (document.getElementById('project_detail').offsetHeight)* 0.47;
-       this.mapStyle= `width:${standardWidth}px;height:${standardHeight}px`
+       this.mapStyle= `width:${standardWidth}px;height:${standardHeight}px`;
+       if(window.innerWidth <420){
+         var standardWidth= (document.getElementById('project_detail').offsetWidth)
+         var standardHeight = (document.getElementById('project_detail').offsetHeight)* 0.3;
+         this.mapStyle= `width:${standardWidth}px;height:${standardHeight}px`;
+       }
       //  console.log(document.getElementById('project_detail').offsetWidth);
       //  console.log(document.getElementById('project_detail').offsetHeight);
        var country = location.href.split('=')[1]
        if(country){
          this.showCountry(country);
           var element = document.getElementById("project");
-          element.classList.add("router-link-exact-active");
+        element.classList.add("router-link-exact-active");
        }
+       
 	},
 
 	methods: {
@@ -242,6 +250,13 @@ export default {
   
   changePhoto (img) {
       this.projectPhotoNow = img.srcElement.src;
+  },
+
+  zooming () {
+    if(window.innerWidth>420){
+      return this.zoomCom
+    }
+    else{ return this.zoomMobile }
   }
 	}
 }
@@ -249,4 +264,5 @@ export default {
 
 <style lang="scss">
 @import "../assets/scss/project.scss";
+@import "../assets/scss/mobile/project_mobile.scss";
 </style>
