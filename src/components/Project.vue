@@ -2,8 +2,8 @@
   <div class="project">
     <div class="project_img"></div>
     <div class="project_banner">
-      <div class="project_banner_word">
-        Project <div class="project_banner_country" v-if="countriesSelect.length == 1"> > {{ countriesSelect[0] }} </div><div class="project_banner_country" v-if="projectDetail"> > {{ projectDetail.name }}</div>
+      <div class="project_banner_word" id="projectBanner">
+        Project <div class="project_banner_country" id="projectCountry" v-if="countriesSelect.length == 1"> > {{ countriesSelect[0] }} </div><div class="project_banner_country" id="projectName" v-if="projectDetail"> > {{ projectDetail.name }}</div>
       </div>
     </div>
   <div class="project_info">
@@ -177,8 +177,13 @@ export default {
 
 	mounted () {
       this.openFile();	  
-      //  console.log(document.getElementById('country_list').clientHeight)
-       var standardWidth= (document.getElementById('project_detail').offsetWidth)
+       var country = location.href.split('=')[1]
+       if(country){
+        this.showCountry(country);
+        var element = document.getElementById("project");
+        element.classList.add("router-link-exact-active");
+       }
+        var standardWidth= (document.getElementById('project_detail').offsetWidth)
        var standardHeight = (document.getElementById('project_detail').offsetHeight)* 0.47;
        this.mapStyle= `width:${standardWidth}px;height:${standardHeight}px`;
        if(window.innerWidth <420){
@@ -186,16 +191,19 @@ export default {
          var standardHeight = (document.getElementById('project_detail').offsetHeight)* 0.3;
          this.mapStyle= `width:${standardWidth}px;height:${standardHeight}px`;
        }
-      //  console.log(document.getElementById('project_detail').offsetWidth);
-      //  console.log(document.getElementById('project_detail').offsetHeight);
-       var country = location.href.split('=')[1]
-       if(country){
-         this.showCountry(country);
-          var element = document.getElementById("project");
-        element.classList.add("router-link-exact-active");
-       }
-       
-	},
+      //  this.$nextTick(() => {
+      //     window.addEventListener('orientationchange', this.doOnOrientationChange);
+      //     //console.log(window.innerWidth)
+      //     this.doOnOrientationChange()
+      //  })
+  },
+
+created() {
+  window.addEventListener('orientationchange', this.doOnOrientationChange);
+},
+destroyed() {
+  window.removeEventListener('orientationchange', this.doOnOrientationChange);
+},
 
 	methods: {
       openFile () {
@@ -225,6 +233,8 @@ export default {
       document.getElementById('project_table').style.display = 'none';
       document.getElementById('fit_project_album').style.display = 'none';
       //document.getElementById('project_album').style.display = 'none';
+          var fontSize = document.querySelector('#projectBanner')
+    fontSize.classList.remove('small_font')
 	},
 
   listAll () {
@@ -235,6 +245,8 @@ export default {
     document.getElementById('project_table').style.display = 'none';
     document.getElementById('fit_project_album').style.display = 'none';
     //document.getElementById('project_album').style.display = 'none';
+    var fontSize = document.querySelector('#projectBanner')
+    fontSize.classList.remove('small_font')
   },
 
 	showProject (project) {
@@ -245,6 +257,11 @@ export default {
       this.projectPhotoNow = tempProjectDetail[0].img[0];
       document.getElementById('project_table').style.display = 'block';
       document.getElementById('fit_project_album').style.display = 'block';
+
+      if(this.projectDetail.name.length >=60) {
+        var fontSize = document.querySelector('#projectBanner')
+        fontSize.classList.add('small_font')
+      }
       //document.getElementById('project_album').style.display = 'block';
   },
   
@@ -257,8 +274,29 @@ export default {
       return this.zoomCom
     }
     else{ return this.zoomMobile }
+  },
+  doOnOrientationChange() {
+    console.log(window.innerWidth)
+    let _this = this
+    if(window.innerWidth < 420){
+       var standardWidth= (document.getElementById('project_detail').offsetWidth)
+       var standardHeight = (document.getElementById('project_detail').offsetHeight)* 0.47;
+       this.mapStyle= `width:${standardWidth}px;height:${standardHeight}px`;
+       console.log('not straight')
+       this.zooming();
+    }else {
+      var standardWidth= (document.getElementById('project_detail').offsetWidth)
+      var standardHeight = (document.getElementById('project_detail').offsetHeight)* 0.3;
+      this.mapStyle= `width:${standardWidth}px;height:${standardHeight}px`;
+      this.zooming();
+    }
+},
+  },
+
+  beforeDestroy() {
+    window.removeEventListener('orientationchange', this.doOnOrientationChange);
   }
-	}
+  
 }
 </script>
 

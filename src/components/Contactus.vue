@@ -34,7 +34,7 @@ export default {
       }
   },
   mounted () {
-      if(window.innerWidth < 400){
+      if(window.innerWidth < 415){
            this.height = ( window.innerHeight * 0.5 ) + 'px';
            this.width = ( window.innerWidth * 1 ) + 'px';
       }
