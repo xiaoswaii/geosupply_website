@@ -28,13 +28,11 @@ header {
   padding-left: 0;
   padding-right: 0;
   float: left;
-  width: 15%;
   border: none;
   display: block;
   outline: 0;
   height: 100%;
   width: 100%;
-  border: none;
 }
 
 .logo_img {
@@ -92,27 +90,10 @@ header {
   color: #0b8bf9;
 }
 
-.title:active {
-  //color: #ddd;
-}
-
 .nav-right {
   float: right !important;
   margin-right: -16px;
 }
-
-// .title:after {
-//     content: '';
-//     width: 0px;
-//     height: 1px;
-//     display: block;
-//     background: black;
-//     transition: 300ms;
-//   }
-
-//   .title:hover:after {
-//     width: 100%;
-//   }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .nav_logo {

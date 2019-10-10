@@ -203,7 +203,6 @@
     width: 90%;
     display: inline-block;
     margin-block-start: 0;
-    margin-block-start: 0;
     margin-inline-start: 0;
     margin-inline-end: 0;
     margin-left: 10px;
@@ -299,8 +298,4 @@
   .read_more:hover {
     background-color: #6db8d8;
   }
-}
-
-@media (min-height: 320px) and (max-width: 480px) {
-
 }
