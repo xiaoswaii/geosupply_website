@@ -191,19 +191,12 @@ export default {
          var standardHeight = (document.getElementById('project_detail').offsetHeight)* 0.3;
          this.mapStyle= `width:${standardWidth}px;height:${standardHeight}px`;
        }
-      //  this.$nextTick(() => {
-      //     window.addEventListener('orientationchange', this.doOnOrientationChange);
-      //     //console.log(window.innerWidth)
-      //     this.doOnOrientationChange()
-      //  })
+      this.$nextTick(() => {
+         window.addEventListener('resize', this.doOnOrientationChange);
+         //console.log(window.innerWidth)
+         this.doOnOrientationChange()
+      })
   },
-
-created() {
-  window.addEventListener('orientationchange', this.doOnOrientationChange);
-},
-destroyed() {
-  window.removeEventListener('orientationchange', this.doOnOrientationChange);
-},
 
 	methods: {
       openFile () {
@@ -278,7 +271,7 @@ destroyed() {
   doOnOrientationChange() {
     console.log(window.innerWidth)
     let _this = this
-    if(window.innerWidth < 420){
+    if(window.innerWidth > 420){
        var standardWidth= (document.getElementById('project_detail').offsetWidth)
        var standardHeight = (document.getElementById('project_detail').offsetHeight)* 0.47;
        this.mapStyle= `width:${standardWidth}px;height:${standardHeight}px`;

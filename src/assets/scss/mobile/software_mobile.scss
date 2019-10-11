@@ -1,179 +1,178 @@
 @media (max-width: 480px) and (min-width: 320px) {
-    .software{
-        height: 810px;
-        width: 100%;
-        overflow: hidden;
-        margin-bottom: -7px;
-    }
-    
-    .software_banner_word{
-        display: inline-block;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 4vw;
-        font-family: "Helvetica Neue", Helvetica, Frutiger, Univers, sans-serif;
-        position: relative;
-        margin-left: 1%;
-        font-weight: bold;
-        color: white;
-    }
-    
-    .software_banner_country {
-      display: inline-block;
-      white-space: pre;
-      font-weight: bold;
-    }
-    
-    .software_img{
-        background-image: url('../assets/img/005.jpg');
-        background-attachment: inherit;
-        background-size: 100% 100%;
-        width: 100%;
-        height: 180px;
-    }
-    
-    .software_banner{
-        background-color: #0182CA;
-        width: 100%;
-        height: 30px;
-    }
-    
-    .software_info{
-        width: 100%;
-        //height: max-content;
-        height: 592.91px;
-    }
-    
-    .fit_software_list{
-        width: 25%;
-        height: 100%;
-        float: left;
-    }
-    
-    .software_list{
-        width: 81%;
-        height: 100%;
-        border-right:1px solid grey;
-        border-left:1px solid grey;
-        //margin: 0 auto;
-    }
-    
-    .software_list_table{
-        //margin-top: 20px;
-        border-radius: 0;
-        //border-right: 1px solid grey;
-    }
-    
-    .software_list_table_header{
-        height: 20px;
-        background-color: #26a6f1;
-        line-height: 2;
-    }
-    
-    .software_list_title{
-        width: 100%;
-        //height: 100%;
+  .software {
+    height: 810px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: -7px;
+  }
+
+  .software_banner_word {
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4vw;
+    font-family: "Helvetica Neue", Helvetica, Frutiger, Univers, sans-serif;
+    position: relative;
+    margin-left: 1%;
+    font-weight: bold;
+    color: white;
+  }
+
+  .software_banner_country {
+    display: inline-block;
+    white-space: pre;
+    font-weight: bold;
+  }
+
+  .software_img {
+    background-image: url('../assets/img/005.jpg');
+    background-attachment: inherit;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 180px;
+  }
+
+  .software_banner {
+    background-color: #0182ca;
+    width: 100%;
+    height: 30px;
+  }
+
+  .software_info {
+    width: 100%;
+    //height: max-content;
+    height: 592.91px;
+  }
+
+  .fit_software_list {
+    width: 25%;
+    height: 100%;
+    float: left;
+  }
+
+  .software_list {
+    width: 81%;
+    height: 100%;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    //margin: 0 auto;
+  }
+
+  .software_list_table {
+    //margin-top: 20px;
+    border-radius: 0;
+    //border-right: 1px solid grey;
+  }
+
+  .software_list_table_header {
+    height: 20px;
+    background-color: #26a6f1;
+    line-height: 2;
+  }
+
+  .software_list_title {
+    width: 100%;
+    //height: 100%;
+    display: block;
+    text-align: left;
+    font-size: 7px;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: white;
+    //padding-left: 5%;
+  }
+
+  .software_list_item {
+    background-color: #fff;
+    color: black;
+    font-size: 2vw;
+    height: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    //border: 1.5px solid #e2e2e2;
+    //border-right: 2px solid #e2e2e2;
+  }
+
+  .software_list_item:hover {
+    background-color: #ecf5ff;
+    color: black;
+    cursor: pointer;
+  }
+
+  .software_detail {
+    width: 76%;
+    display: block;
+    float: left;
+    height: 98%;
+    margin-top: 1%;
+    margin-left: -2%;
+    box-shadow: 0 0 2px 1px #adadad;
+  }
+
+  .software_detail_list {
+    width: 100%;
+    height: 9%;
+    margin-top: 1%;
+
+    .software_detail_list_logo {
+      width: 25%;
+      height: 100%;
+      float: left;
+
+      img {
+        max-width: 100%;
+        max-height: 80%;
+        margin: 0 auto;
         display: block;
-        text-align: left;
-        font-size: 7px;
+      }
+    }
+
+    .software_detail_list_intro {
+      width: 70%;
+      float: left;
+      margin-left: 5%;
+
+      li {
+        font-size: 8px;
         font-family: Verdana, Tahoma, sans-serif;
-        color: white;
-        //padding-left: 5%;
+      }
     }
-    
-    .software_list_item{
-        background-color: #ffffff;
-        color: black;
-        font-size: 2vw;
-        height: 20px;
-        padding-top: 1px;
-        padding-bottom: 1px;
-        //border: 1.5px solid #e2e2e2;
-        //border-right: 2px solid #e2e2e2;
+
+    .double {
+      ul {
+        margin-top: 10px;
+      }
     }
-    
-    .software_list_item:hover{
-        background-color: #ecf5ff;
-        color: black;
-        cursor: pointer;
+  }
+
+  .software_detail_bottom {
+    height: 27%;
+    width: 100%;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      margin: 0 auto;
+      display: block;
     }
-    
-    .software_detail {
-        width: 76%;
-        display: block;
-        float: left;
-        height: 98%;
-        margin-top:1%;
-        margin-left: -2%;
-        box-shadow: 0px 0px 2px 1px #ADADAD;
-    }
-    
-    .software_detail_list{
-        width: 100%;
-        height: 9%;
-        margin-top: 1%;
-    
-        .software_detail_list_logo{
-            width: 25%;
-            height: 100%;
-            float:left;
-    
-            img{
-                max-width: 100%;
-                max-height: 80%;
-                margin:0 auto;
-                display: block;
-            }
-        }
-    
-        .software_detail_list_intro {
-            width: 70%;
-            float: left;
-            margin-left: 5%;
-    
-            li{
-                font-size: 8px;
-                font-family: Verdana, Tahoma, sans-serif;
-            }
-        }
-    
-        .double {
-    
-            ul{
-                margin-top: 10px;
-            }
-        }
-    }
-    
-    .software_detail_bottom{
-        height: 27%;
-        width: 100%;
-    
-        img{
-            max-width: 100%;
-            max-height: 100%;
-            margin:0 auto;
-            display: block;
-        }
-    }
-    
-    .software_detail_bottom_title{
-        height: 5%;
-        width: 100%;
-        text-align: center;
-        font-family: Verdana, Tahoma, sans-serif;
-        font-size: 18px;
-    }
-    
-    .data {
-        margin-top: -1%;
-    }
-    
-    .map {
-        margin-top: 1.5%;
-    }
-    
-    .gcp{
-        margin-top: 1%;
-    }
+  }
+
+  .software_detail_bottom_title {
+    height: 5%;
+    width: 100%;
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 18px;
+  }
+
+  .data {
+    margin-top: -1%;
+  }
+
+  .map {
+    margin-top: 1.5%;
+  }
+
+  .gcp {
+    margin-top: 1%;
+  }
 }

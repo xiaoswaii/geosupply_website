@@ -30,17 +30,45 @@ export default {
   data () {
       return {
           height: '',
-          width: ''
+          width: '',
+          tickWidth: '',
       }
   },
   mounted () {
-      if(window.innerWidth < 415){
+    this.initWindow();
+
+     this.$nextTick(function() {
+      window.addEventListener('resize', this.redefineWindow);
+
+      //Init
+      this.redefineWindow()
+    })
+
+  },
+
+  methods: {
+      initWindow () {
+        if(window.innerWidth < 415){
            this.height = ( window.innerHeight * 0.5 ) + 'px';
            this.width = ( window.innerWidth * 1 ) + 'px';
-      }
-      else {
+        }
+        else {
             this.height = ( document.getElementById("contact").offsetHeight * 0.5 ) + 'px';
             this.width = ( document.getElementById("app").offsetWidth * 0.48 ) + 'px';
+        }
+      },
+
+      redefineWindow (event) {
+          console.log(window.innerWidth)
+        this.tickWidth = document.documentElement.clientWidth;
+        if(window.innerWidth < 415){
+           this.height = ( window.innerHeight * 0.5 ) + 'px';
+           this.width = ( window.innerWidth * 1 ) + 'px';
+        }
+        else {
+            this.height = ( document.getElementById("contact").offsetHeight * 0.5 ) + 'px';
+            this.width = ( document.getElementById("app").offsetWidth * 0.48 ) + 'px';
+        }
       }
   }
 }
