@@ -3,7 +3,7 @@
   <div class="product_img"></div>
   <div class="product_banner">
     <div class="product_banner_word">
-    Product
+    {{ $t('banner.product') }}
     </div>
   </div>
   <div class="product_main">
@@ -26,7 +26,12 @@ export default {
   },
   methods: {
       locationContact(){
-        document.location.href="/ContactUs";
+        if(this.$i18n.locale=='zh'){
+          document.location.href="/ContactUs?lang=zh";
+        }
+        else {
+          document.location.href="/ContactUs";
+        }
       }
   }
 }

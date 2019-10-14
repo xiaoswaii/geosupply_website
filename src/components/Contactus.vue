@@ -36,7 +36,10 @@ export default {
   },
   mounted () {
     this.initWindow();
-
+    var lang = location.href.split('=')[1];
+    if(lang) {
+        this.$i18n.locale ='zh';
+    }
      this.$nextTick(function() {
       window.addEventListener('resize', this.redefineWindow);
 

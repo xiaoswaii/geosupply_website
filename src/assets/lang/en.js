@@ -101,8 +101,13 @@ module.exports = {
     },
 
     aboutUs: {
-        title:'Who Is Geosupply',
-        content1:'GeoSupply is the provider of automated and manual monitoring services.',
-        content2:'GeoSupply, headquartered in Taipei, Taiwan, has been expending its business throughout Asia and has successfully implanted its Geosupply Realtime Monitoring Platform in major infrastructure projects in a few South East Asia countries. Through the experiences of integrate cross platform monitoring services, we provide innovative and reliable system.',
+        title: 'Who Is Geosupply',
+        content1: 'GeoSupply is the provider of automated and manual monitoring services.',
+        content2: 'GeoSupply, headquartered in Taipei, Taiwan, has been expending its business throughout Asia and has successfully implanted its Geosupply Realtime Monitoring Platform in major infrastructure projects in a few South East Asia countries. Through the experiences of integrate cross platform monitoring services, we provide innovative and reliable system.',
+    },
+
+    footer: {
+        about: 'About GeoSupply',
+        addrs: '6F., No.28, Ln. 57, Jiancheng Rd., Xizhi Dist., New Taipei City 221, Taiwan (R.O.C.)'
     }
   }

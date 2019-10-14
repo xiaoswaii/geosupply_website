@@ -95,6 +95,25 @@ header {
   margin-right: -16px;
 }
 
+.changeLang {
+  background: rgb(13, 5, 129);
+  color :white;
+  //border-radius: 10%;
+  height: 30px;
+  width: 26px;
+  font-size: 20px;
+  text-align: center;
+  display: inline-block;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg);
+  transition: all .5s ease;
+  letter-spacing: 0ch;
+}
+
+.changeLang:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   .nav_logo {
     width: 20%;

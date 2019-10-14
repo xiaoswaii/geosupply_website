@@ -10,7 +10,8 @@
         <router-link active-class="router-active" to="./Product" class="title button">{{$t('nav.product')}}</router-link>
         <router-link active-class="router-active" to="./Contactus" class="title button">{{$t('nav.contact')}}</router-link>
         <router-link active-class="router-active" to="./Aboutus" class="title button">{{$t('nav.about')}}</router-link>
-        <span@click="test()">test</span>
+        <span id="changeLang" v-if="this.$i18n.locale == 'en'" class="changeLang" @click="test()">{{ this.$i18n.locale }}</span>
+        <span id="changeLang" v-else class="changeLang" @click="test()">中</span>
       </div>
     </header>
   </div>
@@ -34,14 +35,19 @@ export default {
 
   methods: {
     test() {
-      console.log('test')
-      console.log(this.$i18n.locale)
+      if(document.querySelector('#changeLang').style.transform == 'rotateX(360deg)'){
+        document.querySelector('#changeLang').style.transform = 'rotateX(0deg)'
+      }
+      else {
+        document.querySelector('#changeLang').style.transform = "rotateX(360deg)"
+      }
       if(this.$i18n.locale =='zh'){
         this.$i18n.locale ='en'
       }
       else {
         this.$i18n.locale ='zh'
       }
+      //document.querySelector('#changeLang').style.transform = "rotateX(0deg)"
     }
   }
 }

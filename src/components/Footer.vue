@@ -22,14 +22,14 @@
 			<div class="footer-right">
 
 				<p class="footer-company-about">
-					<span>About GeoSupply</span>
+					<span>{{ $t('footer.about') }}</span>
 					Provided domestic and international automated monitoring system engineering service
 				</p>
 			</div>
 			<div class="footer-center">
 				<div class="logo_section">
 					<i class="fa fa-map-marker"></i>
-					<p><span>6F., No.28, Ln. 57, Jiancheng Rd., Xizhi Dist., New Taipei City 221, Taiwan (R.O.C.)</span> </p>
+					<p><span>{{ $t('footer.addrs') }}</span> </p>
 				</div>
 				<div class="logo_section">
 					<i class="fa fa-phone"></i>
