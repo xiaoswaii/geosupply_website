@@ -3,7 +3,7 @@
     <div class="software_img"></div>
     <div class="software_banner">
       <div class="software_banner_word">
-        Software
+        {{ $t('banner.software') }}
       </div>
     </div>
   <div class="software_info">
@@ -12,18 +12,18 @@
         <table class="software_list_table">
 						<thead>
 							<tr class="software_list_table_header">
-								<th class="software_list_title" colspan="2">Cloud Platform</th>
+								<th class="software_list_title" colspan="2">{{ $t('software.listTitle') }}</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr class="software_list_item" @click="relocate('http://104.199.169.90')">
-								<td class="column1_software">Client Login #1</td>
+								<td class="column1_software">{{ $t('software.list[0]') }}</td>
 							</tr>
               <tr class="software_list_item" @click="relocate('https://geo.geosupply.com.tw')">
-								<td class="column1_software">Client Login #2</td>
+								<td class="column1_software">{{ $t('software.list[1]') }}</td>
 							</tr>
               <tr class="software_list_item">
-								<td class="column1_software">Demo</td>
+								<td class="column1_software">{{ $t('software.list[2]') }}</td>
 							</tr>
 						</tbody>
 					</table>
@@ -36,9 +36,7 @@
               </div>
               <div class="software_detail_list_intro">
                 <ul class="gcp">
-                  <li>GeoSupply Cloud Server at Google Cloud Platform</li>
-                  <li>Trust and Security</li>
-                  <li>Safe and secure</li>
+                  <li :key="list" v-for="list in $t('software.cloud')">{{ list }}</li>
                 </ul>
               </div>
             </div>
@@ -48,10 +46,7 @@
               </div>
               <div class="software_detail_list_intro">
                 <ul>
-                  <li>Integrate Different Type of Monitoring Systems 
-                      (Including Fiber Optic FBG System、Analog System、Digital System、Automated 
-                      Total Station、Vibration System and etc)
-                  </li>
+                  <li>{{ $t('software.intergrate[0]') }}</li>
                 </ul>
               </div>
             </div>
@@ -61,8 +56,7 @@
               </div>
               <div class="software_detail_list_intro double">
                 <ul>
-                  <li>Collect Data</li>
-                  <li>Manual and real-time data capture</li>
+                  <li :key="list" v-for="list in $t('software.collectData')">{{ list }}</li>
                 </ul>
               </div>
             </div>
@@ -72,10 +66,7 @@
               </div>
               <div class="software_detail_list_intro">
                 <ul class="data">
-                  <li>Data processing </li>
-                  <li>Calculation </li>
-                  <li>Data analysis </li>
-                  <li>Data Display</li>
+                  <li :key="list" v-for="list in $t('software.analysisData')">{{ list }}</li>
                 </ul>
               </div>
             </div>
@@ -85,8 +76,7 @@
               </div>
               <div class="software_detail_list_intro double">
                 <ul>
-                  <li>Custom Graphing</li>
-                  <li>Multi-axis (different sensors plot in one graph)</li>
+                  <li :key="list" v-for="list in $t('software.graph')">{{ list }}</li>
                 </ul>
               </div>
             </div>
@@ -96,9 +86,7 @@
               </div>
               <div class="software_detail_list_intro map">
                 <ul>
-                  <li>GIS Mapping</li>
-                  <li>Geographical View (OpenStreetMap)</li>
-                  <li>Any type of layout</li>
+                  <li :key="list" v-for="list in $t('software.map')">{{ list }}</li>
                 </ul>
               </div>
             </div>
@@ -108,8 +96,7 @@
               </div>
               <div class="software_detail_list_intro double">
                 <ul>
-                  <li>Trigger system</li>
-                  <li>Email / SMS notification</li>
+                  <li :key="list" v-for="list in $t('software.alarm')">{{ list }}</li>
                 </ul>
               </div>
             </div>
@@ -132,20 +119,6 @@ export default {
 	data () {
       return { }
 	},	
-
-  // beforeRouteUpdate(to) {
-  //   this.$route.params.name = to.params.name
-  // },
-
-
-  // watch: {
-  //   '$route' (to, from) {
-  //     console.log('hahaha')
-  //     if(to === from){
-  //       console.log('wtf')
-  //     }
-  //   }
-  // },
 
 	mounted () {	  
       var standardWidth = window.innerWidth * 0.49 + 'px';

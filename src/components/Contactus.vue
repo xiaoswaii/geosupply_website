@@ -3,16 +3,16 @@
         <div class="contact_img"></div>
         <div class="contact_banner">
             <div class="contact_banner_word">
-            Contact Us
+            {{ $t('banner.contact') }}
             </div>
         </div>
         <div class="contact_detail">
             <div class="contact_detail_table">
-                <h1 class="contact_info">Contact Info</h1>
-                <span class="contact_detail_list address"><span class="contact_detail_logo"><i class="fa fa-home fa-lg"></i></span><span class="contact_detail_word">6F., No.28, Ln. 57, Jiancheng Rd., Xizhi Dist., New Taipei City 221, Taiwan (R.O.C.)
-                    <br><br>1F., No.30, Ln. 56, Jiancheng Rd., Xizhi Dist., New Taipei City 221, Taiwan (R.O.C.)</span></span>
-                <span class="contact_detail_list"><span class="contact_detail_logo"><i class="fa fa-envelope fa-cus"></i></span><span class="contact_detail_word">geosupply.tw@gmail.com</span></span>
-                <span class="contact_detail_list"><span class="contact_detail_logo"><i class="fa fa-phone fa-lg"></i></span><span class="contact_detail_word">+886-918-883451  <br><br>+886‐2‐26481050</span></span>
+                <h1 class="contact_info">{{ $t('contactUs.title') }}</h1>
+                <span class="contact_detail_list address"><span class="contact_detail_logo"><i class="fa fa-home fa-lg"></i></span><span class="contact_detail_word">{{ $t('contactUs.addrs1') }}
+                    <br><br>{{ $t('contactUs.addrs2') }}</span></span>
+                <span class="contact_detail_list"><span class="contact_detail_logo"><i class="fa fa-envelope fa-cus"></i></span><span class="contact_detail_word">{{ $t('contactUs.email') }}</span></span>
+                <span class="contact_detail_list"><span class="contact_detail_logo"><i class="fa fa-phone fa-lg"></i></span><span class="contact_detail_word">{{ $t('contactUs.phone1') }}  <br><br>{{ $t('contactUs.phone2') }}</span></span>
             </div>
         </div>
         <div class="mapouter" :height="height" :width="width">
