@@ -126,34 +126,26 @@
 </template>
 
 <script>
-import  axios  from 'axios';
-
 export default {
 	name: 'Footer',
 	props: [],	
 	data () {
-      return {
-      mapStyle:"",
-      countries: ['Client Login','Client Login','Demo'],
-      countriesSelect: ['TAIWAN','MALAYSIA','INDONESIA'],
-		  raw: [],
-		  nowCountry: '',
-      }
+      return { }
 	},	
 
-  beforeRouteUpdate(to) {
-    this.$route.params.name = to.params.name
-  },
+  // beforeRouteUpdate(to) {
+  //   this.$route.params.name = to.params.name
+  // },
 
 
-  watch: {
-    '$route' (to, from) {
-      console.log('hahaha')
-      if(to === from){
-        console.log('wtf')
-      }
-    }
-  },
+  // watch: {
+  //   '$route' (to, from) {
+  //     console.log('hahaha')
+  //     if(to === from){
+  //       console.log('wtf')
+  //     }
+  //   }
+  // },
 
 	mounted () {	  
       var standardWidth = window.innerWidth * 0.49 + 'px';

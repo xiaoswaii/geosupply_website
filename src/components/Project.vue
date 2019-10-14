@@ -202,10 +202,10 @@ export default {
       openFile () {
           	  axios.get(`${window.location.protocol}/project.json`)
 		  	  .then(res =>{
-		  	  	  console.log(res);
+		  	  	  //console.log(res);
               this.raw = res.data.project;
               this.projectCountry = res.data.project;
-              console.log(this.raw);
+              //console.log(this.raw);
           })
           .then(res =>{
               this.projectMalaysia = this.raw.filter(element => element.place == 'Malaysia');
@@ -221,12 +221,12 @@ export default {
       this.projectCountry = [];
       this.projectDetail = {};
       this.countriesSelect = [country];
-		  this.projectCountry = this.raw.filter(element => element.place == country);
+      this.projectCountry = this.raw.filter(element => element.place == country);
       document.getElementById('project_list').style.display = 'block';
       document.getElementById('project_table').style.display = 'none';
       document.getElementById('fit_project_album').style.display = 'none';
       //document.getElementById('project_album').style.display = 'none';
-          var fontSize = document.querySelector('#projectBanner')
+      var fontSize = document.querySelector('#projectBanner')
     fontSize.classList.remove('small_font')
 	},
 
@@ -269,13 +269,11 @@ export default {
     else{ return this.zoomMobile }
   },
   doOnOrientationChange() {
-    console.log(window.innerWidth)
-    let _this = this
+    //let _this = this
     if(window.innerWidth > 420){
        var standardWidth= (document.getElementById('project_detail').offsetWidth)
        var standardHeight = (document.getElementById('project_detail').offsetHeight)* 0.47;
        this.mapStyle= `width:${standardWidth}px;height:${standardHeight}px`;
-       console.log('not straight')
        this.zooming();
     }else {
       var standardWidth= (document.getElementById('project_detail').offsetWidth)
