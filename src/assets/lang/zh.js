@@ -57,9 +57,9 @@ software: {
         'Demo'
         ],
     cloud: [
-        'GeoSupply 雲端伺服器架設於GCP(Google Cloud Platform, Google 雲端平台)。',
-        '可信賴與最安全之環境，無斷電之風險。',
-        '完善的防火牆且不易被駭客入侵，網路品質最佳。',
+        'GeoSupply雲端伺服器架設於GCP(Google Cloud Platform, Google雲端平台)',
+        '可信賴與最安全之環境，無斷電之風險',
+        '完善的防火牆且不易被駭客入侵，網路品質最佳',
     ],
     intergrate: [ 
         '可整合不同種類之監測系統(含光纖監測儀器, 一般類比訊號或數位訊號監測儀器, 全測站經緯儀系統, 微震量測 ,地震監測等)'
