@@ -96,18 +96,20 @@ header {
 }
 
 .changeLang {
-  background: rgb(13, 5, 129);
+  background: #0182ca;;
   color :white;
   //border-radius: 10%;
-  height: 30px;
+  height: 65px;
+  padding-top: 16px;
   width: 26px;
   font-size: 20px;
   text-align: center;
   display: inline-block;
   transform-style: preserve-3d;
-  transform: rotateX(0deg);
+  transform: rotateY(0deg);
   transition: all .5s ease;
   letter-spacing: 0ch;
+  box-sizing: border-box;
 }
 
 .changeLang:hover {

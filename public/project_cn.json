@@ -1,0 +1,114 @@
+{
+    "project":[
+        {
+            "place"     :"馬來西亞",
+            "name"      :"馬來西亞深開挖結構自動化監測系統",
+            "location"  :"Sentul, Kuala Lumpur, Malaysia",
+            "detail"    :"",
+            "contrator" :"",
+            "software"  :"自動化監測系統-GeoSupply 雲端平台",
+            "instrument":["荷重計","應變計","溫度計"],
+            "img"       :["project_img/project1/Picture1.png","project_img/project1/Picture2.png","project_img/project1/Picture3.png"]
+        },
+        {
+            "place"     :"馬來西亞",
+            "name"      :"深開挖基礎自動化監測系統",
+            "location"  :"Kampung Datuk Keramat, Kuala Lumpur, Malaysia",
+            "detail"    :"",
+            "contrator" :"",
+            "software"  :"自動化監測系統-GeoSupply 雲端平台",
+            "instrument":["荷重計","應變計","溫度計"],
+            "img"       :["project_img/project2/picture1.png","project_img/project2/picture2.png"]
+        },
+        {
+            "place"     :"馬來西亞",
+            "name"      :"Cadangan Pembangunan Bagi Perumahan Strata Bertanah 震動監測",
+            "location"  :"Cybersouth, Kuala Lumpur, Malaysia",
+            "detail"    :"",
+            "contrator" :"",
+            "software"  :"自動化監測系統-GeoSupply 雲端平台",
+            "instrument":["無線加速度計* 2 套"],
+            "img"       :["project_img/project3/picture1.png","project_img/project3/picture2.png","project_img/project3/picture3.png"]
+        },
+        {
+            "place"     :"印尼",
+            "name"      :"Mpp 辦公大樓自動化監測系統",
+            "location"  :"Tanah Abang Jakarta Pusat, Indonesia",
+            "detail"    :"",
+            "contrator" :["JO. SHIMIZU-BCK MPP PROJECT","PT PONDASI KISOCON RAYA"],
+            "software"  :"自動化監測系統-GeoSupply 雲端平台",
+            "instrument":["應變計"," 鋼筋計"],
+            "img"       :["project_img/project4/picture1.png","project_img/project4/picture2.png","project_img/project4/picture3.png"]
+        },
+        {
+            "place"     :"台灣",
+            "name"      :"桃園捷運-台灣機場捷運永久監測系統設備維護工作",
+            "location"  :"桃園機場捷運沿線",
+            "detail"    :"DWS係提供即時與長期監測系統，利用裝設之監測儀器提供營運警示之功能。係以安裝在適當地點之監測儀器，測讀相關數據，使其對各項安全監測中變化較大或難以掌握的現象能獲得即時資訊，俾利儘速反應並做出研判及分析，以有效掌握各種行為變化，對有異常之行為或現象提出預警。",
+            "contrator" :"Taoyuan Metro Corporation",
+            "software"  :"",
+            "instrument":["土中傾斜儀 (IPI)","水壓計","裂縫計","傾斜計","超音波水位計","雨量計","GPS衛星定位系統","監視器CCTV"],
+            "img"       :["project_img/project5/picture1.png","project_img/project5/picture2.png","project_img/project5/picture3.png"]
+        },
+        {
+            "place"     :"台灣",
+            "name"      :"公路總局-107年至109年度台62、台62甲線順向坡路段邊坡即時監測",
+            "location"  :"台62、台62甲線",
+            "detail"    :"台62線係萬里至瑞濱之東西向快速公路(又稱萬瑞快速道路)，其中部分路段位於風險較高之順向坡，故建立自動化預警防災監測系統，確保用路人安全。",
+            "contrator" :"Taoyuan Metro Corporation",
+            "software"  :"自動化監測系統-GeoSupply 雲端平台",
+            "instrument":["土中傾斜儀 (IPI)","水壓計","傾斜計","蹼輪式流量計","雨量計"],
+            "img"       :["project_img/project6/picture1.png","project_img/project6/picture2.png"]
+        },
+        {
+            "place"     :"台灣",
+            "name"      :"台灣高鐵-合約T1-18-009標「高鐵里程TK122西側路堤改善工程-自動化監測」",
+            "location"  :"高鐵里程TK122",
+            "detail"    :"高鐵里程TK122西側路堤改善工程-自動化監測。",
+            "contrator" :["SOUKEN ENGINEERING CO., LTD.","Diagnostic Engineering Consultant Co., Ltd."],
+            "software"  :"自動化監測系統-GeoSupply 雲端平台",
+            "instrument":["排列電子式傾斜儀SAA"],
+            "img"       :["project_img/project7/picture1.png","project_img/project7/picture2.png"]
+        },
+        {
+            "place"     :"台灣",
+            "name"      :"台灣高鐵-合約C1-19-004標「高鐵里程TK94、TK168與TK188等三路段土建結構位移監測工作",
+            "location"  :"高鐵里程TK94、TK168與TK188",
+            "detail"    :"高鐵里程TK94、TK168與TK188等三路段土建結構位移監測工作。",
+            "contrator" :"Taiwan High Speed Railway Corporation",
+            "software"  :"自動化監測系統-GeoSupply 雲端平台",
+            "instrument":["水壓計","傾斜計","雨量計"],
+            "img"       :["project_img/project8/picture1.png","project_img/project8/picture2.png","project_img/project8/picture3.png"]
+        },
+        {
+            "place"     :"台灣",
+            "name"      :"台灣高鐵-合約T1-19-006標「高鐵里程TK170路堤改善工程FBG光纖DSM自動化監測」",
+            "location"  :"高鐵里程TK170",
+            "detail"    :"TK170路堤改善工程FBG光纖DSM自動化監測",
+            "contrator" :["TP Engineering Construction Co., Ltd","Citpo Tech"],
+            "software"  :"自動化監測系統-GeoSupply 雲端平台)",
+            "instrument":["FBG光纖連通管式沉陷計(DSM)"],
+            "img"       :["project_img/project9/picture1.png","project_img/project9/picture2.png"]
+        },
+        {
+            "place"     :"台灣",
+            "name"      :"台灣高鐵-合約C1-19-007標「高鐵苗栗路工段噴泥調查與改善工程初步設計工作顧問服務之自動化監測系統」",
+            "location"  :"高鐵里程TK88，TK100",
+            "detail"    :"高鐵苗栗路工段噴泥調查與改善工程初步設計工作顧問服務之自動化監測系統。",
+            "contrator" :"Sino Geotechnology, Inc.",
+            "software"  :"Real Time Monitoring System ( Geosupply Cloud Platform)",
+            "instrument":["含水量計(土壤飽和計)","層別沉陷計","傾斜計","水壓計"],
+            "img"       :["project_img/project10/picture1.png","project_img/project10/picture2.png"]
+        },
+        {
+            "place"     :"台灣",
+            "name"      :"桃園市政府水務局-「工四工業區東側坑溝兩岸滯洪沉砂設施工程」超音波水位計自動化監測",
+            "location"  :"桃園工四工業區",
+            "detail"    :"工四工業區東側坑溝兩岸滯洪沉砂設施工程」超音波水位計自動化監測。",
+            "contrator" :"Yu Cheng Construction Engineering Co., Ltd.",
+            "software"  :"自動化監測系統-GeoSupply 雲端平台",
+            "instrument":["超音波水位計"],
+            "img"       :["project_img/project11/picture1.png","project_img/project11/picture2.png"]
+        }
+    ]
+}

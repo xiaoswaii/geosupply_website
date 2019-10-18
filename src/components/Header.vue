@@ -35,11 +35,11 @@ export default {
 
   methods: {
     test() {
-      if(document.querySelector('#changeLang').style.transform == 'rotateX(360deg)'){
-        document.querySelector('#changeLang').style.transform = 'rotateX(0deg)'
+      if(document.querySelector('#changeLang').style.transform == 'rotateY(360deg)'){
+        document.querySelector('#changeLang').style.transform = 'rotateY(0deg)'
       }
       else {
-        document.querySelector('#changeLang').style.transform = "rotateX(360deg)"
+        document.querySelector('#changeLang').style.transform = "rotateY(360deg)"
       }
       if(this.$i18n.locale =='zh'){
         this.$i18n.locale ='en'

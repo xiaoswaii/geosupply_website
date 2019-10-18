@@ -3,7 +3,7 @@
     <div class="project_img"></div>
     <div class="project_banner">
       <div class="project_banner_word" id="projectBanner">
-        Project <div class="project_banner_country" id="projectCountry" v-if="countriesSelect.length == 1"> > {{ countriesSelect[0] }} </div><div class="project_banner_country" id="projectName" v-if="projectDetail"> > {{ projectDetail.name }}</div>
+        {{ $t('banner.project') }}<div class="project_banner_country" id="projectCountry" v-if="countriesSelect.length == 1"> > {{ countriesSelect[0] }} </div><div class="project_banner_country" id="projectName" v-if="projectDetail"> > {{ projectDetail.name }}</div>
       </div>
     </div>
   <div class="project_info">
@@ -16,7 +16,7 @@
         <table class="project_list_table">
 						<thead>
 							<tr class="project_list_table_header">
-								<th class="project_list_title" colspan="2">LIST OF COUNTRY</th>
+								<th class="project_list_title" colspan="2">{{ $t('project.listOfCountry') }}</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -24,7 +24,7 @@
 									<td class="column1_project" @click="showCountry(country)">{{ country }}</td>
 								</tr>
                 <tr class="project_list_item">
-									<td class="column1_project" @click="listAll()">List All</td>
+									<td class="column1_project" @click="listAll()">{{ $t('project.listAll') }}</td>
 								</tr>
 						</tbody>
 					</table>
@@ -74,13 +74,13 @@
          <table class="project_detail_table_whole" id="project_detail_table">
 						<thead>
 							<tr class="table100-head">
-								<th class="column" colspan="2">Project Detail</th>
+								<th class="column" colspan="2">{{ $t('project.detailTitle') }}</th>
 							</tr>
 						</thead>
               <ul class="project_details_list">
                 <br>
                 <li v-if="projectDetail.name" class="project_detail_li">
-                    <span>Name of Project:</span>
+                    <span>{{ $t('project.name') }}</span>
                     <span>{{ projectDetail.name }}</span>
                 </li>
                 <br v-if="projectDetail.name">
@@ -88,14 +88,14 @@
                 
                 
                 <li v-if="projectDetail.location" class="project_detail_li place">
-                  <span>Project Location:</span>
+                  <span>{{ $t('project.location') }}</span>
                   <span>{{ projectDetail.location }}</span>
                 </li>
                 <br v-if="projectDetail.location">
                 <div v-if="projectDetail.location" class="line"></div>
      
                 <li v-if="projectDetail.contractor" class="project_detail_li contractor">
-                  <span>Main Contractor:</span>
+                  <span>{{ $t('project.contractor') }}</span>
                   <span>{{ projectDetail.contractor }}</span>
                 </li>
                 <br v-if="projectDetail.contractor">
@@ -103,7 +103,7 @@
                 
                 
                 <li v-if="projectDetail.software" class="project_detail_li grey">
-                  <span>Software:</span>
+                  <span>{{ $t('project.software') }}</span>
                   <span>{{ projectDetail.software }}</span>
                 </li>
                 <br v-if="projectDetail.software">
@@ -111,14 +111,14 @@
                 
                 
                 <li v-if="projectDetail.detail" class="project_detail_li">
-                  <span>Project Detail:</span>
+                  <span>{{ $t('project.detail') }}</span>
                   <span>{{ projectDetail.detail }}</span>
                 </li>
                 <br v-if="projectDetail.detail">
                 <div v-if="projectDetail.detail" class="line"></div>
                 
                 <li class="project_detail_li">
-                  <span>Instrument:</span>
+                  <span>{{ $t('project.instrument') }}</span>
                   <span :key="instrument" v-for="instrument in projectDetail.instrument">{{ instrument }}</span>
                 </li>
                 <br>
@@ -159,24 +159,17 @@ export default {
       projectIndonesia: [],
       projectCountry: [],
       }
-	},	
-
-  beforeRouteUpdate(to) {
-    this.$route.params.name = to.params.name
-  },
-
-
-  watch: {
-    '$route' (to, from) {
-      console.log('hahaha')
-      if(to === from){
-        console.log('wtf')
-      }
-    }
   },
 
 	mounted () {
-      this.openFile();	  
+      if(this.$i18n.locale =="en"){
+        this.openFile();
+      }
+      else{
+        this.openFileCn();
+        this.countries=['台灣','馬來西亞','印尼'];
+        this.countriesSelect=['台灣','馬來西亞','印尼'];
+      }
        var country = location.href.split('=')[1]
        if(country){
         this.showCountry(country);
@@ -198,7 +191,35 @@ export default {
       })
   },
 
+computed: {
+    changeLang: function() {
+      return this.$i18n.locale;
+    }
+  },
+
+  watch: {
+    changeLang: function(val){
+      console.log(val)
+      if(val == "zh"){
+        this.openFileCn();
+        this.countries=['台灣','馬來西亞','印尼'];
+        this.countriesSelect=['台灣','馬來西亞','印尼'];
+        
+      }else{
+        this.openFile();
+        this.countries=['Taiwan','Malaysia','Indonesia'];
+        this.countriesSelect=['Taiwan','Malaysia','Indonesia'];
+      }
+      this.listAll();
+    }
+  },
+
+
+
 	methods: {
+      fuck () {
+        console.log('jibaila')
+      },
       openFile () {
           	  axios.get(`${window.location.protocol}/project.json`)
 		  	  .then(res =>{
@@ -211,6 +232,24 @@ export default {
               this.projectMalaysia = this.raw.filter(element => element.place == 'Malaysia');
               this.projectIndonesia = this.raw.filter(element => element.place == 'Indonesia');
               this.projectTaiwan = this.raw.filter(element => element.place == 'Taiwan');
+          })   
+          // .catch(err => {
+		  	  //     console.log(err);
+          // })
+  },
+  
+        openFileCn () {
+          	  axios.get(`${window.location.protocol}/project_cn.json`)
+		  	  .then(res =>{
+		  	  	  //console.log(res);
+              this.raw = res.data.project;
+              this.projectCountry = res.data.project;
+              console.log(this.raw);
+          })
+          .then(res =>{
+              this.projectMalaysia = this.raw.filter(element => element.place == '馬來西亞');
+              this.projectIndonesia = this.raw.filter(element => element.place == '印尼');
+              this.projectTaiwan = this.raw.filter(element => element.place == '台灣');
           })   
           // .catch(err => {
 		  	  //     console.log(err);
@@ -231,7 +270,12 @@ export default {
 	},
 
   listAll () {
-    this.countriesSelect = ['Taiwan','Malaysia','Indonesia'];
+    if(this.$i18n.locale =="en"){
+      this.countriesSelect = ['Taiwan','Malaysia','Indonesia'];
+    }
+    else {
+      this.countriesSelect=['台灣','馬來西亞','印尼'];
+    }
     this.projectDetail = {};
     this.projectCountry = this.raw;
     document.getElementById('project_list').style.display = 'block';

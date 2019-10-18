@@ -1,4 +1,5 @@
 module.exports = {
+    lang:"en",
     nav: {
        home:"HOME",
        project:"PROJECT",
@@ -45,6 +46,18 @@ module.exports = {
            indonesia:"Indonesia",
            read:"Read more"
        }
+   },
+
+   project: {
+      detailTitle:"Project Detail",
+      name:"Name of Project:",
+      location:"Project Location:",
+      contractor:"Main Contractor:",
+      software:"Software:",
+      detail:"Project Detail:",
+      instrument:"Instrument",
+      listAll:"List All",
+      listOfCountry:"LIST OF COUNTRY"
    },
 
    software: {

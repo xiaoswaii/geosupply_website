@@ -1,4 +1,5 @@
 module.exports = {
+    lang:"zh",
     nav : {
         home:"首頁",
         project:"工程實績",
@@ -48,6 +49,18 @@ module.exports = {
         read:"了解更多"
     }
 },
+
+project: {
+    detailTitle:"簡介",
+    name:"工程名稱：",
+    location:"專案區域位置：",
+    contractor:"Main Contractor:",
+    software:"軟體：",
+    detail:"專案說明：",
+    instrument:"監測儀器：",
+    listAll:"顯示全部",
+    listOfCountry:"國家列表"
+ },
 
 software: {
     listTitle: '雲端軟平台',

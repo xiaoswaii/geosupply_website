@@ -2,6 +2,7 @@
     "project":[
         {
             "place"     :"Malaysia",
+            "displayPlace":"Malaysia",
             "name"      :"Deep Excavation Structure Monitoring Project",
             "location"  :"Sentul, Kuala Lumpur, Malaysia",
             "detail"    :"",
@@ -12,6 +13,7 @@
         },
         {
             "place"     :"Malaysia",
+            "displayPlace":"Malaysia",
             "name"      :"Deep Excavation Foundation Monitoring Project",
             "location"  :"Kampung Datuk Keramat, Kuala Lumpur, Malaysia",
             "detail"    :"",
@@ -22,6 +24,7 @@
         },
         {
             "place"     :"Malaysia",
+            "displayPlace":"Malaysia",
             "name"      :"Cadangan Pembangunan Bagi Perumahan Strata Bertanah",
             "location"  :"Cybersouth, Kuala Lumpur, Malaysia",
             "detail"    :"",
