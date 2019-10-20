@@ -125,7 +125,7 @@
                 <br>
               </ul>
 					  </table> 
-            <span id="back" class="back" @click="listAll()">&laquo;{{ $t('project.back') }}</span>
+            <span id="back" class="back" @click="listAll()">&#8249;&nbsp;{{ $t('project.back') }}</span>
           </div>
       </div>
     </div>
@@ -264,15 +264,7 @@ computed: {
       document.getElementById('project_table').style.display = 'none';
       document.getElementById('fit_project_album').style.display = 'none';
       //document.getElementById('project_album').style.display = 'none';
-      var fontSize = document.querySelector('#projectBanner')
-      fontSize.classList.remove('small_font')
-      var fontSize = document.querySelector('#projectBanner')
-      fontSize.classList.remove('small_font_com')
-      var fontSize = document.querySelector('#projectBanner')
-      fontSize.classList.remove('small_font_cn')
-      var fontSize = document.querySelector('#projectBanner')
-      fontSize.classList.remove('exsmall_font_cn')
-      
+      this.removeSmallFont();  
 	},
 
   listAll () {
@@ -288,8 +280,7 @@ computed: {
     document.getElementById('project_table').style.display = 'none';
     document.getElementById('fit_project_album').style.display = 'none';
     //document.getElementById('project_album').style.display = 'none';
-    var fontSize = document.querySelector('#projectBanner')
-    fontSize.classList.remove('small_font_com')
+    this.removeSmallFont();  
   },
 
 	showProject (project) {
@@ -336,7 +327,13 @@ computed: {
       this.mapStyle= `width:${standardWidth}px;height:${standardHeight}px`;
       this.zooming();
     }
-},
+  },
+
+  removeSmallFont () {
+      var fontSize = document.querySelector('#projectBanner')
+      fontSize.classList.remove('small_font')
+      fontSize.classList.remove('small_font_cn')
+  }
   },
 
   beforeDestroy() {
