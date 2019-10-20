@@ -62,7 +62,7 @@ export default {
       },
 
       redefineWindow (event) {
-          console.log(window.innerWidth)
+        //console.log(window.innerWidth)
         this.tickWidth = document.documentElement.clientWidth;
         if(window.innerWidth < 415){
            this.height = ( window.innerHeight * 0.5 ) + 'px';

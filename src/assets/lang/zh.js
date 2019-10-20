@@ -19,9 +19,9 @@ module.exports = {
 
    index: {
     about:{
-        title:"創新 x 完善 x 可信賴",
+        title:"創新 · 完善 · 可信賴",
         content1:"「捷貿儀器工程」自成立以來，已提供國內外相關自動化監測系統工程服務。如高鐵、捷運、道路之土木與大地等，相關工程監測系統專業服務。",
-        content2:"本公司同仁具有超過15年之豐富監測經驗，且自動化監測雲端平台(GeoSupply Cloud Platform)已運用於國內外數個重大公共工程。"
+        content2:"本公司專業團隊具有超過15年之豐富的監測實務經驗，以確實負責的原則提供客戶專業、全方位的服務。"
     },
     product: {
         title:"產品介紹",
@@ -34,9 +34,9 @@ module.exports = {
         title:"服務範圍",
         instrutmentTitle:"自動化監測系統",
         instrumentContent:"(捷運. 高速鐵路, 橋梁, 水庫, 邊坡, 路堤, 開挖, 邊坡滑動, 水位, 管線, 隧道 和 風力發電風機等)",
-        services: ['噪音監測',
-            '微震/地震監測',
-            '光纖自動化監測',
+        services: ['噪音/微震/地震監測',
+            '物聯網技術IOT監測網',
+            '光纖自動化監測(含光纖FBG 連通管式沉陷計/IPI/水壓計/應變計等)',
             '網頁型自動化監測雲端平台',
             '客製化顯示與分析軟體',
             ]
@@ -59,7 +59,8 @@ project: {
     detail:"專案說明：",
     instrument:"監測儀器：",
     listAll:"顯示全部",
-    listOfCountry:"國家列表"
+    listOfCountry:"國家列表",
+    back:"返回"
  },
 
 software: {

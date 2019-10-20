@@ -91,7 +91,7 @@
             "contrator" :["TP Engineering Construction Co., Ltd","Citpo Tech"],
             "software"  :"Real Time Monitoring System ( Geosupply Cloud Platform)",
             "instrument":["Fiber Optic Liquid Settlement System"],
-            "img"       :["project_img/project9/picture1.png","project_img/project9/picture2.png"]
+            "img"       :["project_img/project9/picture1.png","project_img/project9/picture2.png","project_img/project9/picture3.jpg","project_img/project9/picture4.jpg","project_img/project9/picture5.jpg"]
         },
         {
             "place"     :"Taiwan",
@@ -101,7 +101,7 @@
             "contrator" :"Sino Geotechnology, Inc.",
             "software"  :"Real Time Monitoring System ( Geosupply Cloud Platform)",
             "instrument":["Tilt Meter","Vibration Monitoring","High Speed Camare (8000fps)","Soil Moisture Sensor","Piezometer","Spider Type Extensometer"],
-            "img"       :["project_img/project10/picture1.png","project_img/project10/picture2.png"]
+            "img"       :["project_img/project10/picture1.png","project_img/project10/picture2.png","project_img/project10/picture3.jpg","project_img/project10/picture4.jpg","project_img/project10/picture5.jpg"]
         },
         {
             "place"     :"Taiwan",

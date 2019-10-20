@@ -3,7 +3,7 @@
     <div class="project_img"></div>
     <div class="project_banner">
       <div class="project_banner_word" id="projectBanner">
-        {{ $t('banner.project') }}<div class="project_banner_country" id="projectCountry" v-if="countriesSelect.length == 1"> > {{ countriesSelect[0] }} </div><div class="project_banner_country" id="projectName" v-if="projectDetail"> > {{ projectDetail.name }}</div>
+        {{ $t('banner.project') }}<div class="project_banner_country" id="projectCountry" v-if="countriesSelect.length == 1"> > {{ countriesSelect[0] }} </div><div class="project_banner_country" id="projectName" v-if="projectDetail.shortName"> > {{ projectDetail.shortName }}</div><div class="project_banner_country" id="projectName" v-else> > {{ projectDetail.name }}</div>
       </div>
     </div>
   <div class="project_info">
@@ -47,14 +47,15 @@
           @click="center=m.position"
         />
       </GmapMap>
-        <div id="country_list">
+        <div id="country_list" class="country_list">
           <div :key="country" v-for="country in countriesSelect">
           <br>
           <span>{{ country }}</span>
           <span class="country_br"></span>
           <ul>
             <div :key="project.name" v-for="project in projectCountry">
-              <li class="li" v-if="project.place == country" @click="showProject( project.name )">{{ project.name }}</li>
+              <li class="li" v-if="project.place == country && project.shortName" @click="showProject( project.name )">{{ project.shortName }}</li>
+              <li class="li" v-else-if="project.place == country" @click="showProject( project.name )">{{ project.name }}</li>
             </div>
           </ul>
           </div>
@@ -71,7 +72,7 @@
         </div>
       </div>
       <div class="project_table" id="project_table">
-         <table class="project_detail_table_whole" id="project_detail_table">
+          <table class="project_detail_table_whole" id="project_detail_table">
 						<thead>
 							<tr class="table100-head">
 								<th class="column" colspan="2">{{ $t('project.detailTitle') }}</th>
@@ -94,12 +95,12 @@
                 <br v-if="projectDetail.location">
                 <div v-if="projectDetail.location" class="line"></div>
      
-                <li v-if="projectDetail.contractor" class="project_detail_li contractor">
+                <li v-if="projectDetail.contrator" class="project_detail_li contractor">
                   <span>{{ $t('project.contractor') }}</span>
-                  <span>{{ projectDetail.contractor }}</span>
+                  <span>{{ projectDetail.contrator }}</span>
                 </li>
-                <br v-if="projectDetail.contractor">
-                <div v-if="projectDetail.contractor" class="line"></div>
+                <br v-if="projectDetail.contrator">
+                <div v-if="projectDetail.contrator" class="line"></div>
                 
                 
                 <li v-if="projectDetail.software" class="project_detail_li grey">
@@ -123,7 +124,8 @@
                 </li>
                 <br>
               </ul>
-					</table> 
+					  </table> 
+            <span id="back" class="back" @click="listAll()">&laquo;{{ $t('project.back') }}</span>
           </div>
       </div>
     </div>
@@ -217,9 +219,6 @@ computed: {
 
 
 	methods: {
-      fuck () {
-        console.log('jibaila')
-      },
       openFile () {
           	  axios.get(`${window.location.protocol}/project.json`)
 		  	  .then(res =>{
@@ -266,7 +265,14 @@ computed: {
       document.getElementById('fit_project_album').style.display = 'none';
       //document.getElementById('project_album').style.display = 'none';
       var fontSize = document.querySelector('#projectBanner')
-    fontSize.classList.remove('small_font')
+      fontSize.classList.remove('small_font')
+      var fontSize = document.querySelector('#projectBanner')
+      fontSize.classList.remove('small_font_com')
+      var fontSize = document.querySelector('#projectBanner')
+      fontSize.classList.remove('small_font_cn')
+      var fontSize = document.querySelector('#projectBanner')
+      fontSize.classList.remove('exsmall_font_cn')
+      
 	},
 
   listAll () {
@@ -283,7 +289,7 @@ computed: {
     document.getElementById('fit_project_album').style.display = 'none';
     //document.getElementById('project_album').style.display = 'none';
     var fontSize = document.querySelector('#projectBanner')
-    fontSize.classList.remove('small_font')
+    fontSize.classList.remove('small_font_com')
   },
 
 	showProject (project) {
@@ -294,7 +300,11 @@ computed: {
       this.projectPhotoNow = tempProjectDetail[0].img[0];
       document.getElementById('project_table').style.display = 'block';
       document.getElementById('fit_project_album').style.display = 'block';
-
+      console.log(this.projectDetail.name.length)
+      if(this.projectDetail.name.length >=40 && this.changeLang =="zh") {
+        var fontSize = document.querySelector('#projectBanner')
+        fontSize.classList.add('small_font_cn')
+      }
       if(this.projectDetail.name.length >=60) {
         var fontSize = document.querySelector('#projectBanner')
         fontSize.classList.add('small_font')
@@ -312,6 +322,7 @@ computed: {
     }
     else{ return this.zoomMobile }
   },
+
   doOnOrientationChange() {
     //let _this = this
     if(window.innerWidth > 420){

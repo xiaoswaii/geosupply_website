@@ -1,6 +1,6 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .project {
-    height: 830px;
+    height: 850px;
     width: 100%;
     overflow: hidden;
     margin-bottom: -2%;
@@ -19,6 +19,13 @@
     .small_font {
       font-size: 2.5vw;
     }
+
+    .small_font_cn {
+      font-size: 2.5vw;
+    }
+    .exsmall_font_cn {
+      font-size: 1.9vw;
+    }
   }
 
   .project_info {
@@ -32,8 +39,13 @@
     font-weight: bold;
   }
 
+  .country_list {
+    height: 50%;
+  }
+
   .li {
-    font-size: 3vw;
+    font-size: 2.8vw;
+    -webkit-font-size: 2.8vw;
   }
 
   .project_img {
@@ -83,16 +95,25 @@
 
   .project_detail_table_whole {
     margin-left: -6.5%;
-    width: 110%;
+    width: 105%;
     height: auto;
     -webkit-box-shadow: 0 0 2px 0 #adadad;
     box-shadow: 0 0 2px 0 #adadad;
   }
 
+  .project_details_list li span:nth-child(1) {
+    width: 25%;
+    padding-inline-start: 3%;
+}
+
+  .project_details_list li span:nth-child(n+2) {
+    padding-left: 0%;
+    }
+
   .project_detail_li {
     overflow: auto;
     font-family: Verdana, Tahoma, sans-serif;
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
 
   .fit_project_album {
@@ -111,10 +132,24 @@
     width: 85%;
   }
 
+  .project_detail {
+    width: 75%;
+  }
+
   .project_detail_list {
     span {
-      font-size: 4vw;
+      font-size: 3.8vw;
     }
+  }
+
+  .fit_project_list {
+    width: 25%;
+    height: 632px;
+    float: left;
+}
+
+  ul {
+    line-height: 1.4;
   }
 
   .project_list_title {
@@ -126,5 +161,14 @@
     margin-left: 3.5%;
     width: 98%;
     display: none;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) and (orientation: landscape) {
+  
+  //CSS
+  .li {
+    font-size: 3.5vh;
+    -webkit-font-size: 3.5vh;
   }
 }

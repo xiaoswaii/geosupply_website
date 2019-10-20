@@ -33,8 +33,8 @@ module.exports = {
            title:"Service Provided",
            instrutmentTitle:"Instrumentation Monitoring System",
            instrumentContent:"(MRT, High Speed Railway, Bridges, Dams, Slope, Embankments, Excavation, Land Fills, Ground Water, Mines, Pipelines, Tunnels and Wind Turbines)",
-           services: ['Noise Monitoring',
-                    'Earthquake Monitoring',
+           services: ['Noise Monitoring / Earthquake Monitoring',
+                    'IOT Technology Monitoring System',
                     'Fiber Optic(FBG) Real Time Monitoring System', 
                     'Web‐based Cloud‐based RTMS',
                     'Display and Analysis Software']
@@ -57,7 +57,8 @@ module.exports = {
       detail:"Project Detail:",
       instrument:"Instrument",
       listAll:"List All",
-      listOfCountry:"LIST OF COUNTRY"
+      listOfCountry:"LIST OF COUNTRY",
+      back:"BACK"
    },
 
    software: {

@@ -22,7 +22,7 @@
               <tr class="software_list_item" @click="relocate('https://geo.geosupply.com.tw')">
 								<td class="column1_software">{{ $t('software.list[1]') }}</td>
 							</tr>
-              <tr class="software_list_item">
+              <tr class="software_list_item" @click="relocate('http://104.199.169.90/login')">
 								<td class="column1_software">{{ $t('software.list[2]') }}</td>
 							</tr>
 						</tbody>
