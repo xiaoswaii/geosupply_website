@@ -39,7 +39,7 @@
             "shortName" :"Mpp 辦公大樓自動化監測系統",
             "location"  :"Tanah Abang Jakarta Pusat, Indonesia",
             "detail"    :"",
-            "contrator" :["JO. SHIMIZU-BCK MPP PROJECT","PT PONDASI KISOCON RAYA"],
+            "contrator" :"JO. SHIMIZU-BCK MPP PROJECT , PT PONDASI KISOCON RAYA",
             "software"  :"自動化監測系統-GeoSupply 雲端平台",
             "instrument":["應變計"," 鋼筋計"],
             "img"       :["project_img/project4/picture1.png","project_img/project4/picture2.png","project_img/project4/picture3.png"]
@@ -72,7 +72,7 @@
             "shortName" :"高鐵TK122西側路堤改善工程-自動化監測",
             "location"  :"高鐵里程TK122",
             "detail"    :"高鐵里程TK122西側路堤改善工程-自動化監測。",
-            "contrator" :["SOUKEN ENGINEERING CO., LTD.","Diagnostic Engineering Consultant Co., Ltd."],
+            "contrator" :"SOUKEN ENGINEERING CO., LTD. , Diagnostic Engineering Consultant Co., Ltd.",
             "software"  :"自動化監測系統-GeoSupply 雲端平台",
             "instrument":["排列電子式傾斜儀SAA"],
             "img"       :["project_img/project7/picture1.png","project_img/project7/picture2.png"]
@@ -94,7 +94,7 @@
             "shortName" :"高鐵TK170路堤改善工程FBG光纖DSM自動化監測",
             "location"  :"高鐵里程TK170",
             "detail"    :"TK170路堤改善工程FBG光纖DSM自動化監測",
-            "contrator" :["TP Engineering Construction Co., Ltd","Citpo Tech"],
+            "contrator" :"TP Engineering Construction Co., Ltd , Citpo Tech",
             "software"  :"自動化監測系統-GeoSupply 雲端平台)",
             "instrument":["FBG光纖連通管式沉陷計(DSM)"],
             "img"       :["project_img/project9/picture1.png","project_img/project9/picture2.png","project_img/project9/picture3.jpg","project_img/project9/picture4.jpg","project_img/project9/picture5.jpg"]

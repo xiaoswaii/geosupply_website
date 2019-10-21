@@ -38,7 +38,7 @@
             "name"      :"Mpp Office Building Project: Supply Install And Monitoring Of Instrumentation",
             "location"  :"Tanah Abang Jakarta Pusat, Indonesia",
             "detail"    :"",
-            "contrator" :["JO. SHIMIZU-BCK MPP PROJECT","PT PONDASI KISOCON RAYA"],
+            "contrator" :"JO. SHIMIZU-BCK MPP PROJECT , PT PONDASI KISOCON RAYA",
             "software"  :"Real Time Monitoring System (Geosupply Cloud Platform)",
             "instrument":["Strain Gauge (for King Post)"," Rebar Stress (for Slab)"],
             "img"       :["project_img/project4/picture1.png","project_img/project4/picture2.png","project_img/project4/picture3.png"]
@@ -68,7 +68,7 @@
             "name"      :"Taiwan High Speed Railway Contract T1-18-009",
             "location"  :"Taiwan High Speed Railway TK122+340~400",
             "detail"    :"TK122+340~400 Embankment Improvement Real Time Monitoring System",
-            "contrator" :["SOUKEN ENGINEERING CO., LTD.","Diagnostic Engineering Consultant Co., Ltd."],
+            "contrator" :"SOUKEN ENGINEERING CO., LTD. , Diagnostic Engineering Consultant Co., Ltd.",
             "software"  :"Real Time Monitoring System ( Geosupply Cloud Platform)",
             "instrument":["Measurand SAA"],
             "img"       :["project_img/project7/picture1.png","project_img/project7/picture2.png"]
@@ -88,7 +88,7 @@
             "name"      :"Taiwan High Speed Railway Contract T1-19-006",
             "location"  :"Taiwan High Speed Railway TK170",
             "detail"    :"TK170+360~412.5 Embankment Improvement Real Time Monitoring System",
-            "contrator" :["TP Engineering Construction Co., Ltd","Citpo Tech"],
+            "contrator" :"TP Engineering Construction Co., Ltd , Citpo Tech",
             "software"  :"Real Time Monitoring System ( Geosupply Cloud Platform)",
             "instrument":["Fiber Optic Liquid Settlement System"],
             "img"       :["project_img/project9/picture1.png","project_img/project9/picture2.png","project_img/project9/picture3.jpg","project_img/project9/picture4.jpg","project_img/project9/picture5.jpg"]

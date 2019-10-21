@@ -13,7 +13,7 @@
     font-size: 3vw;
 
     .project_banner_word {
-      font-size: 3vw;
+      font-size: 4vw;
     }
 
     .small_font {
@@ -23,6 +23,7 @@
     .small_font_cn {
       font-size: 2.5vw;
     }
+
     .exsmall_font_cn {
       font-size: 1.9vw;
     }
@@ -51,7 +52,7 @@
   .project_img {
     background-image: url(/img/006.16dc0291.jpg);
     background-attachment: inherit;
-    background-size: 100% 100%;
+    background-size: 120% 100%;
     width: 100%;
     height: 180px;
   }
@@ -59,6 +60,10 @@
   .project_list_title {
     font-size: 1.8vw;
     padding-top: 4px;
+  }
+
+  .project_list {
+    height: 633px;
   }
 
   .project_list_table_header {
@@ -104,11 +109,11 @@
   .project_details_list li span:nth-child(1) {
     width: 25%;
     padding-inline-start: 3%;
-}
+  }
 
   .project_details_list li span:nth-child(n+2) {
     padding-left: 0%;
-    }
+  }
 
   .project_detail_li {
     overflow: auto;
@@ -146,7 +151,7 @@
     width: 25%;
     height: 632px;
     float: left;
-}
+  }
 
   ul {
     line-height: 1.4;
@@ -164,11 +169,29 @@
   }
 }
 
-@media (min-width: 600px) and (max-width: 1023px) and (orientation: landscape) {
-  
+@media (min-width: 600px) and (max-width: 1023px) {
+
   //CSS
   .li {
     font-size: 3.5vh;
     -webkit-font-size: 3.5vh;
+  }
+
+  .project {
+    height: 1300px;
+  }
+
+  .project_list {
+    height: 965px;
+  }
+
+  .project_detail_li {
+    span {
+      font-size: 15px;
+    }
+  }
+
+  .project_details_list li span:nth-child(n+2) {
+    font-size: 15px;
   }
 }

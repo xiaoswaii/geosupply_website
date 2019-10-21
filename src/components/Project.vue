@@ -296,7 +296,7 @@ computed: {
         var fontSize = document.querySelector('#projectBanner')
         fontSize.classList.add('small_font_cn')
       }
-      if(this.projectDetail.name.length >=60) {
+      if(this.projectDetail.name.length >=40) {
         var fontSize = document.querySelector('#projectBanner')
         fontSize.classList.add('small_font')
       }

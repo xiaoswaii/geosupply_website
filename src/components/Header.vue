@@ -39,14 +39,14 @@ export default {
     changeNav :function(val){
       if(val == 'zh'){
         var i = document.querySelectorAll('.button');
-        for(var k =0;k<=i.length;k++){
+        for(var k =0;k<i.length;k++){
           i[k].classList.add("cn");
         }
       }
       else {
          var i = document.querySelectorAll('.button');
-          for(var k =0;k<=i.length;k++){
-           i[k].classList.remove("cn");
+          for(var k =0;k<i.length;k++){
+            i[k].classList.remove("cn");
         }
       }
     }

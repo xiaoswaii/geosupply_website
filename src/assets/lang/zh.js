@@ -54,7 +54,7 @@ project: {
     detailTitle:"簡介",
     name:"工程名稱：",
     location:"專案區域位置：",
-    contractor:"Main Contractor:",
+    contractor:"承包商:",
     software:"軟體：",
     detail:"專案說明：",
     instrument:"監測儀器：",

@@ -58,7 +58,7 @@ import { swiper, swiperSlide } from 'vue-awesome-swiper'
 
 @media (min-width: 320px) and (max-width: 480px) {
   .swiper-container {
-    height: 200px;
+    height: 160px;
   }
 }
 </style>
