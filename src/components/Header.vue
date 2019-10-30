@@ -29,28 +29,28 @@ export default {
     }
   },
 
-  computed:{
-    changeNav: function(){
-      return this.$i18n.locale
-    }
-  },
+  // computed:{
+  //   changeNav: function(){
+  //     return this.$i18n.locale
+  //   }
+  // },
 
-  watch: {
-    changeNav :function(val){
-      if(val == 'zh'){
-        var i = document.querySelectorAll('.button');
-        for(var k =0;k<i.length;k++){
-          i[k].classList.add("cn");
-        }
-      }
-      else {
-         var i = document.querySelectorAll('.button');
-          for(var k =0;k<i.length;k++){
-            i[k].classList.remove("cn");
-        }
-      }
-    }
-  },
+  // watch: {
+  //   changeNav :function(val){
+  //     if(val == 'zh'){
+  //       var i = document.querySelectorAll('.button');
+  //       for(var k =0;k<i.length;k++){
+  //         i[k].classList.add("cn");
+  //       }
+  //     }
+  //     else {
+  //        var i = document.querySelectorAll('.button');
+  //         for(var k =0;k<i.length;k++){
+  //           i[k].classList.remove("cn");
+  //       }
+  //     }
+  //   }
+  // },
 
   mounted(){
     this.logoStyle= `max-width:${((document.getElementById('nav').offsetWidth) - (document.getElementById('navright').offsetWidth)) * 0.7}px;max-height:100%;`;

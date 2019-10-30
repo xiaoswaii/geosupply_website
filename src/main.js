@@ -26,7 +26,7 @@ Vue.prototype.$http = axios;
 Vue.config.productionTip = false
 
 const i18n = new VueI18n({
-  locale: 'en', // 語言標識
+  locale: 'zh', // 語言標識
   messages: {
     'zh': require('./assets/lang/zh'),
     'en': require('./assets/lang/en')
