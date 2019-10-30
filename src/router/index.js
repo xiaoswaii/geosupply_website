@@ -6,7 +6,8 @@ import Contactus from '@/components/Contactus'
 import Index from '@/components/Index'
 import Product from '@/components/Product'
 import Software from '@/components/Software'
-import Project from '@/components/Project' //引入Project Componenet
+import Project from '@/components/Project'
+import notFound from '@/components/404' //引入Project Componenet
 // import Aboutus_cn from '@/components/cn/Aboutus_cn'
 // import Contactus_cn from '@/components/cn/Contactus_cn'
 // import Index_cn from '@/components/cn/Index_cn'
@@ -33,19 +34,25 @@ export default new Router({
       path: '/ContactUs',
       name: 'Contactus',
       component: Contactus
-    },{
+    },
+    {
       path: '/',
       name: 'Index',
       component: Index
-    },{
+    },
+    {
         path: '/Product',
         name: 'Product',
         component: Product,
-    },{
+    },
+    {
       path: '/Software',
       name: 'Software',
       component: Software,
     },
+    { path: '*',
+    name: 'notFound',
+     component: notFound }
 
   ]
 })
